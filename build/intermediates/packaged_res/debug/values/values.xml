@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="black_trans">#9F000000</color>
+    <color name="blue">#2b91f7</color>
+    <color name="blue_dark">#040C3E</color>
+    <color name="blue_light">#00BCD4</color>
+    <color name="blue_pastel">#cce6ff</color>
+    <color name="blue_trans">#fc4a8aff</color>
+    <color name="chrono_running">#D6250C</color>
+    <color name="chrono_walking">#fc4a8aff</color>
+    <color name="gray">#D8D8D8</color>
+    <color name="gray_dark">#2B2A29</color>
+    <color name="gray_light">#f7f7f7</color>
+    <color name="gray_light_trans">#9Ff7f7f7</color>
+    <color name="gray_medium">#787878</color>
+    <color name="gray_strong">#5B5B5B</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FFC107</color>
+    <color name="orange_dark">#c7980c</color>
+    <color name="pastel_yellow">#f9eeb3</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="salmon">#EA786F</color>
+    <color name="salmon_dark">#ff4f78</color>
+    <color name="salmon_pastel">#ffccdd</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="transparent">#00ffffff</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="acept">He leído y acepto los</string>
     <string name="app_name">WildProject</string>
+    <string name="bar_title_terms">Términos y Condiciones de Uso</string>
+    <string name="default_web_client_id" translatable="false">348875125973-njucfmt4gb5b7avpac1n8j4drpgqhbr1.apps.googleusercontent.com</string>
+    <string name="email">Email</string>
+    <string name="empty_email">Introduce un email porfaplis</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="forgotPassword"><u>Olvidaste tu contraseña?</u></string>
+    <string name="gcm_defaultSenderId" translatable="false">348875125973</string>
+    <string name="google">GOOGLE</string>
+    <string name="google_api_key" translatable="false">AIzaSyBfDcDC7B8fmIjDpAiKPzEBgxlQv6rZm3c</string>
+    <string name="google_app_id" translatable="false">1:348875125973:android:177056f9317dcd22011e5c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBfDcDC7B8fmIjDpAiKPzEBgxlQv6rZm3c</string>
+    <string name="google_storage_bucket" translatable="false">wildproject-ee610.appspot.com</string>
+    <string name="invalid_email">mmm parece que el email está mal escrito</string>
+    <string name="invitation">¿Hasta qué nivel eres capaz de llegar?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="password">Contraseña</string>
+    <string name="project_id" translatable="false">wildproject-ee610</string>
+    <string name="resetPassword">Enviar Contraseña</string>
+    <string name="terms">términos y condiciones de uso.</string>
+    <string name="terms1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus convallis metus at pretium. Vivamus at lacinia leo. Praesent velit elit, suscipit sit amet pulvinar id, imperdiet ac massa. Quisque molestie lectus rhoncus urna tempor, ut lacinia mi tempor. Praesent volutpat, ligula eget lobortis cursus, mauris libero consequat ligula, nec scelerisque erat ipsum tempor justo. Aliquam ornare faucibus augue vel faucibus. Ut sollicitudin commodo tortor eu faucibus. Vestibulum lacinia ligula sed tortor auctor, vitae sollicitudin lorem dapibus. Phasellus sed tincidunt odio.</string>
+    <string name="terms2">Praesent arcu nisi, auctor quis tempor id, vehicula non nulla. Sed a fermentum tellus, quis pharetra lorem. Fusce vehicula libero in ultricies varius. Suspendisse vel velit tortor. Aliquam non nisi eget lectus tempor consectetur sed in magna. Nullam tincidunt, nibh ut sodales suscipit, ante est luctus purus, sed pellentesque ipsum massa et quam. Proin sed sapien ultrices ex aliquet elementum sed et erat. Sed tincidunt felis sapien, a suscipit massa cursus et. Phasellus auctor tellus ac neque maximus accumsan. Morbi sit amet odio nec sapien pharetra elementum maximus id odio. Integer laoreet, neque id efficitur auctor, magna massa consequat justo, quis vehicula ipsum massa at sem. Morbi in ornare sapien, in luctus mauris. </string>
+    <string name="terms3">Sed id libero auctor, lacinia lectus a, consequat nisl. Nam quis suscipit purus. Fusce at congue quam. Etiam congue imperdiet bibendum. Etiam at porttitor ipsum. Donec consectetur sapien in neque tempus tempus. Sed vulputate rutrum ultrices. Praesent in est leo. Suspendisse euismod purus id urna tempus pellentesque. Praesent condimentum nisl sit amet purus pulvinar sagittis. Cras purus felis, hendrerit et ornare ut, molestie id orci. Integer dictum consequat leo, id pretium urna tempus et. Donec nibh ante, laoreet id lorem vitae, vestibulum sollicitudin lorem. </string>
     <style name="Theme.WildProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
@@ -20,5 +65,10 @@
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
+    </style>
+    <style name="viewCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
     </style>
 </resources>

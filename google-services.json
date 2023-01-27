@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348875125973",
+    "project_id": "wildproject-ee610",
+    "storage_bucket": "wildproject-ee610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348875125973:android:177056f9317dcd22011e5c",
+        "android_client_info": {
+          "package_name": "com.example.wildproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348875125973-njucfmt4gb5b7avpac1n8j4drpgqhbr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfDcDC7B8fmIjDpAiKPzEBgxlQv6rZm3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348875125973-njucfmt4gb5b7avpac1n8j4drpgqhbr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
