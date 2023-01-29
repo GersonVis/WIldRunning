@@ -41,10 +41,13 @@ id cbAccept
 id etEmail
 id etPassword
 id lyTerm
+id tvSession
 id tvTerms
 id txtInvitation
+layout activity_forgot_password
 layout activity_login
 layout activity_main
+layout activity_terms
 mipmap ic_launcher
 mipmap ic_launcher_round
 string acept

@@ -3300,6 +3300,7 @@ int id transition_transform 0x7f08020a
 int id triangle 0x7f08020b
 int id trouble_signing_in 0x7f08020c
 int id trouble_signing_in_possible_fixes 0x7f08020d
+int id tvSession 0x7f08022d
 int id tvTerms 0x7f08020e
 int id txtInvitation 0x7f08020f
 int id unchecked 0x7f080210
@@ -3455,8 +3456,10 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_forgot_password 0x7f0b008d
 int layout activity_login 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_terms 0x7f0b008e
 int layout browser_actions_context_menu_page 0x7f0b001e
 int layout browser_actions_context_menu_row 0x7f0b001f
 int layout custom_dialog 0x7f0b0020

@@ -32,6 +32,20 @@
         android:theme="@style/Theme.WildProject"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.wildproject.ForgotPasswordActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.wildproject.TermsActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.wildproject.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
