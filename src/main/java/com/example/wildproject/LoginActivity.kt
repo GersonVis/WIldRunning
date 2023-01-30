@@ -1,8 +1,10 @@
 package com.example.wildproject
 
 import android.content.Intent
+import android.content.IntentSender
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.LinearLayout
@@ -10,9 +12,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
-import com.example.wildproject.ValidateEmail.Companion.isEmail
 import com.example.wildproject.databinding.ActivityLoginBinding
-import com.google.android.material.appbar.AppBarLayout
+import com.google.android.gms.auth.api.identity.BeginSignInRequest
+import com.google.android.gms.auth.api.identity.Identity
+import com.google.android.gms.auth.api.identity.SignInClient
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
         lateinit var useremail: String
         lateinit var providerSession: String
     }
+
     private var email by Delegates.notNull<String>()
     private var password by Delegates.notNull<String>()
     private lateinit var etEmail: EditText
@@ -35,6 +39,9 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
+    private lateinit var oneTapClient: SignInClient
+    private lateinit var signInRequest: BeginSignInRequest
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //   setContentView(R.layout.activity_login)
@@ -42,8 +49,50 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         mAuth = FirebaseAuth.getInstance()
         binding.lyTerm.visibility = View.INVISIBLE
+
+
+        oneTapClient = Identity.getSignInClient(this)
+        signInRequest = BeginSignInRequest.builder()
+            .setPasswordRequestOptions(
+                BeginSignInRequest.PasswordRequestOptions.builder()
+                    .setSupported(true)
+                    .build()
+            )
+            .setGoogleIdTokenRequestOptions(
+                BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
+                    .setSupported(true)
+                    // Your server's client ID, not your Android client ID.
+                    .setServerClientId(getString(R.string.your_web_client_id))
+                    // Only show accounts previously used to sign in.
+                    .setFilterByAuthorizedAccounts(true)
+                    .build()
+            )
+            // Automatically sign in when exactly one credential is retrieved.
+            .setAutoSelectEnabled(true)
+            .build()
+
+        binding.btSignGoogle.setOnClickListener {
+            oneTapClient.beginSignIn(signInRequest)
+                .addOnSuccessListener(this) { result ->
+                    try {
+                        startIntentSenderForResult(
+                            result.pendingIntent.intentSender, REQ_ONE_TAP,
+                            null, 0, 0, 0, null
+                        )
+                    } catch (e: IntentSender.SendIntentException) {
+                        Log.e("prueba", "Couldn't start One Tap UI: ${e.localizedMessage}")
+                    }
+                }
+                .addOnFailureListener(this) { e ->
+                    // No saved credentials found. Launch the One Tap sign-up flow, or
+                    // do nothing and continue presenting the signed-out UI.
+                    Log.d("prueba", e.localizedMessage)
+                }
+        }
+
     }
 
+    private lateinit var auth: FirebaseAuth
     override fun onStart() {
         super.onStart()
         val currentUser = FirebaseAuth.getInstance().currentUser
@@ -57,6 +106,8 @@ class LoginActivity : AppCompatActivity() {
         binding.etPassword.doOnTextChanged { text, start, before, count ->
             managedButtonLogin()
         }
+
+
     }
     private fun managedButtonLogin():Unit{
         if(TextUtils.isEmpty(binding.etPassword.text) || !ValidateEmail.isEmail(binding.etEmail.text.toString())){
@@ -140,15 +191,31 @@ class LoginActivity : AppCompatActivity() {
         var e = binding.etEmail.text.toString()
         if(!TextUtils.isEmpty(e)){
             mAuth.sendPasswordResetEmail(e)
-                .addOnCompleteListener{
-                    if(it.isSuccessful) Snackbar.make(binding.root, "Se ha mandando un correó a $e", Snackbar.LENGTH_SHORT).show()
-                    else{
-                        Snackbar.make(binding.root, "No se encontro al usuario con este correó", Snackbar.LENGTH_SHORT)
+                .addOnCompleteListener {
+                    if (it.isSuccessful) Snackbar.make(
+                        binding.root,
+                        "Se ha mandando un correó a $e",
+                        Snackbar.LENGTH_SHORT
+                    ).show()
+                    else {
+                        Snackbar.make(
+                            binding.root,
+                            "No se encontro al usuario con este correó",
+                            Snackbar.LENGTH_SHORT
+                        )
                     }
                 }
-        }else{
+        } else {
             Snackbar.make(binding.root, "El campo email esta vacío", Snackbar.LENGTH_SHORT).show()
         }
     }
+
+    fun signInGoogle(): Unit {
+
+    }
+
+    private val REQ_ONE_TAP = 2  // Can be any integer unique to the Activity
+    private var showOneTapUI = true
+
 
 }
