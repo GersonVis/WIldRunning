@@ -1793,7 +1793,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
-    <string name="default_web_client_id" translatable="false">348875125973-njucfmt4gb5b7avpac1n8j4drpgqhbr1.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">348875125973-16occd6fbkqtvfrskiv8rh34iaeustsr.apps.googleusercontent.com</string>
     <string name="email">Email</string>
     <string name="empty_email">Introduce un email porfaplis</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
