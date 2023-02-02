@@ -9,6 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/salmon_dark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/bar_title"/>
 
 
     </com.google.android.material.appbar.AppBarLayout>
