@@ -22,7 +22,7 @@
     <string name="your_web_client_id">348875125973-njucfmt4gb5b7avpac1n8j4drpgqhbr1.apps.googleusercontent.com</string>
     <string name="bar_title">WildRunning</string>
 
-    <string name="bar_title">Alegría Macarena</string>
+    <string name="bar_title2">Alegría Macarena</string>
     <string name="menu_running">Running</string>
     <string name="menu_record">Historial</string>
     <string name="menu_becamepremium">Hazte Premium</string>
@@ -50,5 +50,5 @@
     <string name="orderby_durationAZ">Duración (Menores primero)</string>
     <string name="orderby_distanceAZ">Distancia (Menores primero)</string>
     <string name="orderby_avgspeedAZ">Vel. Prom. (Menores primero)</string>
-    <string name="orderby_maxspeedAZ">Vel. Máx. (Menores primero)</s
+    <string name="orderby_maxspeedAZ">Vel. Máx. (Menores primero)</string>
 </resources>

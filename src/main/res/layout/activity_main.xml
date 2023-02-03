@@ -23,6 +23,7 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_gravity="start"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/activity_main_drawer"

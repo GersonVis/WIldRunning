@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_item_main"
+            android:icon="@drawable/google"
+            android:title="@string/menu_running" />
+        <item
+            android:id="@+id/nav_item_record"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_record" />
+        <item
+            android:id="@+id/nav_item_premiun"
+            android:icon="@drawable/ic_baseline_mood_24"
+            android:title="@string/menu_becamepremium" />
+    </group>
+    <item android:title="Cuenta">
+        <menu>
+            <item android:id="@+id/nav_item_clearpreferences"
+                android:icon="@drawable/ic_popup_sync"
+                android:title="@string/menu_clearpreferences"
+                />
+            <item
+                android:id="@+id/nav_item_signout"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="@string/menu_signout" />
+        </menu>
+    </item>
+    <item android:title="Anuncio">
+        <menu>
+            <item
+                android:id="@+id/nav_item_offer"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/menu_offercourse"
+                />
+        </menu>
+    </item>
+</menu>
