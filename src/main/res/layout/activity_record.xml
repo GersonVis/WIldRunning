@@ -85,7 +85,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="end|bottom"
-        android:onClick="fbHome"
+        android:onClick="callHome"
         android:src="@drawable/fui_ic_twitter_bird_white_24dp"
         android:translationX="-20dp"
         android:translationY="-90dp"

@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\activity_forgot_password.xml"
     },
     {
+        "merged": "com.example.wildproject.app-mergeDebugResources-38:/layout/activity_main.xml",
+        "source": "com.example.wildproject.app-main-41:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-38:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\activity_main.xml"
     },
@@ -16,15 +20,15 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-38:\\layout\\activity_record.xml",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\activity_record.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-38:\\layout\\app_bar_main.xml",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\app_bar_main.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-38:\\layout\\activity_terms.xml",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\layout\\activity_terms.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-mergeDebugResources-38:/layout/activity_record.xml",
-        "source": "com.example.wildproject.app-main-41:/layout/activity_record.xml"
     }
 ]

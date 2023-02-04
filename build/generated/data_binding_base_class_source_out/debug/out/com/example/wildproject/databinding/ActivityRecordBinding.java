@@ -4,32 +4,67 @@ package com.example.wildproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.wildproject.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityRecordBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final TextView textView;
+  public final FloatingActionButton fbHome;
 
-  private ActivityRecordBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textView) {
+  @NonNull
+  public final ImageView ivBike;
+
+  @NonNull
+  public final ImageView ivRollerRunning;
+
+  @NonNull
+  public final ImageView ivRollerSkate;
+
+  @NonNull
+  public final LinearLayout lySports;
+
+  @NonNull
+  public final LinearLayout rlRecyclers;
+
+  @NonNull
+  public final RecyclerView rvRecyclers;
+
+  @NonNull
+  public final Toolbar toolbarRecord;
+
+  private ActivityRecordBinding(@NonNull LinearLayout rootView,
+      @NonNull FloatingActionButton fbHome, @NonNull ImageView ivBike,
+      @NonNull ImageView ivRollerRunning, @NonNull ImageView ivRollerSkate,
+      @NonNull LinearLayout lySports, @NonNull LinearLayout rlRecyclers,
+      @NonNull RecyclerView rvRecyclers, @NonNull Toolbar toolbarRecord) {
     this.rootView = rootView;
-    this.textView = textView;
+    this.fbHome = fbHome;
+    this.ivBike = ivBike;
+    this.ivRollerRunning = ivRollerRunning;
+    this.ivRollerSkate = ivRollerSkate;
+    this.lySports = lySports;
+    this.rlRecyclers = rlRecyclers;
+    this.rvRecyclers = rvRecyclers;
+    this.toolbarRecord = toolbarRecord;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +89,56 @@ public final class ActivityRecordBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.fbHome;
+      FloatingActionButton fbHome = ViewBindings.findChildViewById(rootView, id);
+      if (fbHome == null) {
         break missingId;
       }
 
-      return new ActivityRecordBinding((ConstraintLayout) rootView, textView);
+      id = R.id.ivBike;
+      ImageView ivBike = ViewBindings.findChildViewById(rootView, id);
+      if (ivBike == null) {
+        break missingId;
+      }
+
+      id = R.id.ivRollerRunning;
+      ImageView ivRollerRunning = ViewBindings.findChildViewById(rootView, id);
+      if (ivRollerRunning == null) {
+        break missingId;
+      }
+
+      id = R.id.ivRollerSkate;
+      ImageView ivRollerSkate = ViewBindings.findChildViewById(rootView, id);
+      if (ivRollerSkate == null) {
+        break missingId;
+      }
+
+      id = R.id.lySports;
+      LinearLayout lySports = ViewBindings.findChildViewById(rootView, id);
+      if (lySports == null) {
+        break missingId;
+      }
+
+      id = R.id.rlRecyclers;
+      LinearLayout rlRecyclers = ViewBindings.findChildViewById(rootView, id);
+      if (rlRecyclers == null) {
+        break missingId;
+      }
+
+      id = R.id.rvRecyclers;
+      RecyclerView rvRecyclers = ViewBindings.findChildViewById(rootView, id);
+      if (rvRecyclers == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar_record;
+      Toolbar toolbarRecord = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarRecord == null) {
+        break missingId;
+      }
+
+      return new ActivityRecordBinding((LinearLayout) rootView, fbHome, ivBike, ivRollerRunning,
+          ivRollerSkate, lySports, rlRecyclers, rvRecyclers, toolbarRecord);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

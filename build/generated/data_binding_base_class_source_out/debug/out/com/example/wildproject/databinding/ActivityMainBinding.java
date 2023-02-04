@@ -4,37 +4,925 @@ package com.example.wildproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.NumberPicker;
+import android.widget.RelativeLayout;
+import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.wildproject.R;
-import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import me.tankery.lib.circularseekbar.CircularSeekBar;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   private final DrawerLayout rootView;
 
   @NonNull
+  public final LinearLayout btStart;
+
+  @NonNull
+  public final TextView btStartLabel;
+
+  @NonNull
+  public final CheckBox cbAutoFinish;
+
+  @NonNull
+  public final CheckBox cbNotify;
+
+  @NonNull
+  public final CircularSeekBar csbChallengeDistance;
+
+  @NonNull
+  public final CircularSeekBar csbCurrentAvgSpeed;
+
+  @NonNull
+  public final CircularSeekBar csbCurrentDistance;
+
+  @NonNull
+  public final CircularSeekBar csbCurrentMaxSpeed;
+
+  @NonNull
+  public final CircularSeekBar csbCurrentSpeed;
+
+  @NonNull
+  public final CircularSeekBar csbDistanceLevel;
+
+  @NonNull
+  public final CircularSeekBar csbRecordAvgSpeed;
+
+  @NonNull
+  public final CircularSeekBar csbRecordDistance;
+
+  @NonNull
+  public final CircularSeekBar csbRecordSpeed;
+
+  @NonNull
+  public final CircularSeekBar csbRunWalk;
+
+  @NonNull
+  public final CircularSeekBar csbRunsLevel;
+
+  @NonNull
+  public final CardView cvCurrentAVGSpeed;
+
+  @NonNull
+  public final CardView cvCurrentDistance;
+
+  @NonNull
+  public final CardView cvCurrentSpeed;
+
+  @NonNull
+  public final CardView cvLevel;
+
+  @NonNull
   public final DrawerLayout drawerLayout;
 
   @NonNull
-  public final NavigationView navView;
+  public final FloatingActionButton fbCamera;
 
   @NonNull
-  public final TextView tvSession;
+  public final FloatingActionButton fbFinalPicture;
 
-  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull DrawerLayout drawerLayout,
-      @NonNull NavigationView navView, @NonNull TextView tvSession) {
+  @NonNull
+  public final FloatingActionButton fbShareRun;
+
+  @NonNull
+  public final ImageView ivClosePopUp;
+
+  @NonNull
+  public final ImageView ivCurrentLevel;
+
+  @NonNull
+  public final ImageView ivMapIcon;
+
+  @NonNull
+  public final ImageView ivMedalAvgSpeed;
+
+  @NonNull
+  public final ImageView ivMedalDistance;
+
+  @NonNull
+  public final ImageView ivMedalMaxSpeed;
+
+  @NonNull
+  public final ImageView ivOpenClose;
+
+  @NonNull
+  public final ImageView ivSportBike;
+
+  @NonNull
+  public final ImageView ivSportRollerSkate;
+
+  @NonNull
+  public final ImageView ivSportRunning;
+
+  @NonNull
+  public final ImageView ivSportSelected;
+
+  @NonNull
+  public final ImageView ivTypeMap;
+
+  @NonNull
+  public final LinearLayout lyAvgSpeedDataRun;
+
+  @NonNull
+  public final LinearLayout lyChallengeDistance;
+
+  @NonNull
+  public final LinearLayout lyChallengeDistanceNPs;
+
+  @NonNull
+  public final LinearLayout lyChallengeDistancePopUp;
+
+  @NonNull
+  public final LinearLayout lyChallengeDistanceRun;
+
+  @NonNull
+  public final LinearLayout lyChallengeDuration;
+
+  @NonNull
+  public final LinearLayout lyChallengeDurationNPs;
+
+  @NonNull
+  public final LinearLayout lyChallengeDurationRun;
+
+  @NonNull
+  public final LinearLayout lyChallenges;
+
+  @NonNull
+  public final LinearLayout lyChallengesOptions;
+
+  @NonNull
+  public final LinearLayout lyChallengesSettings;
+
+  @NonNull
+  public final LinearLayout lyChallengesSpace;
+
+  @NonNull
+  public final RelativeLayout lyChrono;
+
+  @NonNull
+  public final LinearLayout lyChronoProgressBg;
+
+  @NonNull
+  public final LinearLayout lyChronoRound;
+
+  @NonNull
+  public final LinearLayout lyCurrentData;
+
+  @NonNull
+  public final LinearLayout lyCurrentDatas;
+
+  @NonNull
+  public final LinearLayout lyCurrentDistance;
+
+  @NonNull
+  public final LinearLayout lyCurrentDuration;
+
+  @NonNull
+  public final RelativeLayout lyCurrentLevel;
+
+  @NonNull
+  public final LinearLayout lyCurrentRun;
+
+  @NonNull
+  public final LinearLayout lyCurrentSpeeds;
+
+  @NonNull
+  public final LinearLayout lyCurrentSport;
+
+  @NonNull
+  public final LinearLayout lyCurrentTimeMedals;
+
+  @NonNull
+  public final LinearLayout lyDistanceData;
+
+  @NonNull
+  public final LinearLayout lyFragmentMap;
+
+  @NonNull
+  public final LinearLayout lyHardTrack;
+
+  @NonNull
+  public final LinearLayout lyHardVolume;
+
+  @NonNull
+  public final LinearLayout lyIntervalDuration;
+
+  @NonNull
+  public final LinearLayout lyIntervalDurationNP;
+
+  @NonNull
+  public final LinearLayout lyIntervalMode;
+
+  @NonNull
+  public final LinearLayout lyIntervalModeSpace;
+
+  @NonNull
+  public final LinearLayout lyIntervalRun;
+
+  @NonNull
+  public final LinearLayout lyLevel;
+
+  @NonNull
+  public final LinearLayout lyMap;
+
+  @NonNull
+  public final LinearLayout lyMapContainer;
+
+  @NonNull
+  public final LinearLayout lyMaxSpeedRun;
+
+  @NonNull
+  public final LinearLayout lyMaxUnevennessRun;
+
+  @NonNull
+  public final LinearLayout lyMedalAvgSpeed;
+
+  @NonNull
+  public final LinearLayout lyMedalDistance;
+
+  @NonNull
+  public final LinearLayout lyMedalMaxSpeed;
+
+  @NonNull
+  public final LinearLayout lyMedalsRun;
+
+  @NonNull
+  public final LinearLayout lyMinUnevennessRun;
+
+  @NonNull
+  public final LinearLayout lyNotifyVolume;
+
+  @NonNull
+  public final LinearLayout lyOpenEnd;
+
+  @NonNull
+  public final LinearLayout lyOpenStart;
+
+  @NonNull
+  public final LinearLayout lyOpenerButton;
+
+  @NonNull
+  public final LinearLayout lyOpenerLine;
+
+  @NonNull
+  public final LinearLayout lyOpenerMap;
+
+  @NonNull
+  public final LinearLayout lyOpenerTitle;
+
+  @NonNull
+  public final LinearLayout lyOptionsRun;
+
+  @NonNull
+  public final LinearLayout lyPopUpClose;
+
+  @NonNull
+  public final LinearLayout lyPopUpOptionsRun;
+
+  @NonNull
+  public final LinearLayout lyPopupRun;
+
+  @NonNull
+  public final LinearLayout lyProgressLevel;
+
+  @NonNull
+  public final LinearLayout lyRoundProgressBg;
+
+  @NonNull
+  public final LinearLayout lyRunningWalking;
+
+  @NonNull
+  public final LinearLayout lyRunningWalkingTimes;
+
+  @NonNull
+  public final LinearLayout lySettingsVolumes;
+
+  @NonNull
+  public final LinearLayout lySettingsVolumesSpace;
+
+  @NonNull
+  public final LinearLayout lySoftTrack;
+
+  @NonNull
+  public final LinearLayout lySoftVolume;
+
+  @NonNull
+  public final LinearLayout lySportBike;
+
+  @NonNull
+  public final LinearLayout lySportRollerSkate;
+
+  @NonNull
+  public final LinearLayout lySportRunning;
+
+  @NonNull
+  public final LinearLayout lySports;
+
+  @NonNull
+  public final LinearLayout lyTracks;
+
+  @NonNull
+  public final LinearLayout lyUnevennessDataRun;
+
+  @NonNull
+  public final LinearLayout lyUnevennessRun;
+
+  @NonNull
+  public final LinearLayout lyWindow;
+
+  @NonNull
+  public final RelativeLayout lysbSoftMusic;
+
+  @NonNull
+  public final NumberPicker npChallengeDistance;
+
+  @NonNull
+  public final NumberPicker npChallengeDurationHH;
+
+  @NonNull
+  public final NumberPicker npChallengeDurationMM;
+
+  @NonNull
+  public final NumberPicker npChallengeDurationSS;
+
+  @NonNull
+  public final NumberPicker npDurationInterval;
+
+  @NonNull
+  public final RelativeLayout relativeLayoutsbHardMusic;
+
+  @NonNull
+  public final RelativeLayout rlChallengeOptions;
+
+  @NonNull
+  public final RelativeLayout rlCurrentAvg;
+
+  @NonNull
+  public final RelativeLayout rlCurrentDistance;
+
+  @NonNull
+  public final RelativeLayout rlCurrentSpeed;
+
+  @NonNull
+  public final RelativeLayout rlMain;
+
+  @NonNull
+  public final LinearLayout rlStart;
+
+  @NonNull
+  public final RelativeLayout rlStartCamara;
+
+  @NonNull
+  public final RelativeLayout rlTopFixed;
+
+  @NonNull
+  public final SeekBar sbHardTrack;
+
+  @NonNull
+  public final SeekBar sbHardVolume;
+
+  @NonNull
+  public final SeekBar sbNotifyVolume;
+
+  @NonNull
+  public final SeekBar sbSoftTrack;
+
+  @NonNull
+  public final SeekBar sbSoftVolume;
+
+  @NonNull
+  public final Switch swChallenges;
+
+  @NonNull
+  public final Switch swIntervalMode;
+
+  @NonNull
+  public final Switch swVolumes;
+
+  @NonNull
+  public final TextView tvAvgSpeedRecord;
+
+  @NonNull
+  public final TextView tvAvgSpeedRun;
+
+  @NonNull
+  public final TextView tvAvgSpeedRunUX;
+
+  @NonNull
+  public final TextView tvAvgSpeedTitle;
+
+  @NonNull
+  public final TextView tvChallengeDistance;
+
+  @NonNull
+  public final TextView tvChallengeDistanceRun;
+
+  @NonNull
+  public final TextView tvChallengeDistanceRunUX;
+
+  @NonNull
+  public final TextView tvChallengeDistanceTitle;
+
+  @NonNull
+  public final TextView tvChallengeDistanceUX;
+
+  @NonNull
+  public final TextView tvChallengeDuration;
+
+  @NonNull
+  public final TextView tvChallengeDurationHHMM;
+
+  @NonNull
+  public final TextView tvChallengeDurationMMSS;
+
+  @NonNull
+  public final TextView tvChallengeDurationRun;
+
+  @NonNull
+  public final TextView tvChallengeDurationUX;
+
+  @NonNull
+  public final TextView tvChallengeTitle;
+
+  @NonNull
+  public final TextView tvChrono;
+
+  @NonNull
+  public final TextView tvCurrentAvgSpeed;
+
+  @NonNull
+  public final TextView tvCurrentAvgSpeedLabel;
+
+  @NonNull
+  public final TextView tvCurrentAvgSpeedUX;
+
+  @NonNull
+  public final TextView tvCurrentDistance;
+
+  @NonNull
+  public final TextView tvCurrentSpeed;
+
+  @NonNull
+  public final TextView tvDeleteRun;
+
+  @NonNull
+  public final TextView tvDistanceLabel;
+
+  @NonNull
+  public final TextView tvDistanceRecord;
+
+  @NonNull
+  public final TextView tvDistanceRun;
+
+  @NonNull
+  public final TextView tvDistanceRunUX;
+
+  @NonNull
+  public final TextView tvDistanceTitle;
+
+  @NonNull
+  public final TextView tvDistanceUX;
+
+  @NonNull
+  public final TextView tvDurationRun;
+
+  @NonNull
+  public final TextView tvDurationTitle;
+
+  @NonNull
+  public final TextView tvHardPosition;
+
+  @NonNull
+  public final TextView tvHardRemaining;
+
+  @NonNull
+  public final TextView tvHardVolumen;
+
+  @NonNull
+  public final TextView tvIntervalDuration;
+
+  @NonNull
+  public final TextView tvIntervalDurationUX;
+
+  @NonNull
+  public final TextView tvIntervalRun;
+
+  @NonNull
+  public final TextView tvIntervalTitle;
+
+  @NonNull
+  public final TextView tvLevelDistanceLabel;
+
+  @NonNull
+  public final TextView tvLevelRunsLabel;
+
+  @NonNull
+  public final TextView tvMapCenter;
+
+  @NonNull
+  public final TextView tvMapTitle;
+
+  @NonNull
+  public final TextView tvMaxSpeedRecord;
+
+  @NonNull
+  public final TextView tvMaxSpeedRun;
+
+  @NonNull
+  public final TextView tvMaxSpeedRunUX;
+
+  @NonNull
+  public final TextView tvMaxSpeedTitle;
+
+  @NonNull
+  public final TextView tvMaxUnevennessRun;
+
+  @NonNull
+  public final TextView tvMaxUnevennessUX;
+
+  @NonNull
+  public final TextView tvMedalAvgSpeedTitle;
+
+  @NonNull
+  public final TextView tvMedalDistanceTitle;
+
+  @NonNull
+  public final TextView tvMedalMaxSpeedTitle;
+
+  @NonNull
+  public final TextView tvMinUnevennessRun;
+
+  @NonNull
+  public final TextView tvMinUnevennessUX;
+
+  @NonNull
+  public final TextView tvNotifyVolumen;
+
+  @NonNull
+  public final TextView tvNumberLevel;
+
+  @NonNull
+  public final TextView tvReset;
+
+  @NonNull
+  public final TextView tvRounds;
+
+  @NonNull
+  public final TextView tvRunningTime;
+
+  @NonNull
+  public final TextView tvRunningTimeUX;
+
+  @NonNull
+  public final TextView tvSoftPosition;
+
+  @NonNull
+  public final TextView tvSoftRemaining;
+
+  @NonNull
+  public final TextView tvSoftVolumen;
+
+  @NonNull
+  public final TextView tvSpeedLabel;
+
+  @NonNull
+  public final TextView tvSpeedUX;
+
+  @NonNull
+  public final TextView tvTotalDistance;
+
+  @NonNull
+  public final TextView tvTotalDistanceLevel;
+
+  @NonNull
+  public final TextView tvTotalRunsLevel;
+
+  @NonNull
+  public final TextView tvTotalTime;
+
+  @NonNull
+  public final TextView tvUnevennessTitle;
+
+  @NonNull
+  public final TextView tvWalkingTime;
+
+  @NonNull
+  public final TextView tvWalkingTimeDiv;
+
+  @NonNull
+  public final TextView tvWalkingTimeux;
+
+  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull LinearLayout btStart,
+      @NonNull TextView btStartLabel, @NonNull CheckBox cbAutoFinish, @NonNull CheckBox cbNotify,
+      @NonNull CircularSeekBar csbChallengeDistance, @NonNull CircularSeekBar csbCurrentAvgSpeed,
+      @NonNull CircularSeekBar csbCurrentDistance, @NonNull CircularSeekBar csbCurrentMaxSpeed,
+      @NonNull CircularSeekBar csbCurrentSpeed, @NonNull CircularSeekBar csbDistanceLevel,
+      @NonNull CircularSeekBar csbRecordAvgSpeed, @NonNull CircularSeekBar csbRecordDistance,
+      @NonNull CircularSeekBar csbRecordSpeed, @NonNull CircularSeekBar csbRunWalk,
+      @NonNull CircularSeekBar csbRunsLevel, @NonNull CardView cvCurrentAVGSpeed,
+      @NonNull CardView cvCurrentDistance, @NonNull CardView cvCurrentSpeed,
+      @NonNull CardView cvLevel, @NonNull DrawerLayout drawerLayout,
+      @NonNull FloatingActionButton fbCamera, @NonNull FloatingActionButton fbFinalPicture,
+      @NonNull FloatingActionButton fbShareRun, @NonNull ImageView ivClosePopUp,
+      @NonNull ImageView ivCurrentLevel, @NonNull ImageView ivMapIcon,
+      @NonNull ImageView ivMedalAvgSpeed, @NonNull ImageView ivMedalDistance,
+      @NonNull ImageView ivMedalMaxSpeed, @NonNull ImageView ivOpenClose,
+      @NonNull ImageView ivSportBike, @NonNull ImageView ivSportRollerSkate,
+      @NonNull ImageView ivSportRunning, @NonNull ImageView ivSportSelected,
+      @NonNull ImageView ivTypeMap, @NonNull LinearLayout lyAvgSpeedDataRun,
+      @NonNull LinearLayout lyChallengeDistance, @NonNull LinearLayout lyChallengeDistanceNPs,
+      @NonNull LinearLayout lyChallengeDistancePopUp, @NonNull LinearLayout lyChallengeDistanceRun,
+      @NonNull LinearLayout lyChallengeDuration, @NonNull LinearLayout lyChallengeDurationNPs,
+      @NonNull LinearLayout lyChallengeDurationRun, @NonNull LinearLayout lyChallenges,
+      @NonNull LinearLayout lyChallengesOptions, @NonNull LinearLayout lyChallengesSettings,
+      @NonNull LinearLayout lyChallengesSpace, @NonNull RelativeLayout lyChrono,
+      @NonNull LinearLayout lyChronoProgressBg, @NonNull LinearLayout lyChronoRound,
+      @NonNull LinearLayout lyCurrentData, @NonNull LinearLayout lyCurrentDatas,
+      @NonNull LinearLayout lyCurrentDistance, @NonNull LinearLayout lyCurrentDuration,
+      @NonNull RelativeLayout lyCurrentLevel, @NonNull LinearLayout lyCurrentRun,
+      @NonNull LinearLayout lyCurrentSpeeds, @NonNull LinearLayout lyCurrentSport,
+      @NonNull LinearLayout lyCurrentTimeMedals, @NonNull LinearLayout lyDistanceData,
+      @NonNull LinearLayout lyFragmentMap, @NonNull LinearLayout lyHardTrack,
+      @NonNull LinearLayout lyHardVolume, @NonNull LinearLayout lyIntervalDuration,
+      @NonNull LinearLayout lyIntervalDurationNP, @NonNull LinearLayout lyIntervalMode,
+      @NonNull LinearLayout lyIntervalModeSpace, @NonNull LinearLayout lyIntervalRun,
+      @NonNull LinearLayout lyLevel, @NonNull LinearLayout lyMap,
+      @NonNull LinearLayout lyMapContainer, @NonNull LinearLayout lyMaxSpeedRun,
+      @NonNull LinearLayout lyMaxUnevennessRun, @NonNull LinearLayout lyMedalAvgSpeed,
+      @NonNull LinearLayout lyMedalDistance, @NonNull LinearLayout lyMedalMaxSpeed,
+      @NonNull LinearLayout lyMedalsRun, @NonNull LinearLayout lyMinUnevennessRun,
+      @NonNull LinearLayout lyNotifyVolume, @NonNull LinearLayout lyOpenEnd,
+      @NonNull LinearLayout lyOpenStart, @NonNull LinearLayout lyOpenerButton,
+      @NonNull LinearLayout lyOpenerLine, @NonNull LinearLayout lyOpenerMap,
+      @NonNull LinearLayout lyOpenerTitle, @NonNull LinearLayout lyOptionsRun,
+      @NonNull LinearLayout lyPopUpClose, @NonNull LinearLayout lyPopUpOptionsRun,
+      @NonNull LinearLayout lyPopupRun, @NonNull LinearLayout lyProgressLevel,
+      @NonNull LinearLayout lyRoundProgressBg, @NonNull LinearLayout lyRunningWalking,
+      @NonNull LinearLayout lyRunningWalkingTimes, @NonNull LinearLayout lySettingsVolumes,
+      @NonNull LinearLayout lySettingsVolumesSpace, @NonNull LinearLayout lySoftTrack,
+      @NonNull LinearLayout lySoftVolume, @NonNull LinearLayout lySportBike,
+      @NonNull LinearLayout lySportRollerSkate, @NonNull LinearLayout lySportRunning,
+      @NonNull LinearLayout lySports, @NonNull LinearLayout lyTracks,
+      @NonNull LinearLayout lyUnevennessDataRun, @NonNull LinearLayout lyUnevennessRun,
+      @NonNull LinearLayout lyWindow, @NonNull RelativeLayout lysbSoftMusic,
+      @NonNull NumberPicker npChallengeDistance, @NonNull NumberPicker npChallengeDurationHH,
+      @NonNull NumberPicker npChallengeDurationMM, @NonNull NumberPicker npChallengeDurationSS,
+      @NonNull NumberPicker npDurationInterval, @NonNull RelativeLayout relativeLayoutsbHardMusic,
+      @NonNull RelativeLayout rlChallengeOptions, @NonNull RelativeLayout rlCurrentAvg,
+      @NonNull RelativeLayout rlCurrentDistance, @NonNull RelativeLayout rlCurrentSpeed,
+      @NonNull RelativeLayout rlMain, @NonNull LinearLayout rlStart,
+      @NonNull RelativeLayout rlStartCamara, @NonNull RelativeLayout rlTopFixed,
+      @NonNull SeekBar sbHardTrack, @NonNull SeekBar sbHardVolume, @NonNull SeekBar sbNotifyVolume,
+      @NonNull SeekBar sbSoftTrack, @NonNull SeekBar sbSoftVolume, @NonNull Switch swChallenges,
+      @NonNull Switch swIntervalMode, @NonNull Switch swVolumes, @NonNull TextView tvAvgSpeedRecord,
+      @NonNull TextView tvAvgSpeedRun, @NonNull TextView tvAvgSpeedRunUX,
+      @NonNull TextView tvAvgSpeedTitle, @NonNull TextView tvChallengeDistance,
+      @NonNull TextView tvChallengeDistanceRun, @NonNull TextView tvChallengeDistanceRunUX,
+      @NonNull TextView tvChallengeDistanceTitle, @NonNull TextView tvChallengeDistanceUX,
+      @NonNull TextView tvChallengeDuration, @NonNull TextView tvChallengeDurationHHMM,
+      @NonNull TextView tvChallengeDurationMMSS, @NonNull TextView tvChallengeDurationRun,
+      @NonNull TextView tvChallengeDurationUX, @NonNull TextView tvChallengeTitle,
+      @NonNull TextView tvChrono, @NonNull TextView tvCurrentAvgSpeed,
+      @NonNull TextView tvCurrentAvgSpeedLabel, @NonNull TextView tvCurrentAvgSpeedUX,
+      @NonNull TextView tvCurrentDistance, @NonNull TextView tvCurrentSpeed,
+      @NonNull TextView tvDeleteRun, @NonNull TextView tvDistanceLabel,
+      @NonNull TextView tvDistanceRecord, @NonNull TextView tvDistanceRun,
+      @NonNull TextView tvDistanceRunUX, @NonNull TextView tvDistanceTitle,
+      @NonNull TextView tvDistanceUX, @NonNull TextView tvDurationRun,
+      @NonNull TextView tvDurationTitle, @NonNull TextView tvHardPosition,
+      @NonNull TextView tvHardRemaining, @NonNull TextView tvHardVolumen,
+      @NonNull TextView tvIntervalDuration, @NonNull TextView tvIntervalDurationUX,
+      @NonNull TextView tvIntervalRun, @NonNull TextView tvIntervalTitle,
+      @NonNull TextView tvLevelDistanceLabel, @NonNull TextView tvLevelRunsLabel,
+      @NonNull TextView tvMapCenter, @NonNull TextView tvMapTitle,
+      @NonNull TextView tvMaxSpeedRecord, @NonNull TextView tvMaxSpeedRun,
+      @NonNull TextView tvMaxSpeedRunUX, @NonNull TextView tvMaxSpeedTitle,
+      @NonNull TextView tvMaxUnevennessRun, @NonNull TextView tvMaxUnevennessUX,
+      @NonNull TextView tvMedalAvgSpeedTitle, @NonNull TextView tvMedalDistanceTitle,
+      @NonNull TextView tvMedalMaxSpeedTitle, @NonNull TextView tvMinUnevennessRun,
+      @NonNull TextView tvMinUnevennessUX, @NonNull TextView tvNotifyVolumen,
+      @NonNull TextView tvNumberLevel, @NonNull TextView tvReset, @NonNull TextView tvRounds,
+      @NonNull TextView tvRunningTime, @NonNull TextView tvRunningTimeUX,
+      @NonNull TextView tvSoftPosition, @NonNull TextView tvSoftRemaining,
+      @NonNull TextView tvSoftVolumen, @NonNull TextView tvSpeedLabel, @NonNull TextView tvSpeedUX,
+      @NonNull TextView tvTotalDistance, @NonNull TextView tvTotalDistanceLevel,
+      @NonNull TextView tvTotalRunsLevel, @NonNull TextView tvTotalTime,
+      @NonNull TextView tvUnevennessTitle, @NonNull TextView tvWalkingTime,
+      @NonNull TextView tvWalkingTimeDiv, @NonNull TextView tvWalkingTimeux) {
     this.rootView = rootView;
+    this.btStart = btStart;
+    this.btStartLabel = btStartLabel;
+    this.cbAutoFinish = cbAutoFinish;
+    this.cbNotify = cbNotify;
+    this.csbChallengeDistance = csbChallengeDistance;
+    this.csbCurrentAvgSpeed = csbCurrentAvgSpeed;
+    this.csbCurrentDistance = csbCurrentDistance;
+    this.csbCurrentMaxSpeed = csbCurrentMaxSpeed;
+    this.csbCurrentSpeed = csbCurrentSpeed;
+    this.csbDistanceLevel = csbDistanceLevel;
+    this.csbRecordAvgSpeed = csbRecordAvgSpeed;
+    this.csbRecordDistance = csbRecordDistance;
+    this.csbRecordSpeed = csbRecordSpeed;
+    this.csbRunWalk = csbRunWalk;
+    this.csbRunsLevel = csbRunsLevel;
+    this.cvCurrentAVGSpeed = cvCurrentAVGSpeed;
+    this.cvCurrentDistance = cvCurrentDistance;
+    this.cvCurrentSpeed = cvCurrentSpeed;
+    this.cvLevel = cvLevel;
     this.drawerLayout = drawerLayout;
-    this.navView = navView;
-    this.tvSession = tvSession;
+    this.fbCamera = fbCamera;
+    this.fbFinalPicture = fbFinalPicture;
+    this.fbShareRun = fbShareRun;
+    this.ivClosePopUp = ivClosePopUp;
+    this.ivCurrentLevel = ivCurrentLevel;
+    this.ivMapIcon = ivMapIcon;
+    this.ivMedalAvgSpeed = ivMedalAvgSpeed;
+    this.ivMedalDistance = ivMedalDistance;
+    this.ivMedalMaxSpeed = ivMedalMaxSpeed;
+    this.ivOpenClose = ivOpenClose;
+    this.ivSportBike = ivSportBike;
+    this.ivSportRollerSkate = ivSportRollerSkate;
+    this.ivSportRunning = ivSportRunning;
+    this.ivSportSelected = ivSportSelected;
+    this.ivTypeMap = ivTypeMap;
+    this.lyAvgSpeedDataRun = lyAvgSpeedDataRun;
+    this.lyChallengeDistance = lyChallengeDistance;
+    this.lyChallengeDistanceNPs = lyChallengeDistanceNPs;
+    this.lyChallengeDistancePopUp = lyChallengeDistancePopUp;
+    this.lyChallengeDistanceRun = lyChallengeDistanceRun;
+    this.lyChallengeDuration = lyChallengeDuration;
+    this.lyChallengeDurationNPs = lyChallengeDurationNPs;
+    this.lyChallengeDurationRun = lyChallengeDurationRun;
+    this.lyChallenges = lyChallenges;
+    this.lyChallengesOptions = lyChallengesOptions;
+    this.lyChallengesSettings = lyChallengesSettings;
+    this.lyChallengesSpace = lyChallengesSpace;
+    this.lyChrono = lyChrono;
+    this.lyChronoProgressBg = lyChronoProgressBg;
+    this.lyChronoRound = lyChronoRound;
+    this.lyCurrentData = lyCurrentData;
+    this.lyCurrentDatas = lyCurrentDatas;
+    this.lyCurrentDistance = lyCurrentDistance;
+    this.lyCurrentDuration = lyCurrentDuration;
+    this.lyCurrentLevel = lyCurrentLevel;
+    this.lyCurrentRun = lyCurrentRun;
+    this.lyCurrentSpeeds = lyCurrentSpeeds;
+    this.lyCurrentSport = lyCurrentSport;
+    this.lyCurrentTimeMedals = lyCurrentTimeMedals;
+    this.lyDistanceData = lyDistanceData;
+    this.lyFragmentMap = lyFragmentMap;
+    this.lyHardTrack = lyHardTrack;
+    this.lyHardVolume = lyHardVolume;
+    this.lyIntervalDuration = lyIntervalDuration;
+    this.lyIntervalDurationNP = lyIntervalDurationNP;
+    this.lyIntervalMode = lyIntervalMode;
+    this.lyIntervalModeSpace = lyIntervalModeSpace;
+    this.lyIntervalRun = lyIntervalRun;
+    this.lyLevel = lyLevel;
+    this.lyMap = lyMap;
+    this.lyMapContainer = lyMapContainer;
+    this.lyMaxSpeedRun = lyMaxSpeedRun;
+    this.lyMaxUnevennessRun = lyMaxUnevennessRun;
+    this.lyMedalAvgSpeed = lyMedalAvgSpeed;
+    this.lyMedalDistance = lyMedalDistance;
+    this.lyMedalMaxSpeed = lyMedalMaxSpeed;
+    this.lyMedalsRun = lyMedalsRun;
+    this.lyMinUnevennessRun = lyMinUnevennessRun;
+    this.lyNotifyVolume = lyNotifyVolume;
+    this.lyOpenEnd = lyOpenEnd;
+    this.lyOpenStart = lyOpenStart;
+    this.lyOpenerButton = lyOpenerButton;
+    this.lyOpenerLine = lyOpenerLine;
+    this.lyOpenerMap = lyOpenerMap;
+    this.lyOpenerTitle = lyOpenerTitle;
+    this.lyOptionsRun = lyOptionsRun;
+    this.lyPopUpClose = lyPopUpClose;
+    this.lyPopUpOptionsRun = lyPopUpOptionsRun;
+    this.lyPopupRun = lyPopupRun;
+    this.lyProgressLevel = lyProgressLevel;
+    this.lyRoundProgressBg = lyRoundProgressBg;
+    this.lyRunningWalking = lyRunningWalking;
+    this.lyRunningWalkingTimes = lyRunningWalkingTimes;
+    this.lySettingsVolumes = lySettingsVolumes;
+    this.lySettingsVolumesSpace = lySettingsVolumesSpace;
+    this.lySoftTrack = lySoftTrack;
+    this.lySoftVolume = lySoftVolume;
+    this.lySportBike = lySportBike;
+    this.lySportRollerSkate = lySportRollerSkate;
+    this.lySportRunning = lySportRunning;
+    this.lySports = lySports;
+    this.lyTracks = lyTracks;
+    this.lyUnevennessDataRun = lyUnevennessDataRun;
+    this.lyUnevennessRun = lyUnevennessRun;
+    this.lyWindow = lyWindow;
+    this.lysbSoftMusic = lysbSoftMusic;
+    this.npChallengeDistance = npChallengeDistance;
+    this.npChallengeDurationHH = npChallengeDurationHH;
+    this.npChallengeDurationMM = npChallengeDurationMM;
+    this.npChallengeDurationSS = npChallengeDurationSS;
+    this.npDurationInterval = npDurationInterval;
+    this.relativeLayoutsbHardMusic = relativeLayoutsbHardMusic;
+    this.rlChallengeOptions = rlChallengeOptions;
+    this.rlCurrentAvg = rlCurrentAvg;
+    this.rlCurrentDistance = rlCurrentDistance;
+    this.rlCurrentSpeed = rlCurrentSpeed;
+    this.rlMain = rlMain;
+    this.rlStart = rlStart;
+    this.rlStartCamara = rlStartCamara;
+    this.rlTopFixed = rlTopFixed;
+    this.sbHardTrack = sbHardTrack;
+    this.sbHardVolume = sbHardVolume;
+    this.sbNotifyVolume = sbNotifyVolume;
+    this.sbSoftTrack = sbSoftTrack;
+    this.sbSoftVolume = sbSoftVolume;
+    this.swChallenges = swChallenges;
+    this.swIntervalMode = swIntervalMode;
+    this.swVolumes = swVolumes;
+    this.tvAvgSpeedRecord = tvAvgSpeedRecord;
+    this.tvAvgSpeedRun = tvAvgSpeedRun;
+    this.tvAvgSpeedRunUX = tvAvgSpeedRunUX;
+    this.tvAvgSpeedTitle = tvAvgSpeedTitle;
+    this.tvChallengeDistance = tvChallengeDistance;
+    this.tvChallengeDistanceRun = tvChallengeDistanceRun;
+    this.tvChallengeDistanceRunUX = tvChallengeDistanceRunUX;
+    this.tvChallengeDistanceTitle = tvChallengeDistanceTitle;
+    this.tvChallengeDistanceUX = tvChallengeDistanceUX;
+    this.tvChallengeDuration = tvChallengeDuration;
+    this.tvChallengeDurationHHMM = tvChallengeDurationHHMM;
+    this.tvChallengeDurationMMSS = tvChallengeDurationMMSS;
+    this.tvChallengeDurationRun = tvChallengeDurationRun;
+    this.tvChallengeDurationUX = tvChallengeDurationUX;
+    this.tvChallengeTitle = tvChallengeTitle;
+    this.tvChrono = tvChrono;
+    this.tvCurrentAvgSpeed = tvCurrentAvgSpeed;
+    this.tvCurrentAvgSpeedLabel = tvCurrentAvgSpeedLabel;
+    this.tvCurrentAvgSpeedUX = tvCurrentAvgSpeedUX;
+    this.tvCurrentDistance = tvCurrentDistance;
+    this.tvCurrentSpeed = tvCurrentSpeed;
+    this.tvDeleteRun = tvDeleteRun;
+    this.tvDistanceLabel = tvDistanceLabel;
+    this.tvDistanceRecord = tvDistanceRecord;
+    this.tvDistanceRun = tvDistanceRun;
+    this.tvDistanceRunUX = tvDistanceRunUX;
+    this.tvDistanceTitle = tvDistanceTitle;
+    this.tvDistanceUX = tvDistanceUX;
+    this.tvDurationRun = tvDurationRun;
+    this.tvDurationTitle = tvDurationTitle;
+    this.tvHardPosition = tvHardPosition;
+    this.tvHardRemaining = tvHardRemaining;
+    this.tvHardVolumen = tvHardVolumen;
+    this.tvIntervalDuration = tvIntervalDuration;
+    this.tvIntervalDurationUX = tvIntervalDurationUX;
+    this.tvIntervalRun = tvIntervalRun;
+    this.tvIntervalTitle = tvIntervalTitle;
+    this.tvLevelDistanceLabel = tvLevelDistanceLabel;
+    this.tvLevelRunsLabel = tvLevelRunsLabel;
+    this.tvMapCenter = tvMapCenter;
+    this.tvMapTitle = tvMapTitle;
+    this.tvMaxSpeedRecord = tvMaxSpeedRecord;
+    this.tvMaxSpeedRun = tvMaxSpeedRun;
+    this.tvMaxSpeedRunUX = tvMaxSpeedRunUX;
+    this.tvMaxSpeedTitle = tvMaxSpeedTitle;
+    this.tvMaxUnevennessRun = tvMaxUnevennessRun;
+    this.tvMaxUnevennessUX = tvMaxUnevennessUX;
+    this.tvMedalAvgSpeedTitle = tvMedalAvgSpeedTitle;
+    this.tvMedalDistanceTitle = tvMedalDistanceTitle;
+    this.tvMedalMaxSpeedTitle = tvMedalMaxSpeedTitle;
+    this.tvMinUnevennessRun = tvMinUnevennessRun;
+    this.tvMinUnevennessUX = tvMinUnevennessUX;
+    this.tvNotifyVolumen = tvNotifyVolumen;
+    this.tvNumberLevel = tvNumberLevel;
+    this.tvReset = tvReset;
+    this.tvRounds = tvRounds;
+    this.tvRunningTime = tvRunningTime;
+    this.tvRunningTimeUX = tvRunningTimeUX;
+    this.tvSoftPosition = tvSoftPosition;
+    this.tvSoftRemaining = tvSoftRemaining;
+    this.tvSoftVolumen = tvSoftVolumen;
+    this.tvSpeedLabel = tvSpeedLabel;
+    this.tvSpeedUX = tvSpeedUX;
+    this.tvTotalDistance = tvTotalDistance;
+    this.tvTotalDistanceLevel = tvTotalDistanceLevel;
+    this.tvTotalRunsLevel = tvTotalRunsLevel;
+    this.tvTotalTime = tvTotalTime;
+    this.tvUnevennessTitle = tvUnevennessTitle;
+    this.tvWalkingTime = tvWalkingTime;
+    this.tvWalkingTimeDiv = tvWalkingTimeDiv;
+    this.tvWalkingTimeux = tvWalkingTimeux;
   }
 
   @Override
@@ -64,21 +952,1238 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btStart;
+      LinearLayout btStart = ViewBindings.findChildViewById(rootView, id);
+      if (btStart == null) {
+        break missingId;
+      }
+
+      id = R.id.btStartLabel;
+      TextView btStartLabel = ViewBindings.findChildViewById(rootView, id);
+      if (btStartLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.cbAutoFinish;
+      CheckBox cbAutoFinish = ViewBindings.findChildViewById(rootView, id);
+      if (cbAutoFinish == null) {
+        break missingId;
+      }
+
+      id = R.id.cbNotify;
+      CheckBox cbNotify = ViewBindings.findChildViewById(rootView, id);
+      if (cbNotify == null) {
+        break missingId;
+      }
+
+      id = R.id.csbChallengeDistance;
+      CircularSeekBar csbChallengeDistance = ViewBindings.findChildViewById(rootView, id);
+      if (csbChallengeDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.csbCurrentAvgSpeed;
+      CircularSeekBar csbCurrentAvgSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (csbCurrentAvgSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.csbCurrentDistance;
+      CircularSeekBar csbCurrentDistance = ViewBindings.findChildViewById(rootView, id);
+      if (csbCurrentDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.csbCurrentMaxSpeed;
+      CircularSeekBar csbCurrentMaxSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (csbCurrentMaxSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.csbCurrentSpeed;
+      CircularSeekBar csbCurrentSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (csbCurrentSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.csbDistanceLevel;
+      CircularSeekBar csbDistanceLevel = ViewBindings.findChildViewById(rootView, id);
+      if (csbDistanceLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.csbRecordAvgSpeed;
+      CircularSeekBar csbRecordAvgSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (csbRecordAvgSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.csbRecordDistance;
+      CircularSeekBar csbRecordDistance = ViewBindings.findChildViewById(rootView, id);
+      if (csbRecordDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.csbRecordSpeed;
+      CircularSeekBar csbRecordSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (csbRecordSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.csbRunWalk;
+      CircularSeekBar csbRunWalk = ViewBindings.findChildViewById(rootView, id);
+      if (csbRunWalk == null) {
+        break missingId;
+      }
+
+      id = R.id.csbRunsLevel;
+      CircularSeekBar csbRunsLevel = ViewBindings.findChildViewById(rootView, id);
+      if (csbRunsLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.cvCurrentAVGSpeed;
+      CardView cvCurrentAVGSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (cvCurrentAVGSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.cvCurrentDistance;
+      CardView cvCurrentDistance = ViewBindings.findChildViewById(rootView, id);
+      if (cvCurrentDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.cvCurrentSpeed;
+      CardView cvCurrentSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (cvCurrentSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.cvLevel;
+      CardView cvLevel = ViewBindings.findChildViewById(rootView, id);
+      if (cvLevel == null) {
+        break missingId;
+      }
+
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
-      id = R.id.nav_view;
-      NavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
+      id = R.id.fbCamera;
+      FloatingActionButton fbCamera = ViewBindings.findChildViewById(rootView, id);
+      if (fbCamera == null) {
         break missingId;
       }
 
-      id = R.id.tvSession;
-      TextView tvSession = ViewBindings.findChildViewById(rootView, id);
-      if (tvSession == null) {
+      id = R.id.fbFinalPicture;
+      FloatingActionButton fbFinalPicture = ViewBindings.findChildViewById(rootView, id);
+      if (fbFinalPicture == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, drawerLayout, navView, tvSession);
+      id = R.id.fbShareRun;
+      FloatingActionButton fbShareRun = ViewBindings.findChildViewById(rootView, id);
+      if (fbShareRun == null) {
+        break missingId;
+      }
+
+      id = R.id.ivClosePopUp;
+      ImageView ivClosePopUp = ViewBindings.findChildViewById(rootView, id);
+      if (ivClosePopUp == null) {
+        break missingId;
+      }
+
+      id = R.id.ivCurrentLevel;
+      ImageView ivCurrentLevel = ViewBindings.findChildViewById(rootView, id);
+      if (ivCurrentLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.ivMapIcon;
+      ImageView ivMapIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivMapIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.ivMedalAvgSpeed;
+      ImageView ivMedalAvgSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (ivMedalAvgSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.ivMedalDistance;
+      ImageView ivMedalDistance = ViewBindings.findChildViewById(rootView, id);
+      if (ivMedalDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.ivMedalMaxSpeed;
+      ImageView ivMedalMaxSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (ivMedalMaxSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.ivOpenClose;
+      ImageView ivOpenClose = ViewBindings.findChildViewById(rootView, id);
+      if (ivOpenClose == null) {
+        break missingId;
+      }
+
+      id = R.id.ivSportBike;
+      ImageView ivSportBike = ViewBindings.findChildViewById(rootView, id);
+      if (ivSportBike == null) {
+        break missingId;
+      }
+
+      id = R.id.ivSportRollerSkate;
+      ImageView ivSportRollerSkate = ViewBindings.findChildViewById(rootView, id);
+      if (ivSportRollerSkate == null) {
+        break missingId;
+      }
+
+      id = R.id.ivSportRunning;
+      ImageView ivSportRunning = ViewBindings.findChildViewById(rootView, id);
+      if (ivSportRunning == null) {
+        break missingId;
+      }
+
+      id = R.id.ivSportSelected;
+      ImageView ivSportSelected = ViewBindings.findChildViewById(rootView, id);
+      if (ivSportSelected == null) {
+        break missingId;
+      }
+
+      id = R.id.ivTypeMap;
+      ImageView ivTypeMap = ViewBindings.findChildViewById(rootView, id);
+      if (ivTypeMap == null) {
+        break missingId;
+      }
+
+      id = R.id.lyAvgSpeedDataRun;
+      LinearLayout lyAvgSpeedDataRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyAvgSpeedDataRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDistance;
+      LinearLayout lyChallengeDistance = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDistanceNPs;
+      LinearLayout lyChallengeDistanceNPs = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDistanceNPs == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDistancePopUp;
+      LinearLayout lyChallengeDistancePopUp = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDistancePopUp == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDistanceRun;
+      LinearLayout lyChallengeDistanceRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDistanceRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDuration;
+      LinearLayout lyChallengeDuration = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDuration == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDurationNPs;
+      LinearLayout lyChallengeDurationNPs = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDurationNPs == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengeDurationRun;
+      LinearLayout lyChallengeDurationRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengeDurationRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallenges;
+      LinearLayout lyChallenges = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallenges == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengesOptions;
+      LinearLayout lyChallengesOptions = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengesOptions == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengesSettings;
+      LinearLayout lyChallengesSettings = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengesSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChallengesSpace;
+      LinearLayout lyChallengesSpace = ViewBindings.findChildViewById(rootView, id);
+      if (lyChallengesSpace == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChrono;
+      RelativeLayout lyChrono = ViewBindings.findChildViewById(rootView, id);
+      if (lyChrono == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChronoProgressBg;
+      LinearLayout lyChronoProgressBg = ViewBindings.findChildViewById(rootView, id);
+      if (lyChronoProgressBg == null) {
+        break missingId;
+      }
+
+      id = R.id.lyChronoRound;
+      LinearLayout lyChronoRound = ViewBindings.findChildViewById(rootView, id);
+      if (lyChronoRound == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentData;
+      LinearLayout lyCurrentData = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentData == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentDatas;
+      LinearLayout lyCurrentDatas = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentDatas == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentDistance;
+      LinearLayout lyCurrentDistance = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentDuration;
+      LinearLayout lyCurrentDuration = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentDuration == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentLevel;
+      RelativeLayout lyCurrentLevel = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentRun;
+      LinearLayout lyCurrentRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentSpeeds;
+      LinearLayout lyCurrentSpeeds = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentSpeeds == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentSport;
+      LinearLayout lyCurrentSport = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentSport == null) {
+        break missingId;
+      }
+
+      id = R.id.lyCurrentTimeMedals;
+      LinearLayout lyCurrentTimeMedals = ViewBindings.findChildViewById(rootView, id);
+      if (lyCurrentTimeMedals == null) {
+        break missingId;
+      }
+
+      id = R.id.lyDistanceData;
+      LinearLayout lyDistanceData = ViewBindings.findChildViewById(rootView, id);
+      if (lyDistanceData == null) {
+        break missingId;
+      }
+
+      id = R.id.lyFragmentMap;
+      LinearLayout lyFragmentMap = ViewBindings.findChildViewById(rootView, id);
+      if (lyFragmentMap == null) {
+        break missingId;
+      }
+
+      id = R.id.lyHardTrack;
+      LinearLayout lyHardTrack = ViewBindings.findChildViewById(rootView, id);
+      if (lyHardTrack == null) {
+        break missingId;
+      }
+
+      id = R.id.lyHardVolume;
+      LinearLayout lyHardVolume = ViewBindings.findChildViewById(rootView, id);
+      if (lyHardVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.lyIntervalDuration;
+      LinearLayout lyIntervalDuration = ViewBindings.findChildViewById(rootView, id);
+      if (lyIntervalDuration == null) {
+        break missingId;
+      }
+
+      id = R.id.lyIntervalDurationNP;
+      LinearLayout lyIntervalDurationNP = ViewBindings.findChildViewById(rootView, id);
+      if (lyIntervalDurationNP == null) {
+        break missingId;
+      }
+
+      id = R.id.lyIntervalMode;
+      LinearLayout lyIntervalMode = ViewBindings.findChildViewById(rootView, id);
+      if (lyIntervalMode == null) {
+        break missingId;
+      }
+
+      id = R.id.lyIntervalModeSpace;
+      LinearLayout lyIntervalModeSpace = ViewBindings.findChildViewById(rootView, id);
+      if (lyIntervalModeSpace == null) {
+        break missingId;
+      }
+
+      id = R.id.lyIntervalRun;
+      LinearLayout lyIntervalRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyIntervalRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyLevel;
+      LinearLayout lyLevel = ViewBindings.findChildViewById(rootView, id);
+      if (lyLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMap;
+      LinearLayout lyMap = ViewBindings.findChildViewById(rootView, id);
+      if (lyMap == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMapContainer;
+      LinearLayout lyMapContainer = ViewBindings.findChildViewById(rootView, id);
+      if (lyMapContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMaxSpeedRun;
+      LinearLayout lyMaxSpeedRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyMaxSpeedRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMaxUnevennessRun;
+      LinearLayout lyMaxUnevennessRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyMaxUnevennessRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMedalAvgSpeed;
+      LinearLayout lyMedalAvgSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (lyMedalAvgSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMedalDistance;
+      LinearLayout lyMedalDistance = ViewBindings.findChildViewById(rootView, id);
+      if (lyMedalDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMedalMaxSpeed;
+      LinearLayout lyMedalMaxSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (lyMedalMaxSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMedalsRun;
+      LinearLayout lyMedalsRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyMedalsRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyMinUnevennessRun;
+      LinearLayout lyMinUnevennessRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyMinUnevennessRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyNotifyVolume;
+      LinearLayout lyNotifyVolume = ViewBindings.findChildViewById(rootView, id);
+      if (lyNotifyVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenEnd;
+      LinearLayout lyOpenEnd = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenEnd == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenStart;
+      LinearLayout lyOpenStart = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenStart == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenerButton;
+      LinearLayout lyOpenerButton = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenerButton == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenerLine;
+      LinearLayout lyOpenerLine = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenerLine == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenerMap;
+      LinearLayout lyOpenerMap = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenerMap == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOpenerTitle;
+      LinearLayout lyOpenerTitle = ViewBindings.findChildViewById(rootView, id);
+      if (lyOpenerTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.lyOptionsRun;
+      LinearLayout lyOptionsRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyOptionsRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyPopUpClose;
+      LinearLayout lyPopUpClose = ViewBindings.findChildViewById(rootView, id);
+      if (lyPopUpClose == null) {
+        break missingId;
+      }
+
+      id = R.id.lyPopUpOptionsRun;
+      LinearLayout lyPopUpOptionsRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyPopUpOptionsRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyPopupRun;
+      LinearLayout lyPopupRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyPopupRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyProgressLevel;
+      LinearLayout lyProgressLevel = ViewBindings.findChildViewById(rootView, id);
+      if (lyProgressLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.lyRoundProgressBg;
+      LinearLayout lyRoundProgressBg = ViewBindings.findChildViewById(rootView, id);
+      if (lyRoundProgressBg == null) {
+        break missingId;
+      }
+
+      id = R.id.lyRunningWalking;
+      LinearLayout lyRunningWalking = ViewBindings.findChildViewById(rootView, id);
+      if (lyRunningWalking == null) {
+        break missingId;
+      }
+
+      id = R.id.lyRunningWalkingTimes;
+      LinearLayout lyRunningWalkingTimes = ViewBindings.findChildViewById(rootView, id);
+      if (lyRunningWalkingTimes == null) {
+        break missingId;
+      }
+
+      id = R.id.lySettingsVolumes;
+      LinearLayout lySettingsVolumes = ViewBindings.findChildViewById(rootView, id);
+      if (lySettingsVolumes == null) {
+        break missingId;
+      }
+
+      id = R.id.lySettingsVolumesSpace;
+      LinearLayout lySettingsVolumesSpace = ViewBindings.findChildViewById(rootView, id);
+      if (lySettingsVolumesSpace == null) {
+        break missingId;
+      }
+
+      id = R.id.lySoftTrack;
+      LinearLayout lySoftTrack = ViewBindings.findChildViewById(rootView, id);
+      if (lySoftTrack == null) {
+        break missingId;
+      }
+
+      id = R.id.lySoftVolume;
+      LinearLayout lySoftVolume = ViewBindings.findChildViewById(rootView, id);
+      if (lySoftVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.lySportBike;
+      LinearLayout lySportBike = ViewBindings.findChildViewById(rootView, id);
+      if (lySportBike == null) {
+        break missingId;
+      }
+
+      id = R.id.lySportRollerSkate;
+      LinearLayout lySportRollerSkate = ViewBindings.findChildViewById(rootView, id);
+      if (lySportRollerSkate == null) {
+        break missingId;
+      }
+
+      id = R.id.lySportRunning;
+      LinearLayout lySportRunning = ViewBindings.findChildViewById(rootView, id);
+      if (lySportRunning == null) {
+        break missingId;
+      }
+
+      id = R.id.lySports;
+      LinearLayout lySports = ViewBindings.findChildViewById(rootView, id);
+      if (lySports == null) {
+        break missingId;
+      }
+
+      id = R.id.lyTracks;
+      LinearLayout lyTracks = ViewBindings.findChildViewById(rootView, id);
+      if (lyTracks == null) {
+        break missingId;
+      }
+
+      id = R.id.lyUnevennessDataRun;
+      LinearLayout lyUnevennessDataRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyUnevennessDataRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyUnevennessRun;
+      LinearLayout lyUnevennessRun = ViewBindings.findChildViewById(rootView, id);
+      if (lyUnevennessRun == null) {
+        break missingId;
+      }
+
+      id = R.id.lyWindow;
+      LinearLayout lyWindow = ViewBindings.findChildViewById(rootView, id);
+      if (lyWindow == null) {
+        break missingId;
+      }
+
+      id = R.id.lysbSoftMusic;
+      RelativeLayout lysbSoftMusic = ViewBindings.findChildViewById(rootView, id);
+      if (lysbSoftMusic == null) {
+        break missingId;
+      }
+
+      id = R.id.npChallengeDistance;
+      NumberPicker npChallengeDistance = ViewBindings.findChildViewById(rootView, id);
+      if (npChallengeDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.npChallengeDurationHH;
+      NumberPicker npChallengeDurationHH = ViewBindings.findChildViewById(rootView, id);
+      if (npChallengeDurationHH == null) {
+        break missingId;
+      }
+
+      id = R.id.npChallengeDurationMM;
+      NumberPicker npChallengeDurationMM = ViewBindings.findChildViewById(rootView, id);
+      if (npChallengeDurationMM == null) {
+        break missingId;
+      }
+
+      id = R.id.npChallengeDurationSS;
+      NumberPicker npChallengeDurationSS = ViewBindings.findChildViewById(rootView, id);
+      if (npChallengeDurationSS == null) {
+        break missingId;
+      }
+
+      id = R.id.npDurationInterval;
+      NumberPicker npDurationInterval = ViewBindings.findChildViewById(rootView, id);
+      if (npDurationInterval == null) {
+        break missingId;
+      }
+
+      id = R.id.relativeLayoutsbHardMusic;
+      RelativeLayout relativeLayoutsbHardMusic = ViewBindings.findChildViewById(rootView, id);
+      if (relativeLayoutsbHardMusic == null) {
+        break missingId;
+      }
+
+      id = R.id.rlChallengeOptions;
+      RelativeLayout rlChallengeOptions = ViewBindings.findChildViewById(rootView, id);
+      if (rlChallengeOptions == null) {
+        break missingId;
+      }
+
+      id = R.id.rlCurrentAvg;
+      RelativeLayout rlCurrentAvg = ViewBindings.findChildViewById(rootView, id);
+      if (rlCurrentAvg == null) {
+        break missingId;
+      }
+
+      id = R.id.rlCurrentDistance;
+      RelativeLayout rlCurrentDistance = ViewBindings.findChildViewById(rootView, id);
+      if (rlCurrentDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.rlCurrentSpeed;
+      RelativeLayout rlCurrentSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (rlCurrentSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.rlMain;
+      RelativeLayout rlMain = ViewBindings.findChildViewById(rootView, id);
+      if (rlMain == null) {
+        break missingId;
+      }
+
+      id = R.id.rlStart;
+      LinearLayout rlStart = ViewBindings.findChildViewById(rootView, id);
+      if (rlStart == null) {
+        break missingId;
+      }
+
+      id = R.id.rlStartCamara;
+      RelativeLayout rlStartCamara = ViewBindings.findChildViewById(rootView, id);
+      if (rlStartCamara == null) {
+        break missingId;
+      }
+
+      id = R.id.rlTopFixed;
+      RelativeLayout rlTopFixed = ViewBindings.findChildViewById(rootView, id);
+      if (rlTopFixed == null) {
+        break missingId;
+      }
+
+      id = R.id.sbHardTrack;
+      SeekBar sbHardTrack = ViewBindings.findChildViewById(rootView, id);
+      if (sbHardTrack == null) {
+        break missingId;
+      }
+
+      id = R.id.sbHardVolume;
+      SeekBar sbHardVolume = ViewBindings.findChildViewById(rootView, id);
+      if (sbHardVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.sbNotifyVolume;
+      SeekBar sbNotifyVolume = ViewBindings.findChildViewById(rootView, id);
+      if (sbNotifyVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.sbSoftTrack;
+      SeekBar sbSoftTrack = ViewBindings.findChildViewById(rootView, id);
+      if (sbSoftTrack == null) {
+        break missingId;
+      }
+
+      id = R.id.sbSoftVolume;
+      SeekBar sbSoftVolume = ViewBindings.findChildViewById(rootView, id);
+      if (sbSoftVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.swChallenges;
+      Switch swChallenges = ViewBindings.findChildViewById(rootView, id);
+      if (swChallenges == null) {
+        break missingId;
+      }
+
+      id = R.id.swIntervalMode;
+      Switch swIntervalMode = ViewBindings.findChildViewById(rootView, id);
+      if (swIntervalMode == null) {
+        break missingId;
+      }
+
+      id = R.id.swVolumes;
+      Switch swVolumes = ViewBindings.findChildViewById(rootView, id);
+      if (swVolumes == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAvgSpeedRecord;
+      TextView tvAvgSpeedRecord = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvgSpeedRecord == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAvgSpeedRun;
+      TextView tvAvgSpeedRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvgSpeedRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAvgSpeedRunUX;
+      TextView tvAvgSpeedRunUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvgSpeedRunUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAvgSpeedTitle;
+      TextView tvAvgSpeedTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvgSpeedTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDistance;
+      TextView tvChallengeDistance = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDistanceRun;
+      TextView tvChallengeDistanceRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDistanceRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDistanceRunUX;
+      TextView tvChallengeDistanceRunUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDistanceRunUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDistanceTitle;
+      TextView tvChallengeDistanceTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDistanceTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDistanceUX;
+      TextView tvChallengeDistanceUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDistanceUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDuration;
+      TextView tvChallengeDuration = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDuration == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDurationHHMM;
+      TextView tvChallengeDurationHHMM = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDurationHHMM == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDurationMMSS;
+      TextView tvChallengeDurationMMSS = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDurationMMSS == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDurationRun;
+      TextView tvChallengeDurationRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDurationRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeDurationUX;
+      TextView tvChallengeDurationUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeDurationUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeTitle;
+      TextView tvChallengeTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChrono;
+      TextView tvChrono = ViewBindings.findChildViewById(rootView, id);
+      if (tvChrono == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentAvgSpeed;
+      TextView tvCurrentAvgSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentAvgSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentAvgSpeedLabel;
+      TextView tvCurrentAvgSpeedLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentAvgSpeedLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentAvgSpeedUX;
+      TextView tvCurrentAvgSpeedUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentAvgSpeedUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentDistance;
+      TextView tvCurrentDistance = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentSpeed;
+      TextView tvCurrentSpeed = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentSpeed == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDeleteRun;
+      TextView tvDeleteRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeleteRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceLabel;
+      TextView tvDistanceLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceRecord;
+      TextView tvDistanceRecord = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceRecord == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceRun;
+      TextView tvDistanceRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceRunUX;
+      TextView tvDistanceRunUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceRunUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceTitle;
+      TextView tvDistanceTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDistanceUX;
+      TextView tvDistanceUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvDistanceUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDurationRun;
+      TextView tvDurationRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvDurationRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDurationTitle;
+      TextView tvDurationTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvDurationTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvHardPosition;
+      TextView tvHardPosition = ViewBindings.findChildViewById(rootView, id);
+      if (tvHardPosition == null) {
+        break missingId;
+      }
+
+      id = R.id.tvHardRemaining;
+      TextView tvHardRemaining = ViewBindings.findChildViewById(rootView, id);
+      if (tvHardRemaining == null) {
+        break missingId;
+      }
+
+      id = R.id.tvHardVolumen;
+      TextView tvHardVolumen = ViewBindings.findChildViewById(rootView, id);
+      if (tvHardVolumen == null) {
+        break missingId;
+      }
+
+      id = R.id.tvIntervalDuration;
+      TextView tvIntervalDuration = ViewBindings.findChildViewById(rootView, id);
+      if (tvIntervalDuration == null) {
+        break missingId;
+      }
+
+      id = R.id.tvIntervalDurationUX;
+      TextView tvIntervalDurationUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvIntervalDurationUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvIntervalRun;
+      TextView tvIntervalRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvIntervalRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvIntervalTitle;
+      TextView tvIntervalTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvIntervalTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLevelDistanceLabel;
+      TextView tvLevelDistanceLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvLevelDistanceLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLevelRunsLabel;
+      TextView tvLevelRunsLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvLevelRunsLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMapCenter;
+      TextView tvMapCenter = ViewBindings.findChildViewById(rootView, id);
+      if (tvMapCenter == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMapTitle;
+      TextView tvMapTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvMapTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxSpeedRecord;
+      TextView tvMaxSpeedRecord = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxSpeedRecord == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxSpeedRun;
+      TextView tvMaxSpeedRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxSpeedRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxSpeedRunUX;
+      TextView tvMaxSpeedRunUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxSpeedRunUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxSpeedTitle;
+      TextView tvMaxSpeedTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxSpeedTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxUnevennessRun;
+      TextView tvMaxUnevennessRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxUnevennessRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxUnevennessUX;
+      TextView tvMaxUnevennessUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxUnevennessUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMedalAvgSpeedTitle;
+      TextView tvMedalAvgSpeedTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvMedalAvgSpeedTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMedalDistanceTitle;
+      TextView tvMedalDistanceTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvMedalDistanceTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMedalMaxSpeedTitle;
+      TextView tvMedalMaxSpeedTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvMedalMaxSpeedTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMinUnevennessRun;
+      TextView tvMinUnevennessRun = ViewBindings.findChildViewById(rootView, id);
+      if (tvMinUnevennessRun == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMinUnevennessUX;
+      TextView tvMinUnevennessUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvMinUnevennessUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvNotifyVolumen;
+      TextView tvNotifyVolumen = ViewBindings.findChildViewById(rootView, id);
+      if (tvNotifyVolumen == null) {
+        break missingId;
+      }
+
+      id = R.id.tvNumberLevel;
+      TextView tvNumberLevel = ViewBindings.findChildViewById(rootView, id);
+      if (tvNumberLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReset;
+      TextView tvReset = ViewBindings.findChildViewById(rootView, id);
+      if (tvReset == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRounds;
+      TextView tvRounds = ViewBindings.findChildViewById(rootView, id);
+      if (tvRounds == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRunningTime;
+      TextView tvRunningTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvRunningTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRunningTimeUX;
+      TextView tvRunningTimeUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvRunningTimeUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSoftPosition;
+      TextView tvSoftPosition = ViewBindings.findChildViewById(rootView, id);
+      if (tvSoftPosition == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSoftRemaining;
+      TextView tvSoftRemaining = ViewBindings.findChildViewById(rootView, id);
+      if (tvSoftRemaining == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSoftVolumen;
+      TextView tvSoftVolumen = ViewBindings.findChildViewById(rootView, id);
+      if (tvSoftVolumen == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSpeedLabel;
+      TextView tvSpeedLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvSpeedLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSpeedUX;
+      TextView tvSpeedUX = ViewBindings.findChildViewById(rootView, id);
+      if (tvSpeedUX == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTotalDistance;
+      TextView tvTotalDistance = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTotalDistanceLevel;
+      TextView tvTotalDistanceLevel = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalDistanceLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTotalRunsLevel;
+      TextView tvTotalRunsLevel = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalRunsLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTotalTime;
+      TextView tvTotalTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUnevennessTitle;
+      TextView tvUnevennessTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvUnevennessTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWalkingTime;
+      TextView tvWalkingTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvWalkingTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWalkingTimeDiv;
+      TextView tvWalkingTimeDiv = ViewBindings.findChildViewById(rootView, id);
+      if (tvWalkingTimeDiv == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWalkingTimeux;
+      TextView tvWalkingTimeux = ViewBindings.findChildViewById(rootView, id);
+      if (tvWalkingTimeux == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((DrawerLayout) rootView, btStart, btStartLabel, cbAutoFinish,
+          cbNotify, csbChallengeDistance, csbCurrentAvgSpeed, csbCurrentDistance,
+          csbCurrentMaxSpeed, csbCurrentSpeed, csbDistanceLevel, csbRecordAvgSpeed,
+          csbRecordDistance, csbRecordSpeed, csbRunWalk, csbRunsLevel, cvCurrentAVGSpeed,
+          cvCurrentDistance, cvCurrentSpeed, cvLevel, drawerLayout, fbCamera, fbFinalPicture,
+          fbShareRun, ivClosePopUp, ivCurrentLevel, ivMapIcon, ivMedalAvgSpeed, ivMedalDistance,
+          ivMedalMaxSpeed, ivOpenClose, ivSportBike, ivSportRollerSkate, ivSportRunning,
+          ivSportSelected, ivTypeMap, lyAvgSpeedDataRun, lyChallengeDistance,
+          lyChallengeDistanceNPs, lyChallengeDistancePopUp, lyChallengeDistanceRun,
+          lyChallengeDuration, lyChallengeDurationNPs, lyChallengeDurationRun, lyChallenges,
+          lyChallengesOptions, lyChallengesSettings, lyChallengesSpace, lyChrono,
+          lyChronoProgressBg, lyChronoRound, lyCurrentData, lyCurrentDatas, lyCurrentDistance,
+          lyCurrentDuration, lyCurrentLevel, lyCurrentRun, lyCurrentSpeeds, lyCurrentSport,
+          lyCurrentTimeMedals, lyDistanceData, lyFragmentMap, lyHardTrack, lyHardVolume,
+          lyIntervalDuration, lyIntervalDurationNP, lyIntervalMode, lyIntervalModeSpace,
+          lyIntervalRun, lyLevel, lyMap, lyMapContainer, lyMaxSpeedRun, lyMaxUnevennessRun,
+          lyMedalAvgSpeed, lyMedalDistance, lyMedalMaxSpeed, lyMedalsRun, lyMinUnevennessRun,
+          lyNotifyVolume, lyOpenEnd, lyOpenStart, lyOpenerButton, lyOpenerLine, lyOpenerMap,
+          lyOpenerTitle, lyOptionsRun, lyPopUpClose, lyPopUpOptionsRun, lyPopupRun, lyProgressLevel,
+          lyRoundProgressBg, lyRunningWalking, lyRunningWalkingTimes, lySettingsVolumes,
+          lySettingsVolumesSpace, lySoftTrack, lySoftVolume, lySportBike, lySportRollerSkate,
+          lySportRunning, lySports, lyTracks, lyUnevennessDataRun, lyUnevennessRun, lyWindow,
+          lysbSoftMusic, npChallengeDistance, npChallengeDurationHH, npChallengeDurationMM,
+          npChallengeDurationSS, npDurationInterval, relativeLayoutsbHardMusic, rlChallengeOptions,
+          rlCurrentAvg, rlCurrentDistance, rlCurrentSpeed, rlMain, rlStart, rlStartCamara,
+          rlTopFixed, sbHardTrack, sbHardVolume, sbNotifyVolume, sbSoftTrack, sbSoftVolume,
+          swChallenges, swIntervalMode, swVolumes, tvAvgSpeedRecord, tvAvgSpeedRun, tvAvgSpeedRunUX,
+          tvAvgSpeedTitle, tvChallengeDistance, tvChallengeDistanceRun, tvChallengeDistanceRunUX,
+          tvChallengeDistanceTitle, tvChallengeDistanceUX, tvChallengeDuration,
+          tvChallengeDurationHHMM, tvChallengeDurationMMSS, tvChallengeDurationRun,
+          tvChallengeDurationUX, tvChallengeTitle, tvChrono, tvCurrentAvgSpeed,
+          tvCurrentAvgSpeedLabel, tvCurrentAvgSpeedUX, tvCurrentDistance, tvCurrentSpeed,
+          tvDeleteRun, tvDistanceLabel, tvDistanceRecord, tvDistanceRun, tvDistanceRunUX,
+          tvDistanceTitle, tvDistanceUX, tvDurationRun, tvDurationTitle, tvHardPosition,
+          tvHardRemaining, tvHardVolumen, tvIntervalDuration, tvIntervalDurationUX, tvIntervalRun,
+          tvIntervalTitle, tvLevelDistanceLabel, tvLevelRunsLabel, tvMapCenter, tvMapTitle,
+          tvMaxSpeedRecord, tvMaxSpeedRun, tvMaxSpeedRunUX, tvMaxSpeedTitle, tvMaxUnevennessRun,
+          tvMaxUnevennessUX, tvMedalAvgSpeedTitle, tvMedalDistanceTitle, tvMedalMaxSpeedTitle,
+          tvMinUnevennessRun, tvMinUnevennessUX, tvNotifyVolumen, tvNumberLevel, tvReset, tvRounds,
+          tvRunningTime, tvRunningTimeUX, tvSoftPosition, tvSoftRemaining, tvSoftVolumen,
+          tvSpeedLabel, tvSpeedUX, tvTotalDistance, tvTotalDistanceLevel, tvTotalRunsLevel,
+          tvTotalTime, tvUnevennessTitle, tvWalkingTime, tvWalkingTimeDiv, tvWalkingTimeux);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
