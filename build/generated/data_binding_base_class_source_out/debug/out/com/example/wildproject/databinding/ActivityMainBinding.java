@@ -20,6 +20,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.wildproject.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -346,6 +347,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final RelativeLayout lysbSoftMusic;
+
+  @NonNull
+  public final NavigationView navView;
 
   @NonNull
   public final NumberPicker npChallengeDistance;
@@ -679,16 +683,17 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull LinearLayout lySports, @NonNull LinearLayout lyTracks,
       @NonNull LinearLayout lyUnevennessDataRun, @NonNull LinearLayout lyUnevennessRun,
       @NonNull LinearLayout lyWindow, @NonNull RelativeLayout lysbSoftMusic,
-      @NonNull NumberPicker npChallengeDistance, @NonNull NumberPicker npChallengeDurationHH,
-      @NonNull NumberPicker npChallengeDurationMM, @NonNull NumberPicker npChallengeDurationSS,
-      @NonNull NumberPicker npDurationInterval, @NonNull RelativeLayout relativeLayoutsbHardMusic,
-      @NonNull RelativeLayout rlChallengeOptions, @NonNull RelativeLayout rlCurrentAvg,
-      @NonNull RelativeLayout rlCurrentDistance, @NonNull RelativeLayout rlCurrentSpeed,
-      @NonNull RelativeLayout rlMain, @NonNull LinearLayout rlStart,
-      @NonNull RelativeLayout rlStartCamara, @NonNull RelativeLayout rlTopFixed,
-      @NonNull SeekBar sbHardTrack, @NonNull SeekBar sbHardVolume, @NonNull SeekBar sbNotifyVolume,
-      @NonNull SeekBar sbSoftTrack, @NonNull SeekBar sbSoftVolume, @NonNull Switch swChallenges,
-      @NonNull Switch swIntervalMode, @NonNull Switch swVolumes, @NonNull TextView tvAvgSpeedRecord,
+      @NonNull NavigationView navView, @NonNull NumberPicker npChallengeDistance,
+      @NonNull NumberPicker npChallengeDurationHH, @NonNull NumberPicker npChallengeDurationMM,
+      @NonNull NumberPicker npChallengeDurationSS, @NonNull NumberPicker npDurationInterval,
+      @NonNull RelativeLayout relativeLayoutsbHardMusic, @NonNull RelativeLayout rlChallengeOptions,
+      @NonNull RelativeLayout rlCurrentAvg, @NonNull RelativeLayout rlCurrentDistance,
+      @NonNull RelativeLayout rlCurrentSpeed, @NonNull RelativeLayout rlMain,
+      @NonNull LinearLayout rlStart, @NonNull RelativeLayout rlStartCamara,
+      @NonNull RelativeLayout rlTopFixed, @NonNull SeekBar sbHardTrack,
+      @NonNull SeekBar sbHardVolume, @NonNull SeekBar sbNotifyVolume, @NonNull SeekBar sbSoftTrack,
+      @NonNull SeekBar sbSoftVolume, @NonNull Switch swChallenges, @NonNull Switch swIntervalMode,
+      @NonNull Switch swVolumes, @NonNull TextView tvAvgSpeedRecord,
       @NonNull TextView tvAvgSpeedRun, @NonNull TextView tvAvgSpeedRunUX,
       @NonNull TextView tvAvgSpeedTitle, @NonNull TextView tvChallengeDistance,
       @NonNull TextView tvChallengeDistanceRun, @NonNull TextView tvChallengeDistanceRunUX,
@@ -830,6 +835,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.lyUnevennessRun = lyUnevennessRun;
     this.lyWindow = lyWindow;
     this.lysbSoftMusic = lysbSoftMusic;
+    this.navView = navView;
     this.npChallengeDistance = npChallengeDistance;
     this.npChallengeDurationHH = npChallengeDurationHH;
     this.npChallengeDurationMM = npChallengeDurationMM;
@@ -1584,6 +1590,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nav_view;
+      NavigationView navView = ViewBindings.findChildViewById(rootView, id);
+      if (navView == null) {
+        break missingId;
+      }
+
       id = R.id.npChallengeDistance;
       NumberPicker npChallengeDistance = ViewBindings.findChildViewById(rootView, id);
       if (npChallengeDistance == null) {
@@ -2164,7 +2176,7 @@ public final class ActivityMainBinding implements ViewBinding {
           lyRoundProgressBg, lyRunningWalking, lyRunningWalkingTimes, lySettingsVolumes,
           lySettingsVolumesSpace, lySoftTrack, lySoftVolume, lySportBike, lySportRollerSkate,
           lySportRunning, lySports, lyTracks, lyUnevennessDataRun, lyUnevennessRun, lyWindow,
-          lysbSoftMusic, npChallengeDistance, npChallengeDurationHH, npChallengeDurationMM,
+          lysbSoftMusic, navView, npChallengeDistance, npChallengeDurationHH, npChallengeDurationMM,
           npChallengeDurationSS, npDurationInterval, relativeLayoutsbHardMusic, rlChallengeOptions,
           rlCurrentAvg, rlCurrentDistance, rlCurrentSpeed, rlMain, rlStart, rlStartCamara,
           rlTopFixed, sbHardTrack, sbHardVolume, sbNotifyVolume, sbSoftTrack, sbSoftVolume,

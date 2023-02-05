@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    tools:openDrawer="start"
     android:id="@+id/drawer_layout">
 
     <RelativeLayout
@@ -15,7 +16,8 @@
             android:id="@+id/rlTopFixed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/transparent">
+            android:background="@color/orange"
+            >
 
             <!-- Datos actuales de carrera -->
             <LinearLayout
@@ -26,7 +28,7 @@
                 android:layout_marginTop="55dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:background="@color/gray_medium"
+                android:translationZ="10dp"
                 android:gravity="center">
                 <RelativeLayout
                     android:id="@+id/rlCurrentDistance"
@@ -1133,7 +1135,7 @@
                             android:layout_marginTop="0dp"
                             android:paddingTop="24dp"
                             android:background="@color/gray_dark"
-                            android:onClick="inflateVolumnes"
+
                             tools:ignore="UseSwitchCompatOrMaterialXml" />
                         <LinearLayout
                             android:id="@+id/lySettingsVolumesSpace"
@@ -1364,6 +1366,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="80dp"
         android:gravity="center|center"
         android:background="@color/gray_light_trans">
 
@@ -2095,7 +2098,7 @@
                 android:id="@+id/lyPopUpOptionsRun"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="horizontal"
@@ -2139,9 +2142,28 @@
     </LinearLayout>
 
 
+    <!--<LinearLayout
+        android:id="@+id/lyPopUpRun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|center"
+       >
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:translationX="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></RelativeLayout>
+        </LinearLayout>
 
+    </LinearLayout>-->
 
-   <!-- <include
+    <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -2151,6 +2173,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        app:menu="@menu/activity_main_drawer" />-->
+        app:menu="@menu/activity_main_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
