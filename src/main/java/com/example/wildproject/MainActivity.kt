@@ -77,6 +77,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 challengeDuration = 0
             }
         }
+        binding.swIntervalMode.setOnCheckedChangeListener { buttonView, isChecked ->
+            inflateIntervalMode(isChecked)
+        }
 
     }
 
@@ -100,7 +103,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                 challengeDistance = 0f
 
-                getChallengeDuration(binding.npChallengeDurationHH.value,
+              getChallengeDuration(binding.npChallengeDurationHH.value,
                     binding.npChallengeDurationMM.value,
                     binding.npChallengeDurationSS.value)
             }
@@ -121,12 +124,51 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
     }
-    private fun getChallengeDuration(a: Int, b: Int, c: Int){
-         Utility.getSecondFromWatch(String.format("%02d:%02d:%02d", a,b,c))
+    private fun getChallengeDuration(a: Int, b: Int, c: Int): Unit{
+         challengeDuration = Utility.getSecondFromWatch(String.format("%02d:%02d:%02d", a,b,c))
+    }
+    private fun initStopWatch():Unit{
+        binding.tvChrono.text = getString(R.string.init_stop_watch_value)
+    }
+    fun inflateIntervalMode(isChecked: Boolean):Unit{
+        if(isChecked){
+            Utility.animateViewofInt(binding.swIntervalMode, "textColor",
+            ContextCompat.getColor(this, R.color.orange), 500)
+
+            Utility.setHeightLinearLayout(binding.lyIntervalModeSpace, 600)
+            Utility.animateViewofFloat(binding.lyIntervalMode, "translationY", 0f, 500)
+
+            Utility.animateViewofFloat(binding.tvChrono, "translationX", -110f, 500)
+            binding.tvRounds.text = getString(R.string.rounds)
+
+            Utility.animateViewofInt(binding.tvRounds, "textColor",
+                ContextCompat.getColor(this, R.color.white), 500)
+
+            Utility.setHeightLinearLayout(binding.lySoftTrack, 120)
+            Utility.setHeightLinearLayout(binding.lySoftVolume, 120)
+
+        }else{
+            Utility.animateViewofInt(binding.swIntervalMode, "textColor",
+                ContextCompat.getColor(this, R.color.white), 500)
+
+            Utility.setHeightLinearLayout(binding.lyIntervalModeSpace, 0)
+            binding.lyIntervalMode.translationY=-200f
+            Utility.animateViewofFloat(binding.tvChrono, "translationX", 0f, 500)
+            binding.tvRounds.text=""
+
+            Utility.setHeightLinearLayout(binding.lySoftTrack, 0)
+            Utility.setHeightLinearLayout(binding.lySoftVolume, 0)
+
+
+
+
+
+        }
     }
 
 
     private fun initObjects(): Unit {
+        initStopWatch()
         Utility.setHeightLinearLayout(binding.lyMap, 0)
         Utility.setHeightLinearLayout(binding.lyIntervalModeSpace, 0)
         Utility.setHeightLinearLayout(binding.lyChallengesSpace, 0)

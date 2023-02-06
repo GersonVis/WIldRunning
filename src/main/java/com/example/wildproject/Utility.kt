@@ -28,5 +28,14 @@ object Utility {
             start()
         }
     }
-    fun getSecondFromWatch(ca: String){}
+    fun getSecondFromWatch(ca: String):Int{
+        if(ca.length==5)"00:"+ca
+         var secs=0
+        secs+= ca.subSequence(0,2).toString().toInt()*3600
+        secs+= ca.subSequence(3,5).toString().toInt()*60
+        secs+= ca.subSequence(6,8).toString().toInt()
+        return secs
+
+
+    }
 }
