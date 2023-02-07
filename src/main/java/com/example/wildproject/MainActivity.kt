@@ -17,6 +17,9 @@ import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import me.tankery.lib.circularseekbar.CircularSeekBar
+import java.math.RoundingMode
+import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -141,11 +144,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             Utility.animateViewofFloat(binding.tvChrono, "translationX", -110f, 500)
             binding.tvRounds.text = getString(R.string.rounds)
 
-            Utility.animateViewofInt(binding.tvRounds, "textColor",
-                ContextCompat.getColor(this, R.color.white), 500)
+            Utility.animateViewofInt(
+                binding.tvRounds, "textColor",
+                ContextCompat.getColor(this, R.color.white), 500
+            )
 
             Utility.setHeightLinearLayout(binding.lySoftTrack, 120)
             Utility.setHeightLinearLayout(binding.lySoftVolume, 120)
+            if (binding.swVolumes.isChecked) {
+                Utility.setHeightLinearLayout(binding.lySettingsVolumesSpace, 600)
+            }
 
         }else{
             Utility.animateViewofInt(binding.swIntervalMode, "textColor",
@@ -173,11 +181,76 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         Utility.setHeightLinearLayout(binding.lyIntervalModeSpace, 0)
         Utility.setHeightLinearLayout(binding.lyChallengesSpace, 0)
         Utility.setHeightLinearLayout(binding.lySettingsVolumesSpace, 0)
+        Utility.setHeightLinearLayout(binding.lySoftTrack, 0)
+        Utility.setHeightLinearLayout(binding.lySoftVolume, 0)
 
         binding.lyFragmentMap.translationY = -300f
         binding.lyIntervalMode.translationY = -300f
         binding.lyChallenges.translationY = -300f
         binding.lySettingsVolumes.translationY = -300f
+
+
+        //reiniciar seekbar
+        binding.csbCurrentDistance.progress =0f
+        binding.csbChallengeDistance.progress =0f
+        binding.csbCurrentAvgSpeed.progress =0f
+        binding.csbCurrentSpeed.progress =0f
+        binding.csbCurrentMaxSpeed.progress =0f
+
+        //marcar ceros los text de tiempos
+        binding.tvDistanceRecord.text=""
+        binding.tvAvgSpeedRecord.text=""
+        binding.tvMaxSpeedRecord.text=""
+
+
+
+
+        var pos_see: Float = 0f
+        var esAnterior: Boolean = false
+        val formateador= DecimalFormat("#")
+        binding.csbRunWalk.setOnSeekBarChangeListener(object :
+            CircularSeekBar.OnCircularSeekBarChangeListener {
+            override fun onProgressChanged(
+                circularSeekBar: CircularSeekBar?,
+                progress: Float,
+                fromUser: Boolean
+            ) {
+                if(progress==pos_see){
+                    return
+                }
+                var rango:Float = progress/15
+                if(progress>pos_see){
+                    formateador.roundingMode = RoundingMode.UP
+                }else{
+                    formateador.roundingMode = RoundingMode.DOWN
+                }
+                rango = formateador.format(rango).toString().toFloat()
+                circularSeekBar!!.progress=rango*15
+                pos_see=progress
+            }
+
+            override fun onStartTrackingTouch(seekBar: CircularSeekBar?) {
+
+            }
+
+            override fun onStopTrackingTouch(seekBar: CircularSeekBar?) {
+                1
+            }
+
+        })
+
+
+
+        //internval
+        binding.npDurationInterval.minValue = 1
+        binding.npDurationInterval.maxValue = 2
+        binding.npDurationInterval.value = 5
+        binding.npDurationInterval.wrapSelectorWheel = true
+        binding.npDurationInterval.setFormatter ( NumberPicker.Formatter {
+            i->String.format("%02d", i)
+        } )
+
+
     }
 
     fun inflateVolumes(v: View): Unit {
