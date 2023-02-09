@@ -2697,6 +2697,8 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f07007c
 int drawable btn_radio_on_mtrl 0x7f07007d
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07007e
 int drawable centermap_icon 0x7f07007f
+int drawable circle_background_todisable 0x7f070125
+int drawable circle_background_topause 0x7f070126
 int drawable circle_background_toplay 0x7f070080
 int drawable close_icon 0x7f070081
 int drawable common_full_open_on_phone 0x7f070082
@@ -2752,6 +2754,7 @@ int drawable googleg_standard_color_18 0x7f0700b3
 int drawable gorilla_bike 0x7f0700b4
 int drawable ic_baseline_login_24 0x7f0700b5
 int drawable ic_baseline_mood_24 0x7f0700b6
+int drawable ic_baseline_pause_24 0x7f070127
 int drawable ic_clock_black_24dp 0x7f0700b7
 int drawable ic_keyboard_black_24dp 0x7f0700b8
 int drawable ic_launcher_background 0x7f0700b9

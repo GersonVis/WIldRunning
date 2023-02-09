@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-mdpi_medalgold.png.flat",
-        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-mdpi\\medalgold.png"
-    },
-    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-hdpi_medal_null.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-hdpi\\medal_null.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-mdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-mdpi\\medalgold.png"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-mdpi_google.png.flat",
@@ -218,6 +218,10 @@
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-mdpi_level_3.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-mdpi\\level_3.png"
+    },
+    {
+        "merged": "com.example.wildproject.app-merged_res-39:/drawable_circle_background_todisable.xml.flat",
+        "source": "com.example.wildproject.app-main-41:/drawable/circle_background_todisable.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-mdpi_medalsilver.png.flat",
@@ -424,6 +428,10 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-xxxhdpi\\medal_null_dark.png"
     },
     {
+        "merged": "com.example.wildproject.app-merged_res-39:/drawable_ic_baseline_pause_24.xml.flat",
+        "source": "com.example.wildproject.app-main-41:/drawable/ic_baseline_pause_24.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-xxhdpi_level_4.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\drawable-xxhdpi\\level_4.png"
     },
@@ -558,6 +566,10 @@
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-41:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.wildproject.app-merged_res-39:/drawable_circle_background_topause.xml.flat",
+        "source": "com.example.wildproject.app-main-41:/drawable/circle_background_topause.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-39:\\drawable-xxhdpi_medalgold.png.flat",

@@ -1,7 +1,10 @@
 package com.example.wildproject
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -12,13 +15,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.wildproject.LoginActivity.Companion.useremail
+import com.example.wildproject.Utility.getFormattedStopWatch
 import com.example.wildproject.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import me.tankery.lib.circularseekbar.CircularSeekBar
-import java.math.RoundingMode
 import java.text.DecimalFormat
 
 
@@ -27,6 +31,33 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var drawer: DrawerLayout
     private var challengeDistance: Float = 0f
     private var challengeDuration: Int = 0
+
+    private var ROUND_INTERVAL: Int = 300
+    private var TIME_RUNNING: Int = 0
+
+    private var mHandler: Handler? = null
+    private var timeInSeconds = 0L
+    private var startButtonClicked: Boolean = false
+
+    private var mInterval: Long = 0
+    private var  widthAnimations= 0
+
+
+    private var chronometer: Runnable = object : Runnable {
+        override fun run() {
+            try {
+                timeInSeconds++
+                updateStopWatchView()
+            } finally {
+                mHandler!!.postDelayed(this, mInterval.toLong())
+            }
+        }
+    }
+
+    private fun updateStopWatchView() {
+        binding.tvChrono.text = getFormattedStopWatch(timeInSeconds * 1000)
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +68,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         initNavigationView()
         eventsViews()
     }
+
 
     private fun eventsViews(): Unit {
 
@@ -198,16 +230,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.csbCurrentMaxSpeed.progress =0f
 
         //marcar ceros los text de tiempos
-        binding.tvDistanceRecord.text=""
-        binding.tvAvgSpeedRecord.text=""
-        binding.tvMaxSpeedRecord.text=""
-
-
+        binding.tvDistanceRecord.text = ""
+        binding.tvAvgSpeedRecord.text = ""
+        binding.tvMaxSpeedRecord.text = ""
 
 
         var pos_see: Float = 0f
         var esAnterior: Boolean = false
-        val formateador= DecimalFormat("#")
+        val formateador = DecimalFormat("#")
+        // binding.csbRunWalk.max = 100f
+        //  binding.csbRunWalk.progress = 150f
+        binding.csbRunWalk.max = 300f
+        binding.csbRunWalk.progress = 150f
         binding.csbRunWalk.setOnSeekBarChangeListener(object :
             CircularSeekBar.OnCircularSeekBarChangeListener {
             override fun onProgressChanged(
@@ -215,18 +249,43 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 progress: Float,
                 fromUser: Boolean
             ) {
-                if(progress==pos_see){
-                    return
+                if (fromUser) {
+                    var STEPS_UX: Int = 15
+                    if (ROUND_INTERVAL > 600) STEPS_UX = 60
+                    if (ROUND_INTERVAL > 1800) STEPS_UX = 300
+                    var set: Int = 0
+                    var p = progress.toInt()
+
+                    var limit = 60
+                    if (ROUND_INTERVAL > 1800) limit = 300
+
+                    if (p % STEPS_UX != 0 && progress != binding.csbRunWalk.max) {
+                        while (p >= limit) p -= limit
+                        while (p >= STEPS_UX) p -= STEPS_UX
+                        if (STEPS_UX - p > STEPS_UX / 2) set = -1 * p
+                        else set = STEPS_UX - p
+
+                        if (binding.csbRunWalk.progress + set > binding.csbRunWalk.max)
+                            binding.csbRunWalk.progress = binding.csbRunWalk.max
+                        else
+                            binding.csbRunWalk.progress = binding.csbRunWalk.progress + set
+                    }
                 }
-                var rango:Float = progress/15
-                if(progress>pos_see){
-                    formateador.roundingMode = RoundingMode.UP
-                }else{
-                    formateador.roundingMode = RoundingMode.DOWN
-                }
-                rango = formateador.format(rango).toString().toFloat()
-                circularSeekBar!!.progress=rango*15
-                pos_see=progress
+                if(binding.csbRunWalk.progress== 0f) managedEnableButtonsRun(false, false)
+                else managedEnableButtonsRun(false, true)
+
+                binding.tvRunningTime.text =
+                    getFormattedStopWatch((binding.csbRunWalk.progress.toInt() * 1000).toLong()).subSequence(
+                        3,
+                        8
+                    )
+                binding.tvWalkingTime.text =
+                    getFormattedStopWatch(((ROUND_INTERVAL - binding.csbRunWalk.progress.toInt()) * 1000).toLong()).subSequence(
+                        3,
+                        8
+                    )
+                TIME_RUNNING = Utility.getSecFromWatch(binding.tvRunningTime.text.toString())
+
             }
 
             override fun onStartTrackingTouch(seekBar: CircularSeekBar?) {
@@ -234,11 +293,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             override fun onStopTrackingTouch(seekBar: CircularSeekBar?) {
-                1
+
             }
-
         })
-
 
 
         //internval
@@ -246,11 +303,224 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.npDurationInterval.maxValue = 2
         binding.npDurationInterval.value = 5
         binding.npDurationInterval.wrapSelectorWheel = true
-        binding.npDurationInterval.setFormatter ( NumberPicker.Formatter {
-            i->String.format("%02d", i)
-        } )
+        binding.npDurationInterval.setFormatter(NumberPicker.Formatter { i ->
+            String.format("%02d", i)
+        })
+
+        binding.npDurationInterval.setOnValueChangedListener { picker, oldVal, newVal ->
+            binding.csbRunWalk.max = (newVal * 60).toFloat()
+            binding.csbRunWalk.progress = binding.csbRunWalk.max / 2
 
 
+            binding.tvRunningTime.text =
+                Utility.getFormattedStopWatch(((newVal * 60 / 2) * 1000).toLong()).subSequence(3, 8)
+            binding.tvWalkingTime.text = binding.tvRunningTime.text
+
+            ROUND_INTERVAL = newVal * 60
+
+            TIME_RUNNING = ROUND_INTERVAL / 2
+        }
+
+        binding.npChallengeDistance.minValue = 1
+        binding.npChallengeDistance.maxValue = 300
+        binding.npChallengeDistance.value = 10
+        binding.npChallengeDistance.wrapSelectorWheel = true
+
+
+        binding.npChallengeDistance.setOnValueChangedListener { picker, oldVal, newVal ->
+
+            challengeDistance = newVal.toFloat()
+            binding.csbChallengeDistance.max = newVal.toFloat()
+            binding.csbChallengeDistance.progress = newVal.toFloat()
+
+            challengeDuration = 0
+            if (binding.csbChallengeDistance.max > binding.csbRecordDistance.max) {
+                binding.csbCurrentDistance.max = binding.csbChallengeDistance.max
+            }
+        }
+
+
+
+        binding.npChallengeDurationHH.minValue = 0
+        binding.npChallengeDurationHH.maxValue = 23
+        binding.npChallengeDurationHH.value = 1
+        binding.npChallengeDurationHH.wrapSelectorWheel = true
+        binding.npChallengeDurationHH.setFormatter(NumberPicker.Formatter { i ->
+            String.format(
+                "%02d",
+                i
+            )
+        })
+
+        binding.npChallengeDurationMM.minValue = 0
+        binding.npChallengeDurationMM.maxValue = 59
+        binding.npChallengeDurationMM.value = 0
+        binding.npChallengeDurationMM.wrapSelectorWheel = true
+        binding.npChallengeDurationMM.setFormatter(NumberPicker.Formatter { i ->
+            String.format(
+                "%02d",
+                i
+            )
+        })
+
+        binding.npChallengeDurationSS.minValue = 0
+        binding.npChallengeDurationSS.maxValue = 59
+        binding.npChallengeDurationSS.value = 0
+        binding.npChallengeDurationSS.wrapSelectorWheel = true
+        binding.npChallengeDurationSS.setFormatter(NumberPicker.Formatter { i ->
+            String.format(
+                "%02d",
+                i
+            )
+        })
+
+        binding.npChallengeDurationHH.setOnValueChangedListener { picker, oldVal, newVal ->
+            getChallengeDuration(
+                newVal,
+                binding.npChallengeDurationMM.value,
+                binding.npChallengeDurationSS.value
+            )
+        }
+        binding.npChallengeDurationMM.setOnValueChangedListener { picker, oldVal, newVal ->
+            getChallengeDuration(
+                binding.npChallengeDurationHH.value,
+                newVal,
+                binding.npChallengeDurationSS.value
+            )
+        }
+        binding.npChallengeDurationSS.setOnValueChangedListener { picker, oldVal, newVal ->
+            getChallengeDuration(
+                binding.npChallengeDurationHH.value,
+                binding.npChallengeDurationMM.value,
+                newVal
+            )
+        }
+
+        binding.btStart.setOnClickListener {
+            startOrStopButtonClicked()
+        }
+
+        binding.tvReset.setOnClickListener {
+            resetClicked()
+        }
+
+        binding.fbCamera.isVisible = false
+    }
+    private fun resetClicked():Unit{
+        resetVariablesRun()
+        resetTimeClicked()
+        resetInterface()
+    }
+    private fun resetInterface():Unit{
+        binding.fbCamera.isVisible = false
+
+        binding.tvCurrentDistance.text= "0.0"
+        binding.tvCurrentAvgSpeed.text= "0.0"
+        binding.tvCurrentSpeed.text= "0.0"
+
+        binding.csbCurrentDistance.progress =0f
+        binding.csbCurrentAvgSpeed.progress =0f
+        binding.csbCurrentSpeed.progress =0f
+        binding.csbCurrentMaxSpeed.progress =0f
+
+        binding.tvDistanceRecord.setTextColor(ContextCompat.getColor(this, R.color.gray_dark))
+        binding.tvAvgSpeedRecord.setTextColor(ContextCompat.getColor(this, R.color.gray_dark))
+        binding.tvMaxSpeedRecord.setTextColor(ContextCompat.getColor(this, R.color.gray_dark))
+
+
+        binding.lyChronoProgressBg.translationX = -widthAnimations.toFloat()
+
+        binding.lyRoundProgressBg.translationX = - widthAnimations.toFloat()
+
+        binding.swIntervalMode.isClickable = true
+        binding.npDurationInterval.isEnabled = true
+        binding.csbRunWalk.isEnabled = true
+
+        binding.swChallenges.isClickable = true
+        binding.npChallengeDistance.isEnabled = true
+        binding.npChallengeDurationHH.isEnabled = true
+        binding.npChallengeDurationMM.isEnabled = true
+        binding.npChallengeDurationSS.isEnabled = true
+
+    }
+    private fun resetVariablesRun():Unit{
+        timeInSeconds = 0
+        initStopWatch()
+    }
+    private fun resetTimeClicked():Unit{
+        initStopWatch()
+        managedEnableButtonsRun(false, true)
+       // binding.btStart.background = getDrawable(R.drawable.circle_background_toplay)
+        binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.white))
+    }
+    private fun startOrStopButtonClicked(): Unit {
+        manageRun()
+    }
+
+    private fun manageRun(): Unit {
+        if(timeInSeconds.toInt()==0){
+
+          binding.fbCamera.isVisible = true
+
+            binding.swIntervalMode.isClickable = false
+            binding.npDurationInterval.isEnabled = false
+            binding.csbRunWalk.isEnabled = false
+
+            binding.swChallenges.isClickable = false
+            binding.npChallengeDistance.isEnabled = false
+            binding.npChallengeDurationHH.isEnabled = false
+            binding.npChallengeDurationMM.isEnabled = false
+            binding.npChallengeDurationSS.isEnabled = false
+
+            binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.chrono_running))
+
+        }
+        if (!startButtonClicked) {
+            startButtonClicked = true
+            startTime()
+            managedEnableButtonsRun(false, true)
+        } else {
+            startButtonClicked = false
+            stopTime()
+            managedEnableButtonsRun(true, true)
+        }
+    }
+
+    private fun managedEnableButtonsRun(e_reset: Boolean, e_run: Boolean): Unit {
+        binding.tvReset.isEnabled = e_reset
+        binding.btStart.isEnabled = e_run
+        if (e_reset) {
+            binding.tvReset.setBackgroundColor(ContextCompat.getColor(this, R.color.green))
+            ObjectAnimator.ofFloat(binding.tvReset, "translationY", 0f).apply {
+                duration = 500
+                start()
+            }
+        }else{
+            binding.tvReset.setBackgroundColor(ContextCompat.getColor(this, R.color.gray))
+            ObjectAnimator.ofFloat(binding.tvReset, "translationY", 150f).apply {
+                duration = 500
+                start()
+            }
+        }
+        if(e_run){
+            if(startButtonClicked){
+                binding.btStart.background = getDrawable(R.drawable.circle_background_topause)
+                binding.btStartLabel.text = getString(R.string.stop)
+            }else{
+                binding.btStart.background = getDrawable(R.drawable.circle_background_toplay)
+                binding.btStartLabel.text = getString(R.string.start)
+            }
+        }
+        else binding.btStart.background = getDrawable(R.drawable.circle_background_todisable)
+    }
+
+    private fun stopTime(): Unit {
+        mHandler?.removeCallbacks(chronometer)
+    }
+
+    private fun startTime(): Unit {
+        mHandler = Handler(Looper.getMainLooper())
+        chronometer.run()
     }
 
     fun inflateVolumes(v: View): Unit {
