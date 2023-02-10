@@ -18,6 +18,7 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.wildproject.LoginActivity.Companion.useremail
+import com.example.wildproject.Utility.animateViewofFloat
 import com.example.wildproject.Utility.getFormattedStopWatch
 import com.example.wildproject.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
@@ -41,16 +42,63 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private var mInterval: Long = 0
     private var  widthAnimations= 0
+    private var rounds: Int = 1
 
 
     private var chronometer: Runnable = object : Runnable {
         override fun run() {
             try {
+                if(binding.swIntervalMode.isChecked){
+                    checkStopRun(timeInSeconds)
+                    checkNewRound(timeInSeconds)
+                }
                 timeInSeconds++
                 updateStopWatchView()
             } finally {
                 mHandler!!.postDelayed(this, mInterval.toLong())
             }
+        }
+    }
+    private fun checkStopRun(Secs: Long):Unit{
+        var secAux: Long = Secs
+        while (secAux.toInt()>ROUND_INTERVAL)secAux-= ROUND_INTERVAL
+        if(secAux.toInt()==TIME_RUNNING){
+            binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.chrono_walking))
+            binding.lyRoundProgressBg.setBackgroundColor(ContextCompat.getColor(this, R.color.chrono_walking))
+            binding.lyRoundProgressBg.translationX = -widthAnimations.toFloat()
+        }else{
+            updateProgressBarRound(Secs)
+        }
+
+    }
+    private fun updateProgressBarRound(secs: Long):Unit{
+        var s = secs.toInt()
+        while (s>=ROUND_INTERVAL) s-=ROUND_INTERVAL
+        s++
+
+
+        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(this, R.color.chrono_running)){
+
+            var movement = -1 * (widthAnimations-(s*widthAnimations/TIME_RUNNING)).toFloat()
+            animateViewofFloat(binding.lyRoundProgressBg, "translationX", movement, 1000L)
+        }
+        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(this, R.color.chrono_walking)){
+            s-= TIME_RUNNING
+            var movement = -1 * (widthAnimations-(s*widthAnimations/(ROUND_INTERVAL-TIME_RUNNING))).toFloat()
+            animateViewofFloat(binding.lyRoundProgressBg, "translationX", movement, 1000L)
+
+        }
+    }
+    private fun checkNewRound(Secs: Long):Unit{
+        if(Secs.toInt()%ROUND_INTERVAL== 0 && Secs.toInt()>0){
+            rounds++
+            binding.tvRounds.text = "Round: $rounds"
+
+            binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.chrono_running))
+            binding.lyRoundProgressBg.setBackgroundColor(ContextCompat.getColor(this, R.color.chrono_running))
+            binding.lyRoundProgressBg.translationX = -widthAnimations.toFloat()
+        }else{
+            updateProgressBarRound(Secs)
         }
     }
 
@@ -186,6 +234,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             if (binding.swVolumes.isChecked) {
                 Utility.setHeightLinearLayout(binding.lySettingsVolumesSpace, 600)
             }
+            TIME_RUNNING= Utility.getSecFromWatch(binding.tvRunningTime.text.toString())
 
         }else{
             Utility.animateViewofInt(binding.swIntervalMode, "textColor",
@@ -445,6 +494,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
     private fun resetVariablesRun():Unit{
         timeInSeconds = 0
+        rounds = 1
         initStopWatch()
     }
     private fun resetTimeClicked():Unit{
