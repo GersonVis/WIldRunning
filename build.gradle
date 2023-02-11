@@ -64,7 +64,9 @@ dependencies {
 //librerías externas por desarrolladores
     implementation 'me.tankery.lib:circularSeekBar:1.4.1'
 
-
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
 
 
 

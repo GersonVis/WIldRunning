@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wildproject.app-mergeDebugResources-37:/values-es-rPA/values-es-rPA.xml",
+            "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-es-rPA/values-es-rPA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\586b96fb5a5fda30ea90540ad311ee05\\transformed\\firebase-ui-auth-7.2.0\\res\\values-es-rPA\\values-es-rPA.xml",

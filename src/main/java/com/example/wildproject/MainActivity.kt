@@ -1,10 +1,14 @@
 package com.example.wildproject
 
 import android.animation.ObjectAnimator
+import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
+import android.location.LocationManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -12,6 +16,7 @@ import android.widget.NumberPicker
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
@@ -41,14 +46,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var startButtonClicked: Boolean = false
 
     private var mInterval: Long = 0
-    private var  widthAnimations= 0
+    private var widthAnimations = 0
     private var rounds: Int = 1
+
+    private var activatedGPS: Boolean = true
 
 
     private var chronometer: Runnable = object : Runnable {
         override fun run() {
             try {
-                if(binding.swIntervalMode.isChecked){
+                if (binding.swIntervalMode.isChecked) {
                     checkStopRun(timeInSeconds)
                     checkNewRound(timeInSeconds)
                 }
@@ -59,32 +66,52 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
-    private fun checkStopRun(Secs: Long):Unit{
+
+    private fun checkStopRun(Secs: Long): Unit {
         var secAux: Long = Secs
-        while (secAux.toInt()>ROUND_INTERVAL)secAux-= ROUND_INTERVAL
-        if(secAux.toInt()==TIME_RUNNING){
+        while (secAux.toInt() > ROUND_INTERVAL) secAux -= ROUND_INTERVAL
+        if (secAux.toInt() == TIME_RUNNING) {
             binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.chrono_walking))
-            binding.lyRoundProgressBg.setBackgroundColor(ContextCompat.getColor(this, R.color.chrono_walking))
+            binding.lyRoundProgressBg.setBackgroundColor(
+                ContextCompat.getColor(
+                    this,
+                    R.color.chrono_walking
+                )
+            )
             binding.lyRoundProgressBg.translationX = -widthAnimations.toFloat()
-        }else{
+        } else {
             updateProgressBarRound(Secs)
         }
 
     }
-    private fun updateProgressBarRound(secs: Long):Unit{
+
+    private fun managedStartStop(): Unit {
+
+    }
+
+    private fun updateProgressBarRound(secs: Long): Unit {
         var s = secs.toInt()
-        while (s>=ROUND_INTERVAL) s-=ROUND_INTERVAL
+        while (s >= ROUND_INTERVAL) s -= ROUND_INTERVAL
         s++
 
 
-        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(this, R.color.chrono_running)){
+        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(
+                this,
+                R.color.chrono_running
+            )
+        ) {
 
-            var movement = -1 * (widthAnimations-(s*widthAnimations/TIME_RUNNING)).toFloat()
+            var movement = -1 * (widthAnimations - (s * widthAnimations / TIME_RUNNING)).toFloat()
             animateViewofFloat(binding.lyRoundProgressBg, "translationX", movement, 1000L)
         }
-        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(this, R.color.chrono_walking)){
-            s-= TIME_RUNNING
-            var movement = -1 * (widthAnimations-(s*widthAnimations/(ROUND_INTERVAL-TIME_RUNNING))).toFloat()
+        if (binding.tvChrono.getCurrentTextColor() == ContextCompat.getColor(
+                this,
+                R.color.chrono_walking
+            )
+        ) {
+            s -= TIME_RUNNING
+            var movement =
+                -1 * (widthAnimations - (s * widthAnimations / (ROUND_INTERVAL - TIME_RUNNING))).toFloat()
             animateViewofFloat(binding.lyRoundProgressBg, "translationX", movement, 1000L)
 
         }
@@ -463,6 +490,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun resetInterface():Unit{
         binding.fbCamera.isVisible = false
 
+        activatedGPS = true
+
         binding.tvCurrentDistance.text= "0.0"
         binding.tvCurrentAvgSpeed.text= "0.0"
         binding.tvCurrentSpeed.text= "0.0"
@@ -492,25 +521,60 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.npChallengeDurationSS.isEnabled = true
 
     }
-    private fun resetVariablesRun():Unit{
+
+    private fun resetVariablesRun(): Unit {
         timeInSeconds = 0
         rounds = 1
         initStopWatch()
     }
-    private fun resetTimeClicked():Unit{
+
+    private fun resetTimeClicked(): Unit {
         initStopWatch()
         managedEnableButtonsRun(false, true)
-       // binding.btStart.background = getDrawable(R.drawable.circle_background_toplay)
+        // binding.btStart.background = getDrawable(R.drawable.circle_background_toplay)
         binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.white))
     }
+
     private fun startOrStopButtonClicked(): Unit {
-        manageRun()
+        manageStartStop()
+    }
+
+    private fun manageStartStop(): Unit {
+        if (timeInSeconds == 0L && !isLocationEnabled()) {
+            AlertDialog.Builder(this)
+                .setTitle(R.string.alertActivationGPSTitle)
+                .setMessage(R.string.alertActivationGPSDescription)
+                .setPositiveButton(R.string.aceptActivationGps,
+                    DialogInterface.OnClickListener { dialog, which ->
+                        activationLocation()
+                    }
+                )
+                .setNegativeButton(R.string.ignoreActivationGPS,
+                    DialogInterface.OnClickListener { dialog, which ->
+                        activatedGPS = false
+                        manageRun()
+                    }
+                ).show()
+
+        } else manageRun()
+    }
+
+    private fun activationLocation(): Unit {
+            var intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+            startActivity(intent)
+    }
+
+    private fun isLocationEnabled(): Boolean {
+        var locationManager: LocationManager =
+            getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
+                locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
     }
 
     private fun manageRun(): Unit {
-        if(timeInSeconds.toInt()==0){
+        if (timeInSeconds.toInt() == 0) {
 
-          binding.fbCamera.isVisible = true
+            binding.fbCamera.isVisible = true
 
             binding.swIntervalMode.isClickable = false
             binding.npDurationInterval.isEnabled = false

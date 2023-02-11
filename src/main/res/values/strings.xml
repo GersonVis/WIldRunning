@@ -88,4 +88,8 @@
     <string name="medalDistanceDescription">Distancia [Record Personal]</string>
     <string name="medalAvgSpeedDescription">Vel. Máx. [Record Personal]</string>
     <string name="medalMaxSpeedDescription">Vel. Prom. [Record Personal]</string>
+    <string name="alertActivationGPSTitle">Activa el gps</string>
+    <string name="alertActivationGPSDescription">Gracias por activar el gps</string>
+    <string name="aceptActivationGps">Aceptar</string>
+    <string name="ignoreActivationGPS">No activaste GPS</string>
 </resources>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wildproject.app-mergeDebugResources-37:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\905cc28472506369256162ff5e36af1f\\transformed\\play-services-auth-20.4.1\\res\\values-watch-v20\\values.xml",

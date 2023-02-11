@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wildproject.app-mergeDebugResources-37:/values-cs/values-cs.xml",
+            "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-cs/values-cs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\1a92391f73c25c119b9f5ade91d79177\\transformed\\appcompat-1.6.0\\res\\values-cs\\values-cs.xml",

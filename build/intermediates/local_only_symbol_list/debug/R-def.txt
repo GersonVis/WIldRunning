@@ -398,6 +398,9 @@ string PopUpTotalRuns
 string PopUpTotalTime
 string PopUpUnevennessTitle
 string acept
+string aceptActivationGps
+string alertActivationGPSDescription
+string alertActivationGPSTitle
 string app_name
 string bar_title
 string bar_title2
@@ -418,6 +421,7 @@ string google_storage_bucket
 string hard_duration
 string hard_position
 string hard_volumen
+string ignoreActivationGPS
 string init_stop_watch_value
 string invalid_email
 string invitation
