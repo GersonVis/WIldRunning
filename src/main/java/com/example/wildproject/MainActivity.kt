@@ -1,10 +1,14 @@
 package com.example.wildproject
 
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.location.Location
 import android.location.LocationManager
+import android.location.LocationRequest
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -18,14 +22,21 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.wildproject.Constants.INTERVAL_LOCATION
 import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.Utility.animateViewofFloat
 import com.example.wildproject.Utility.getFormattedStopWatch
 import com.example.wildproject.databinding.ActivityMainBinding
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.LocationResult
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import me.tankery.lib.circularseekbar.CircularSeekBar
@@ -33,6 +44,14 @@ import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+    companion object {
+        val REQUIRED_PERMISSION_GPS = arrayOf(
+            android.Manifest.permission.ACCESS_COARSE_LOCATION,
+            android.Manifest.permission.ACCESS_FINE_LOCATION
+        )
+    }
+
+    private var PERMISSION_ID: Int = 62
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawer: DrawerLayout
     private var challengeDistance: Float = 0f
@@ -50,11 +69,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var rounds: Int = 1
 
     private var activatedGPS: Boolean = true
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
 
 
     private var chronometer: Runnable = object : Runnable {
         override fun run() {
             try {
+                if (activatedGPS && timeInSeconds.toInt() % INTERVAL_LOCATION == 0) {
+                    managedLocation()
+                }
                 if (binding.swIntervalMode.isChecked) {
                     checkStopRun(timeInSeconds)
                     checkNewRound(timeInSeconds)
@@ -64,6 +87,51 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             } finally {
                 mHandler!!.postDelayed(this, mInterval.toLong())
             }
+        }
+    }
+
+    private fun checkPermission(): Boolean {
+        return ActivityCompat.checkSelfPermission(
+            this,
+            android.Manifest.permission.ACCESS_COARSE_LOCATION
+        ) ==
+                PackageManager.PERMISSION_GRANTED
+                &&
+                ActivityCompat.checkSelfPermission(
+                    this,
+                    android.Manifest.permission.ACCESS_FINE_LOCATION
+                ) ==
+                PackageManager.PERMISSION_GRANTED
+
+
+    }
+
+    private fun managedLocation(): Unit {
+        if (checkPermission()) {
+            fusedLocationClient.lastLocation.addOnSuccessListener { location ->
+                requestNewLocationData()
+            }
+        } else requestPermissionLocation()
+    }
+    @SuppressLint("MissingPermission")
+     fun requestNewLocationData(): Unit {
+         var mLocationRequest = com.google.android.gms.location.LocationRequest()
+         mLocationRequest.priority = com.google.android.gms.location.LocationRequest.CONTENTS_FILE_DESCRIPTOR
+         mLocationRequest.interval = 0
+         mLocationRequest.fastestInterval = 0
+         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+
+         fusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallBack, Looper.myLooper())
+
+    }
+    private var flagSavedLocation: Boolean = false
+    private var latitute: Double = 0.0
+    private var longitude: Double = 0.0
+    private var init_lt: Double = 0.0
+    private var init_ln: Double = 0.0
+    private val mLocationCallBack: LocationCallback = object: LocationCallback() {
+        override fun onLocationResult(locationresult: LocationResult) {
+            var mLastLocation: Location? = locationresult.lastLocation
         }
     }
 
@@ -539,12 +607,33 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         manageStartStop()
     }
 
+    private fun initPermissionGPS(): Unit {
+        if (allPermissionGranted()) {
+            fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+        } else requestPermissionLocation()
+
+    }
+
+    private fun allPermissionGranted() = REQUIRED_PERMISSION_GPS.all {
+        ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
+    }
+
+    private fun requestPermissionLocation(): Unit {
+        ActivityCompat.requestPermissions(
+            this, arrayOf(
+                android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                android.Manifest.permission.ACCESS_FINE_LOCATION
+            ), PERMISSION_ID
+        )
+    }
+
     private fun manageStartStop(): Unit {
         if (timeInSeconds == 0L && !isLocationEnabled()) {
             AlertDialog.Builder(this)
                 .setTitle(R.string.alertActivationGPSTitle)
                 .setMessage(R.string.alertActivationGPSDescription)
-                .setPositiveButton(R.string.aceptActivationGps,
+                .setPositiveButton(
+                    R.string.aceptActivationGps,
                     DialogInterface.OnClickListener { dialog, which ->
                         activationLocation()
                     }
