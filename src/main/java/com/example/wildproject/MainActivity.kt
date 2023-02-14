@@ -16,9 +16,12 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.LinearLayout
+import android.widget.LinearLayout.LayoutParams
 import android.widget.NumberPicker
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -31,25 +34,36 @@ import com.example.wildproject.Constants.INTERVAL_LOCATION
 import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.Utility.animateViewofFloat
 import com.example.wildproject.Utility.getFormattedStopWatch
+import com.example.wildproject.Utility.roundNumber
+import com.example.wildproject.Utility.setHeightLinearLayout
 import com.example.wildproject.databinding.ActivityMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import me.tankery.lib.circularseekbar.CircularSeekBar
 import java.text.DecimalFormat
 
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
+    OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener{
     companion object {
         val REQUIRED_PERMISSION_GPS = arrayOf(
             android.Manifest.permission.ACCESS_COARSE_LOCATION,
             android.Manifest.permission.ACCESS_FINE_LOCATION
         )
     }
+
+    private lateinit var mMap: GoogleMap
 
     private var PERMISSION_ID: Int = 62
     private lateinit var binding: ActivityMainBinding
@@ -71,6 +85,33 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var activatedGPS: Boolean = true
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+
+        // Add a marker in Sydney and move the camera
+       /* val sydney = LatLng(-34.0, 151.0)
+        mMap.addMarker(
+            MarkerOptions()
+            .position(sydney)
+            .title("Marker in Sydney"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))*/
+        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
+        mMap.setOnMyLocationButtonClickListener(this)
+        mMap.setOnMapLongClickListener { mapCentered = false }
+        mMap.setOnMyLocationClickListener(this)
+        mMap.setOnMapClickListener { mapCentered = false }
+
+        managedLocation()
+        centerMap(init_lt, init_ln)
+    }
+    private var mapCentered: Boolean = true
+
+    private fun centerMap(lt: Double, ln: Double):Unit{
+            val posMap = LatLng(lt, ln)
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(posMap, 16f), 1000, null)
+
+    }
 
     private var chronometer: Runnable = object : Runnable {
         override fun run() {
@@ -105,7 +146,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     }
-
+    @SuppressLint("MissingPermission")
     private fun managedLocation(): Unit {
         if (checkPermission()) {
             fusedLocationClient.lastLocation.addOnSuccessListener { location ->
@@ -125,14 +166,89 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
     private var flagSavedLocation: Boolean = false
-    private var latitute: Double = 0.0
+    private var latitude: Double = 0.0
     private var longitude: Double = 0.0
     private var init_lt: Double = 0.0
     private var init_ln: Double = 0.0
+
+    private var distance: Double = 0.0
+    private var maxSpeed: Double = 0.0
+    private var avgSpeed: Double = 0.0
+    private var speed: Double = 0.0
+
     private val mLocationCallBack: LocationCallback = object: LocationCallback() {
         override fun onLocationResult(locationresult: LocationResult) {
             var mLastLocation: Location? = locationresult.lastLocation
+            init_lt = mLastLocation!!.latitude
+            init_ln = mLastLocation!!.longitude
+            if(timeInSeconds >0L){
+                registerNewLocation(mLastLocation)
+            }
         }
+    }
+    private fun registerNewLocation(location: Location){
+        var new_latitude: Double = location.latitude
+        var new_longitude: Double = location.longitude
+
+        if (flagSavedLocation){
+            if (timeInSeconds >= INTERVAL_LOCATION){
+                var distanceInterval = calculateDistance(new_latitude, new_longitude)
+
+                updateSpeeds(distanceInterval)
+                refreshInterfaceData()
+            }
+        }
+        latitude = new_latitude
+        longitude = new_longitude
+    }
+    private fun updateSpeeds(d: Double) {
+        //la distancia se calcula en km, asi que la pasamos a metros para el calculo de velocidadr
+        //convertirmos m/s a km/h multiplicando por 3.6
+        speed = ((d * 1000) / INTERVAL_LOCATION) * 3.6
+        if (speed > maxSpeed) maxSpeed = speed
+        avgSpeed = ((distance * 1000) / timeInSeconds) * 3.6
+    }
+    private fun refreshInterfaceData(){
+        var tvCurrentDistance = findViewById<TextView>(R.id.tvCurrentDistance)
+        var tvCurrentAvgSpeed = findViewById<TextView>(R.id.tvCurrentAvgSpeed)
+        var tvCurrentSpeed = findViewById<TextView>(R.id.tvCurrentSpeed)
+        tvCurrentDistance.text = roundNumber(distance.toString(), 2)
+        tvCurrentAvgSpeed.text = roundNumber(avgSpeed.toString(), 1)
+        tvCurrentSpeed.text = roundNumber(speed.toString(), 1)
+
+
+        binding.csbCurrentDistance.progress = distance.toFloat()
+
+        binding.csbCurrentAvgSpeed.progress = avgSpeed.toFloat()
+
+        binding.csbCurrentSpeed.progress = speed.toFloat()
+
+        if (speed == maxSpeed){
+            binding.csbCurrentMaxSpeed.max = binding.csbRecordSpeed.max
+            binding.csbCurrentMaxSpeed.progress = speed.toFloat()
+
+            binding.csbCurrentSpeed.max = binding.csbRecordSpeed.max
+        }
+    }
+    private fun calculateDistance(n_lt: Double, n_lg: Double): Double{
+        val radioTierra = 6371.0 //en kilómetros
+
+        val dLat = Math.toRadians(n_lt - latitude)
+        val dLng = Math.toRadians(n_lg - longitude)
+        val sindLat = Math.sin(dLat / 2)
+        val sindLng = Math.sin(dLng / 2)
+        val va1 =
+            Math.pow(sindLat, 2.0) + (Math.pow(sindLng, 2.0)
+                    * Math.cos(Math.toRadians(latitude)) * Math.cos(
+                Math.toRadians( n_lt  )
+            ))
+        val va2 = 2 * Math.atan2(Math.sqrt(va1), Math.sqrt(1 - va1))
+        var n_distance =  radioTierra * va2
+
+        //if (n_distance < LIMIT_DISTANCE_ACCEPTED) distance += n_distance
+
+        distance += n_distance
+        return n_distance
     }
 
     private fun checkStopRun(Secs: Long): Unit {
@@ -549,6 +665,58 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         binding.fbCamera.isVisible = false
+
+        initMap()
+
+        /*binding.lyOpenerButton.setOnClickListener {
+            callShowHideMap()
+        }*/
+    }
+    private fun initMap():Unit{
+        createMapFragment()
+        binding.lyOpenerButton.isEnabled = allPermissionGranted()
+    }
+    fun changeTypeMap(v: View){
+        if(mMap.mapType == GoogleMap.MAP_TYPE_HYBRID){
+            mMap.mapType == GoogleMap.MAP_TYPE_NORMAL
+            binding.ivTypeMap.setImageResource(R.drawable.map_type_hybrid)
+        }else{
+            mMap.mapType == GoogleMap.MAP_TYPE_HYBRID
+            binding.ivTypeMap.setImageResource(R.drawable.map_type_normal)
+        }
+    }
+    fun callCenterMap(v: View){
+        mapCentered = true
+        if(latitude == 0.0 )centerMap(init_lt, init_ln)
+        else centerMap(latitude, longitude)
+    }
+     fun callShowHideMap(v: View):Unit{
+        if(allPermissionGranted()){
+            if(binding.lyMap.height==0){
+                var params: LinearLayout.LayoutParams = binding.lyMap.layoutParams as LayoutParams
+                params.height = 1157
+                binding.lyMap.layoutParams = params
+
+                ObjectAnimator.ofFloat(binding.lyFragmentMap, "translationY", 300f)
+                    .apply {
+                        duration= 50
+                        start()
+                    }
+                binding.ivOpenClose.setRotation(100f)
+            }else{
+                ObjectAnimator.ofFloat(binding.lyFragmentMap, "translationY", -300f).
+                apply {
+                    duration = 30
+                    start()
+                }
+            }
+        }else requestPermissionLocation()
+
+    }
+    private fun createMapFragment():Unit{
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.fragmentMap) as SupportMapFragment
+        mapFragment.getMapAsync(this)
     }
     private fun resetClicked():Unit{
         resetVariablesRun()
@@ -676,6 +844,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             binding.npChallengeDurationSS.isEnabled = false
 
             binding.tvChrono.setTextColor(ContextCompat.getColor(this, R.color.chrono_running))
+            if(activatedGPS){
+                flagSavedLocation = false
+                managedLocation()
+                flagSavedLocation = true
+                managedLocation()
+            }
 
         }
         if (!startButtonClicked) {
@@ -785,4 +959,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun callRecordActictivity(): Unit {
         startActivity(Intent(this, RecordActivity::class.java))
     }
+
+    override fun onMyLocationButtonClick(): Boolean {
+        return false
+    }
+
+    override fun onMyLocationClick(p0: Location) {
+
+    }
+
 }

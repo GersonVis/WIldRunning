@@ -4,41 +4,7 @@
             "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\277df2ec142ed3bab5f6ebc3feac2e12\\transformed\\play-services-basement-18.1.0\\res\\values-pt-rBR\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "199",
-                        "endColumns": "140",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "46",
-                        "startColumns": "4",
-                        "startOffsets": "4758",
-                        "endColumns": "144",
-                        "endOffsets": "4898"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\61e069618d6b423984d1aa333c1d05e8\\transformed\\core-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "205",
-                        "startColumns": "4",
-                        "startOffsets": "19553",
-                        "endColumns": "100",
-                        "endOffsets": "19649"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\586b96fb5a5fda30ea90540ad311ee05\\transformed\\firebase-ui-auth-7.2.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\84df847cab23ed2c47444f68ce07ba2c\\transformed\\firebase-ui-auth-7.2.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,24 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\9c4a2d89e22a7b1e6685826ab4643188\\transformed\\play-services-base-18.0.1\\res\\values-pt-rBR\\values.xml",
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\b1e4ad5db6561a50d37207d9f6de2b69\\transformed\\play-services-basement-18.1.0\\res\\values-pt-rBR\\values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "197,298,442,565,669,832,958,1076,1177,1343,1447,1607,1733,1886,2039,2104,2166",
-                        "endColumns": "100,143,122,103,162,125,117,100,165,103,159,125,152,152,64,61,79",
-                        "endOffsets": "297,441,564,668,831,957,1075,1176,1342,1446,1606,1732,1885,2038,2103,2165,2245"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "140",
+                        "endOffsets": "339"
                     },
                     "to": {
-                        "startLines": "38,39,40,41,42,43,44,45,47,48,49,50,51,52,53,54,55",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3746,3851,3999,4126,4234,4401,4531,4653,4903,5073,5181,5345,5475,5632,5789,5858,5924",
-                        "endColumns": "104,147,126,107,166,129,121,104,169,107,163,129,156,156,68,65,83",
-                        "endOffsets": "3846,3994,4121,4229,4396,4526,4648,4753,5068,5176,5340,5470,5627,5784,5853,5919,6003"
+                        "startLines": "46",
+                        "startColumns": "4",
+                        "startOffsets": "4758",
+                        "endColumns": "144",
+                        "endOffsets": "4898"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\1a92391f73c25c119b9f5ade91d79177\\transformed\\appcompat-1.6.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\82ed115d47c0bb8be22ca7538bd6ed2e\\transformed\\core-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "205",
+                        "startColumns": "4",
+                        "startOffsets": "19553",
+                        "endColumns": "100",
+                        "endOffsets": "19649"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\0c988c2b5fe10c465f34d22483785f0a\\transformed\\appcompat-1.6.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,7 +72,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\ad7d322ac960e9dd65ac5a223dde6eeb\\transformed\\material-1.7.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\e34efa809c6258b56c4e2fe2afe3dc4d\\transformed\\browser-1.4.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    },
+                    "to": {
+                        "startLines": "56,59,60,61",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "6008,6279,6378,6490",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "6118,6373,6485,6591"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\cb0f248aa0acd44ae5dccd3c18d3fe02\\transformed\\material-1.7.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,20 +108,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\9982421d2e98a44f1fcdd86f4caad03c\\transformed\\browser-1.4.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\d3bf83c74077b7be188cdff75c753354\\transformed\\play-services-base-18.0.1\\res\\values-pt-rBR\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,170,269,381",
-                        "endColumns": "114,98,111,105",
-                        "endOffsets": "165,264,376,482"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "197,298,442,565,669,832,958,1076,1177,1343,1447,1607,1733,1886,2039,2104,2166",
+                        "endColumns": "100,143,122,103,162,125,117,100,165,103,159,125,152,152,64,61,79",
+                        "endOffsets": "297,441,564,668,831,957,1075,1176,1342,1446,1606,1732,1885,2038,2103,2165,2245"
                     },
                     "to": {
-                        "startLines": "56,59,60,61",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "6008,6279,6378,6490",
-                        "endColumns": "114,98,111,105",
-                        "endOffsets": "6118,6373,6485,6591"
+                        "startLines": "38,39,40,41,42,43,44,45,47,48,49,50,51,52,53,54,55",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3746,3851,3999,4126,4234,4401,4531,4653,4903,5073,5181,5345,5475,5632,5789,5858,5924",
+                        "endColumns": "104,147,126,107,166,129,121,104,169,107,163,129,156,156,68,65,83",
+                        "endOffsets": "3846,3994,4121,4229,4396,4526,4648,4753,5068,5176,5340,5470,5627,5784,5853,5919,6003"
                     }
                 }
             ]

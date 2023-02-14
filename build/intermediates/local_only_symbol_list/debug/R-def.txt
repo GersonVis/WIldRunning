@@ -140,6 +140,7 @@ id fbCamera
 id fbFinalPicture
 id fbHome
 id fbShareRun
+id fragmentMap
 id ivBike
 id ivClosePopUp
 id ivCurrentLevel
@@ -417,6 +418,7 @@ string google
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
+string google_maps_key
 string google_storage_bucket
 string hard_duration
 string hard_position

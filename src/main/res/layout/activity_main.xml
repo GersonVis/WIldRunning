@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -453,7 +454,7 @@
                             android:translationY="-300dp"
                             android:gravity="left"
                             android:orientation="vertical">
-                            <!--
+
                             <fragment
                                 android:id="@+id/fragmentMap"
                                 android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -467,7 +468,7 @@
                                 map:uiTiltGestures="true"
                                 map:uiZoomControls="true"
                                 map:uiZoomGestures="true"/>
-                            -->
+
 
                             <TextView
                                 android:id="@+id/tvMapCenter"
@@ -507,7 +508,8 @@
                         android:translationZ="15dp"
                         android:gravity="left"
                         android:background="@color/transparent"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="callShowHideMap">
                         <LinearLayout
                             android:id="@+id/lyOpenerLine"
                             android:layout_width="match_parent"
@@ -520,7 +522,7 @@
                             android:id="@+id/lyOpenerButton"
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:onClick="callShowHideMap"
+
                             android:orientation="horizontal"
                             android:translationY="-5dp"
                             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">

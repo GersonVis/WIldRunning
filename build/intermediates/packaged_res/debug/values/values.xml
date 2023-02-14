@@ -84,6 +84,7 @@
     <string name="google_api_key" translatable="false">AIzaSyBfDcDC7B8fmIjDpAiKPzEBgxlQv6rZm3c</string>
     <string name="google_app_id" translatable="false">1:348875125973:android:177056f9317dcd22011e5c</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBfDcDC7B8fmIjDpAiKPzEBgxlQv6rZm3c</string>
+    <string name="google_maps_key" translatable="false">AIzaSyBsf0qnzxvGg3cHLzAl1lHdlNjiO_dQBd8</string>
     <string name="google_storage_bucket" translatable="false">wildproject-ee610.appspot.com</string>
     <string name="hard_duration">01:00:00</string>
     <string name="hard_position">00:00:00</string>

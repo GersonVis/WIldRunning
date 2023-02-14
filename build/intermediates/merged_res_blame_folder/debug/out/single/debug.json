@@ -1,634 +1,638 @@
 [
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_running.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/running.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_login_imagen.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/login_imagen.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_1.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_1.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_6.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_6.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_running.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/running.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xxxhdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xxxhdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_5.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_5.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\medalsilver.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_medalgold.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/medalgold.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_medalbronze.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\medalbronze.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_run.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_run.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_7.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_7.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_5.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_5.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_medal_null_dark.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/medal_null_dark.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_max.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\max.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_7.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_7.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_7.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_7.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/menu_menu_secundario.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/menu/menu_secundario.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_medal_null.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\medal_null.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_gorilla_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/gorilla_bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\medalgold.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_map_type_hybrid.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\map_type_hybrid.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_medalbronze.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/medalbronze.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_login_imagen.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\login_imagen.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_bicicleta.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/bicicleta.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_running.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\running.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_medal_null_dark.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/medal_null_dark.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_bicicleta.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\bicicleta.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_facebook.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/facebook.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_bicicleta.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\bicicleta.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_google.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/google.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_google.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\google.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_2.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_2.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_circle_background_toplay.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\circle_background_toplay.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_rollerskate.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/rollerskate.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_map_type_hybrid.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\map_type_hybrid.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_3.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_3.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_2.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_2.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_opener_icon_dark.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/opener_icon_dark.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_medal_null.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\medal_null.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_max.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/max.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_medal_null_dark.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\medal_null_dark.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_1.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_1.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_7.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_7.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_medal_null.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/medal_null.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_rollerskate.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\rollerskate.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_google.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\google.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_rollerskate.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\rollerskate.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_4.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_4.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_gorilla_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\gorilla_bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_opener_icon_dark.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\opener_icon_dark.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_popup_sync.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_popup_sync.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\menu_order_records_by.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\menu\\order_records_by.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_map_type_hybrid.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/map_type_hybrid.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_running.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\running.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_login_imagen.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/login_imagen.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_6.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_6.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_google.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/google.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_centermap_icon.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\centermap_icon.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_run.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_run.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\menu_menu_secundario.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\menu\\menu_secundario.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_shoe_print.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/shoe_print.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\medalsilver.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_1.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_1.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_1.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_1.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_medal_null_dark.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/medal_null_dark.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_gorilla_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\gorilla_bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_activity_login.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/activity_login.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_medal_null_dark.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\medal_null_dark.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_map_icon.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/map_icon.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\menu\\activity_main_drawer.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_medalsilver.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/medalsilver.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_gorilla_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\gorilla_bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_rollerskate.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/rollerskate.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_3.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_3.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_bicicleta.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/bicicleta.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_medalbronze.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\medalbronze.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_activity_forgot_password.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/activity_forgot_password.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_shoe_print.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\shoe_print.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_baseline_mood_24.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_baseline_mood_24.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_rollerskate.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\rollerskate.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_3.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_3.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/menu_activity_main_drawer.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/menu/activity_main_drawer.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_app_bar_main.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_gorilla_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/gorilla_bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_facebook.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\facebook.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_7.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_7.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_record.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_record.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_running.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\running.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_medalsilver.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/medalsilver.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_6.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_6.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_map_type_hybrid.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/map_type_hybrid.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_menu_gallery.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_running.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/running.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_circle_background_todisable.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\circle_background_todisable.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_5.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_5.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_medalsilver.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/medalsilver.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_1.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_1.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/xml_backup_rules.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_opener_icon.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/opener_icon.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_medal_null.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/medal_null.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_6.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_6.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_running.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\running.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_medal_null_dark.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/medal_null_dark.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_facebook.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\facebook.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\medalgold.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_activity_record.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/activity_record.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_7.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_7.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_centermap_icon.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/centermap_icon.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_4.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_4.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_6.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_6.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_medal_null.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/medal_null.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_google.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\google.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_1.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_1.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_rollerskate.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\rollerskate.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_dimens.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/dimens.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_map_type_hybrid.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/map_type_hybrid.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_1.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_1.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_rollerskate.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/rollerskate.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_nav_header_main.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/nav_header_main.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_rollerskate.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/rollerskate.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_min.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/min.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_6.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_6.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_2.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_2.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_4.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_4.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_7.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_7.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi-v24_nav_header_main.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi-v24/nav_header_main.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_circle_background_toplay.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/circle_background_toplay.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_login_imagen.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/login_imagen.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_medalgold.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/medalgold.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_login_imagen.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/login_imagen.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_medalsilver.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/medalsilver.png"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_medal_null.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\medal_null.png"
     },
     {
         "merged": "com.example.wildproject.app-merged_res-41:/layout_activity_main.xml.flat",
         "source": "com.example.wildproject.app-main-43:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_running.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/running.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_gorilla_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\gorilla_bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_activity_terms.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/activity_terms.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_bicicleta.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\bicicleta.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_bicycle.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/bicycle.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_skateboarding.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\skateboarding.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_menu_gallery.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_menu_gallery.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_baseline_login_24.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_baseline_login_24.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_5.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_5.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_medal_null.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\medal_null.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_medalbronze.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/medalbronze.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_2.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_2.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_facebook.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/facebook.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_4.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_4.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_medal_null.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/medal_null.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_gorilla_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\gorilla_bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_4.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_4.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_4.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_4.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_medal_null_dark.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\medal_null_dark.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_google.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/google.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_circle_background_topause.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\circle_background_topause.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_1.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_1.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_medal_null.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\medal_null.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_circle_background_todisable.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/circle_background_todisable.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\medalsilver.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_3.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_3.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_5.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_5.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_bicicleta.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/bicicleta.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_map_type_hybrid.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\map_type_hybrid.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/menu_order_records_by.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/menu/order_records_by.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_2.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_2.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_medalgold.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/medalgold.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_4.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_4.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_medal_null_dark.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\medal_null_dark.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_medalbronze.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/medalbronze.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_3.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_3.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_3.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_3.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_bicicleta.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\bicicleta.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-xxxhdpi_map_type_normal.png.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-xxxhdpi/map_type_normal.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_6.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_6.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_login_imagen.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\login_imagen.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_google.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/google.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_facebook.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\facebook.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_medal_null.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/medal_null.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_5.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_5.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_medalbronze.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/medalbronze.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_bicicleta.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\bicicleta.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_baseline_pause_24.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_baseline_pause_24.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_4.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_4.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_google.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\google.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_map_type_hybrid.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/map_type_hybrid.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_3.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_3.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_medalgold.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/medalgold.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_facebook.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/facebook.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_medalbronze.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\medalbronze.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_2.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_2.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/layout_app_bar_main.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/layout/app_bar_main.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_facebook.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/facebook.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\medalgold.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_7.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_7.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_2.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_2.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_2.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_2.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_3.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_3.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\medalgold.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_2.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_2.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_4.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_4.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_medal_null_dark.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/medal_null_dark.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_rollerskate.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/rollerskate.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_3.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_3.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.wildproject.app-main-43:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_level_5.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/level_5.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_login_imagen.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\login_imagen.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_level_5.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/level_5.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_bicicleta.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/bicicleta.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_google.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\google.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_google.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/google.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_gorilla_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/gorilla_bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_baseline_mood_24.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_baseline_mood_24.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_bicicleta.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/bicicleta.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_map_type_hybrid.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\map_type_hybrid.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxhdpi_level_6.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxhdpi/level_6.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_level_6.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\level_6.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_close_icon.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/close_icon.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_7.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_7.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_running.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/running.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_6.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_6.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_medalbronze.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\medalbronze.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_gorilla_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/gorilla_bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_medalbronze.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\medalbronze.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_medalbronze.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/medalbronze.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_terms.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_terms.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_login_imagen.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/login_imagen.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_map_icon.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\map_icon.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_medalsilver.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/medalsilver.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\bike.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-mdpi_gorilla_bike.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-mdpi/gorilla_bike.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_facebook.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\facebook.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_map_type_hybrid.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/map_type_hybrid.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_opener_icon.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\opener_icon.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_skateboarding.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/skateboarding.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_7.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_7.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_circle_background_topause.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/circle_background_topause.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_close_icon.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\close_icon.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable_ic_baseline_pause_24.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable/ic_baseline_pause_24.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_min.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\min.xml"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_level_5.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/level_5.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_facebook.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\facebook.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-hdpi_medalgold.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-hdpi/medalgold.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xxxhdpi_facebook.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xxxhdpi/facebook.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_running.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\running.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-xhdpi_level_3.png.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-xhdpi/level_3.png"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_map_type_normal.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\map_type_normal.png"
     },
     {
-        "merged": "com.example.wildproject.app-merged_res-41:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.wildproject.app-main-43:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_medalgold.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\medalgold.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_login_imagen.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\login_imagen.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_bicycle.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\bicycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\medalsilver.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-hdpi_level_2.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-hdpi\\level_2.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_4.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_4.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_level_1.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\level_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_dimens.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\dimens.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_medal_null_dark.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\medal_null_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\medalsilver.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_login_imagen.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\login_imagen.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_map_type_hybrid.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\map_type_hybrid.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_level_1.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\level_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_baseline_login_24.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_baseline_login_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxxhdpi-v24_nav_header_main.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi-v24\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xhdpi_rollerskate.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xhdpi\\rollerskate.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-xxhdpi_level_5.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxhdpi\\level_5.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable-mdpi_bike.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-mdpi\\bike.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_popup_sync.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable\\ic_popup_sync.xml"
     }
 ]
