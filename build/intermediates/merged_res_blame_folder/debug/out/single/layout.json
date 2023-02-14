@@ -16,12 +16,12 @@
         "source": "com.example.wildproject.app-main-43:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-40:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-40:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-40:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-mergeDebugResources-40:\\layout\\activity_terms.xml",

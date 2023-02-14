@@ -16,10 +16,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyBsf0qnzxvGg3cHLzAl1lHdlNjiO_dQBd8" />
-
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
@@ -54,6 +50,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.WildProject"
         android:usesCleartextTraffic="true" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsf0qnzxvGg3cHLzAl1lHdlNjiO_dQBd8" />
+
         <activity
             android:name="com.example.wildproject.RecordActivity"
             android:exported="false" >

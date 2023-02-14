@@ -292,12 +292,12 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\drawable-xxxhdpi\\skateboarding.xml"
     },
     {
-        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\xml\\data_extraction_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-43:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",

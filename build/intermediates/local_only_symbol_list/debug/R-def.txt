@@ -140,7 +140,6 @@ id fbCamera
 id fbFinalPicture
 id fbHome
 id fbShareRun
-id fragmentMap
 id ivBike
 id ivClosePopUp
 id ivCurrentLevel
@@ -235,6 +234,7 @@ id lyUnevennessDataRun
 id lyUnevennessRun
 id lyWindow
 id lysbSoftMusic
+id map
 id menu_secundario
 id menu_secundario_supocion
 id nav_header
@@ -244,7 +244,6 @@ id nav_item_offer
 id nav_item_premiun
 id nav_item_record
 id nav_item_signout
-id nav_view
 id npChallengeDistance
 id npChallengeDurationHH
 id npChallengeDurationMM

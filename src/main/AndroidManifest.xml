@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -21,6 +22,7 @@
         android:theme="@style/Theme.WildProject"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
             android:name=".RecordActivity"
             android:exported="false">
@@ -65,7 +67,5 @@
                 android:value="" />
         </activity>
     </application>
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="${MAPS_API_KEY}" />
+
 </manifest>

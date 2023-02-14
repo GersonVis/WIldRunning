@@ -3160,7 +3160,6 @@ int id fixed 0x7f08010a
 int id flip 0x7f08010b
 int id floating 0x7f08010c
 int id forever 0x7f08010d
-int id fragmentMap 0x7f08010e
 int id fragment_container_view_tag 0x7f08010f
 int id fragment_phone 0x7f080110
 int id fragment_register_email 0x7f080111
@@ -3311,6 +3310,7 @@ int id lyUnevennessRun 0x7f0801a1
 int id lyWindow 0x7f0801a2
 int id lysbSoftMusic 0x7f0801a3
 int id main_tos_and_pp 0x7f0801a4
+int id map 0x7f08033d
 int id marquee 0x7f0801a5
 int id masked 0x7f0801a6
 int id match_constraint 0x7f0801a7
@@ -3381,7 +3381,6 @@ int id nav_item_offer 0x7f0801e7
 int id nav_item_premiun 0x7f0801e8
 int id nav_item_record 0x7f0801e9
 int id nav_item_signout 0x7f0801ea
-int id nav_view 0x7f0801eb
 int id navigation_bar_item_active_indicator_view 0x7f0801ec
 int id navigation_bar_item_icon_container 0x7f0801ed
 int id navigation_bar_item_icon_view 0x7f0801ee

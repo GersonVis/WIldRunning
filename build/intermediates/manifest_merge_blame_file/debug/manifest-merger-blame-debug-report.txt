@@ -11,174 +11,175 @@
 9-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-11-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:5-81
-11-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:22-78
+11-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:5-81
+11-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:22-78
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:22-78
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:8:5-67
-13-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:8:22-64
+13-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:5-67
+13-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:22-64
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:5-79
-14-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:22-76
+14-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:10:5-79
+14-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:10:22-76
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:5-81
-15-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:22-78
+15-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:5-81
+15-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:22-78
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:11:5-79
-16-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:11:22-76
+16-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:5-79
+16-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:22-76
 17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-17-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:5-85
-17-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:22-82
+17-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:5-85
+17-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:22-82
 18
-19    <meta-data
-20        android:name="com.google.android.geo.API_KEY"
-20-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:69:9-54
-21        android:value="AIzaSyBsf0qnzxvGg3cHLzAl1lHdlNjiO_dQBd8" />
-21-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:70:9-40
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
 22
-23    <uses-feature
-23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
-24        android:glEsVersion="0x00020000"
-24-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
-25        android:required="true" />
-25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
-26
-27    <queries>
-27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+23    <queries>
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+24
+25        <!-- Needs to be explicitly declared on Android R+ -->
+26        <package android:name="com.google.android.apps.maps" />
+26-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+26-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+27    </queries>
 28
-29        <!-- Needs to be explicitly declared on Android R+ -->
-30        <package android:name="com.google.android.apps.maps" />
-30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
-31    </queries>
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
+29-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:22-65
+30    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+30-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+30-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+31-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+31-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
 32
-33    <uses-permission android:name="android.permission.WAKE_LOCK" />
-33-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
-33-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:22-65
-34    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-34-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
-34-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
-35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-35-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
-35-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+33    <permission
+33-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.wildproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 36
-37    <permission
-37-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-38        android:name="com.example.wildproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-38-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-39        android:protectionLevel="signature" />
-39-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-40
-41    <uses-permission android:name="com.example.wildproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-41-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-41-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-42
-43    <application
-43-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:5-67:19
-44        android:allowBackup="true"
-44-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:14:9-35
-45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-45-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-46        android:dataExtractionRules="@xml/data_extraction_rules"
-46-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:15:9-65
-47        android:debuggable="true"
-48        android:extractNativeLibs="false"
-49        android:fullBackupContent="@xml/backup_rules"
-49-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:16:9-54
-50        android:icon="@mipmap/ic_launcher"
-50-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:17:9-43
-51        android:label="@string/app_name"
-51-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:18:9-41
-52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:19:9-54
-53        android:supportsRtl="true"
-53-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:20:9-35
-54        android:testOnly="true"
-55        android:theme="@style/Theme.WildProject"
-55-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:21:9-49
-56        android:usesCleartextTraffic="true" >
-56-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:22:9-44
+37    <uses-permission android:name="com.example.wildproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+38
+39    <application
+39-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:14:5-69:19
+40        android:allowBackup="true"
+40-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:15:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+42        android:dataExtractionRules="@xml/data_extraction_rules"
+42-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:16:9-65
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:fullBackupContent="@xml/backup_rules"
+45-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:17:9-54
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:18:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:19:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:20:9-54
+49        android:supportsRtl="true"
+49-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:21:9-35
+50        android:testOnly="true"
+51        android:theme="@style/Theme.WildProject"
+51-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:22:9-49
+52        android:usesCleartextTraffic="true" >
+52-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:23:9-44
+53        <meta-data
+53-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:25:9-123
+54            android:name="com.google.android.geo.API_KEY"
+54-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:25:20-65
+55            android:value="AIzaSyBsf0qnzxvGg3cHLzAl1lHdlNjiO_dQBd8" />
+55-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:25:66-121
+56
 57        <activity
-57-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:24:9-30:20
+57-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:26:9-32:20
 58            android:name="com.example.wildproject.RecordActivity"
-58-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:25:13-43
+58-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-43
 59            android:exported="false" >
-59-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:26:13-37
+59-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:13-37
 60            <meta-data
-60-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-29:36
+60-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:13-31:36
 61                android:name="android.app.lib_name"
-61-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:17-52
+61-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:17-52
 62                android:value="" />
-62-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:17-33
+62-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:17-33
 63        </activity>
 64        <activity
-64-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:9-37:20
+64-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:33:9-39:20
 65            android:name="com.example.wildproject.ForgotPasswordActivity"
-65-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:32:13-51
+65-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:34:13-51
 66            android:exported="false" >
-66-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:33:13-37
+66-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:35:13-37
 67            <meta-data
-67-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-29:36
+67-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:13-31:36
 68                android:name="android.app.lib_name"
-68-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:17-52
+68-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:17-52
 69                android:value="" />
-69-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:17-33
+69-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:17-33
 70        </activity>
 71        <activity
-71-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:38:9-44:20
+71-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:40:9-46:20
 72            android:name="com.example.wildproject.TermsActivity"
-72-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:39:13-42
+72-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:41:13-42
 73            android:exported="false" >
-73-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:40:13-37
+73-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:42:13-37
 74            <meta-data
-74-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-29:36
+74-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:13-31:36
 75                android:name="android.app.lib_name"
-75-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:17-52
+75-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:17-52
 76                android:value="" />
-76-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:17-33
+76-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:17-33
 77        </activity>
 78        <activity
-78-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:45:9-58:20
+78-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:47:9-60:20
 79            android:name="com.example.wildproject.LoginActivity"
-79-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:46:13-42
+79-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:48:13-42
 80            android:exported="true"
-80-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:47:13-36
+80-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:49:13-36
 81            android:screenOrientation="portrait" >
-81-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:48:13-49
+81-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:50:13-49
 82            <meta-data
-82-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-29:36
+82-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:13-31:36
 83                android:name="android.app.lib_name"
-83-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:17-52
+83-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:17-52
 84                android:value="" />
-84-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:17-33
+84-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:17-33
 85
 86            <intent-filter>
-86-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:53:13-57:29
+86-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:55:13-59:29
 87                <action android:name="android.intent.action.MAIN" />
-87-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:54:17-69
-87-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:54:25-66
+87-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:17-69
+87-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:25-66
 88
 89                <category android:name="android.intent.category.LAUNCHER" />
-89-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:17-77
-89-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:27-74
+89-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:58:17-77
+89-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:58:27-74
 90            </intent-filter>
 91        </activity>
 92        <activity
-92-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:59:9-66:20
+92-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:61:9-68:20
 93            android:name="com.example.wildproject.MainActivity"
-93-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:60:13-41
+93-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:62:13-41
 94            android:exported="true"
-94-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:61:13-36
+94-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:63:13-36
 95            android:screenOrientation="portrait" >
-95-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:62:13-49
+95-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:64:13-49
 96            <meta-data
-96-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:13-29:36
+96-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:13-31:36
 97                android:name="android.app.lib_name"
-97-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:17-52
+97-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:17-52
 98                android:value="" />
-98-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:17-33
+98-->C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:17-33
 99        </activity>
 100
 101        <meta-data

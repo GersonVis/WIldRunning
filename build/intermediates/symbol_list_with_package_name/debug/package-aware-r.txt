@@ -3161,7 +3161,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragmentMap
 id fragment_container_view_tag
 id fragment_phone
 id fragment_register_email
@@ -3312,6 +3311,7 @@ id lyUnevennessRun
 id lyWindow
 id lysbSoftMusic
 id main_tos_and_pp
+id map
 id marquee
 id masked
 id match_constraint
@@ -3382,7 +3382,6 @@ id nav_item_offer
 id nav_item_premiun
 id nav_item_record
 id nav_item_signout
-id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
