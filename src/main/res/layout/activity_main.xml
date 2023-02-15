@@ -461,13 +461,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="420dp"
                                 tools:context=".MainActivity"
-                                map:mapType="normal"
-                                map:uiCompass="false"
-                                map:uiRotateGestures="true"
-                                map:uiScrollGestures="true"
-                                map:uiTiltGestures="true"
-                                map:uiZoomControls="true"
-                                map:uiZoomGestures="true"/>
+
+                                tools:layout="@layout/activity_record" />
 
 
                             <TextView

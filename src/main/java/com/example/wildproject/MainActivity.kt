@@ -8,7 +8,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
-import android.location.LocationRequest
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -16,12 +15,7 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
-import android.widget.LinearLayout
-import android.widget.LinearLayout.LayoutParams
-import android.widget.NumberPicker
-import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +25,9 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.wildproject.Constants.INTERVAL_LOCATION
+import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_BIKE
+import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_ROLLERSKATE
+import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_RUNNING
 import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.Utility.animateViewofFloat
 import com.example.wildproject.Utility.getFormattedStopWatch
@@ -41,13 +38,13 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
-import com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolylineOptions
+import com.google.android.gms.maps.model.RoundCap
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import me.tankery.lib.circularseekbar.CircularSeekBar
@@ -57,15 +54,18 @@ import java.text.DecimalFormat
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener{
     companion object {
+        lateinit var mainContext: Context
         val REQUIRED_PERMISSION_GPS = arrayOf(
             android.Manifest.permission.ACCESS_COARSE_LOCATION,
             android.Manifest.permission.ACCESS_FINE_LOCATION
         )
     }
+    private lateinit var listPoints: Iterable<LatLng>
 
     private lateinit var mMap: GoogleMap
 
     private var PERMISSION_ID: Int = 62
+    private var LOCATIN_PERMISSION_REQ_CODE = 1000
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawer: DrawerLayout
     private var challengeDistance: Float = 0f
@@ -86,16 +86,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
 
+    private var minAltitude: Double? = null
+    private var maxAltitude: Double? = null
+    private var minLatitude: Double? = null
+    private var maxLatitude: Double? = null
+    private var minLongitude: Double? = null
+    private var maxLongitude: Double? = null
+
+    private lateinit var sportSelected: String
+    private var LIMIT_DISTANCE_ACCEPTED: Double = 0.0
+
+    private fun createPolylines(listPoints: Iterable<LatLng>):Unit{
+            val polyLinesOptions = PolylineOptions()
+                .width(25f)
+                .color(ContextCompat.getColor(this, R.color.salmon_dark))
+                .addAll(listPoints)
+            var polyline = mMap.addPolyline(polyLinesOptions)
+                polyline.startCap = RoundCap()
+
+    }
+
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-       /* val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(
-            MarkerOptions()
-            .position(sydney)
-            .title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))*/
+        /* val sydney = LatLng(-34.0, 151.0)
+         mMap.addMarker(
+             MarkerOptions()
+             .position(sydney)
+             .title("Marker in Sydney"))
+         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))*/
         googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         mMap.setOnMyLocationButtonClickListener(this)
         mMap.setOnMapLongClickListener { mapCentered = false }
@@ -103,14 +123,94 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         mMap.setOnMapClickListener { mapCentered = false }
 
         managedLocation()
+        mLocationCallBack
         centerMap(init_lt, init_ln)
     }
+
     private var mapCentered: Boolean = true
 
-    private fun centerMap(lt: Double, ln: Double):Unit{
-            val posMap = LatLng(lt, ln)
+    private fun centerMap(lt: Double, ln: Double): Unit {
+
+        val posMap = LatLng(lt, ln)
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(posMap, 16f), 1000, null)
 
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun enabledMyLocation(): Unit {
+        if (!::mMap.isInitialized) return
+        if (allPermissionsGrantedGPS()) {
+            mMap.isMyLocationEnabled = true
+        } else requestPermissionLocation()
+    }
+
+    fun selectBike(v: View) {
+        if (timeInSeconds.toInt() == 0) selectSport("Bike")
+    }
+
+    fun selectRollerSkate(v: View) {
+        if (timeInSeconds.toInt() == 0) selectSport("RollerSkate")
+    }
+
+    fun selectRunning(v: View) {
+        if (timeInSeconds.toInt() == 0) selectSport("Running")
+    }
+
+    private fun selectSport(sport: String){
+
+        sportSelected = sport
+
+        var lySportBike = findViewById<LinearLayout>(R.id.lySportBike)
+        var lySportRollerSkate = findViewById<LinearLayout>(R.id.lySportRollerSkate)
+        var lySportRunning = findViewById<LinearLayout>(R.id.lySportRunning)
+
+        when (sport){
+            "Bike"->{
+                LIMIT_DISTANCE_ACCEPTED = LIMIT_DISTANCE_ACCEPTED_BIKE
+
+                lySportBike.setBackgroundColor(ContextCompat.getColor(this, R.color.orange))
+                lySportRollerSkate.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+                lySportRunning.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+            }
+            "RollerSkate"->{
+                LIMIT_DISTANCE_ACCEPTED = LIMIT_DISTANCE_ACCEPTED_ROLLERSKATE
+
+                lySportBike.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+                lySportRollerSkate.setBackgroundColor(ContextCompat.getColor(this, R.color.orange))
+                lySportRunning.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+            }
+            "Running"->{
+                LIMIT_DISTANCE_ACCEPTED = LIMIT_DISTANCE_ACCEPTED_RUNNING
+
+                lySportBike.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+                lySportRollerSkate.setBackgroundColor(ContextCompat.getColor(this, R.color.gray_medium))
+                lySportRunning.setBackgroundColor(ContextCompat.getColor(this, R.color.orange))
+            }
+
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        when (requestCode) {
+            LOCATIN_PERMISSION_REQ_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    binding.lyOpenerButton.isEnabled = true
+                } else {
+                    if (binding.lyMap.height > 0) {
+                        binding.lyFragmentMap.translationY = -300f
+                        binding.ivOpenClose.rotation = 0f
+                    }
+                    binding.lyOpenerButton.isEnabled = false
+                }
+
+            }
+        }
     }
 
     private var chronometer: Runnable = object : Runnable {
@@ -149,23 +249,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     @SuppressLint("MissingPermission")
     private fun managedLocation(): Unit {
         if (checkPermission()) {
+            fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
             fusedLocationClient.lastLocation.addOnSuccessListener { location ->
                 requestNewLocationData()
             }
         } else requestPermissionLocation()
     }
     @SuppressLint("MissingPermission")
-     fun requestNewLocationData(): Unit {
-         var mLocationRequest = com.google.android.gms.location.LocationRequest()
-         mLocationRequest.priority = com.google.android.gms.location.LocationRequest.CONTENTS_FILE_DESCRIPTOR
-         mLocationRequest.interval = 0
-         mLocationRequest.fastestInterval = 0
-         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+    fun requestNewLocationData(): Unit {
+        var mLocationRequest = com.google.android.gms.location.LocationRequest()
+        mLocationRequest.priority =
+            com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCURACY
+        mLocationRequest.interval = 0
+        mLocationRequest.fastestInterval = 0
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-         fusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallBack, Looper.myLooper())
+        fusedLocationClient.requestLocationUpdates(
+            mLocationRequest,
+            mLocationCallBack,
+            Looper.myLooper()
+        )
 
     }
-    private var flagSavedLocation: Boolean = false
+
+    private var
+            flagSavedLocation: Boolean = false
     private var latitude: Double = 0.0
     private var longitude: Double = 0.0
     private var init_lt: Double = 0.0
@@ -190,9 +298,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         var new_latitude: Double = location.latitude
         var new_longitude: Double = location.longitude
 
-        if (flagSavedLocation){
-            if (timeInSeconds >= INTERVAL_LOCATION){
+        if (flagSavedLocation) {
+            if (timeInSeconds >= INTERVAL_LOCATION) {
                 var distanceInterval = calculateDistance(new_latitude, new_longitude)
+
+                var newPos = LatLng(new_latitude,new_longitude)
+                (listPoints as ArrayList<LatLng>).add(newPos)
 
                 updateSpeeds(distanceInterval)
                 refreshInterfaceData()
@@ -200,6 +311,28 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         latitude = new_latitude
         longitude = new_longitude
+
+        if (mapCentered) centerMap(latitude, longitude)
+
+        if (minLatitude == null) {
+            minLatitude = latitude
+            maxLatitude = latitude
+            minLongitude = longitude
+            maxLongitude = longitude
+        }
+        if (latitude < minLatitude!!) minLatitude = latitude
+        if (latitude > maxLatitude!!) maxLatitude = latitude
+        if (longitude < minLongitude!!) minLongitude = longitude
+        if (longitude > maxLongitude!!) maxLongitude = longitude
+
+        if (location.hasAltitude()) {
+            if (maxAltitude == null) {
+                maxAltitude = location.altitude
+                minAltitude = location.altitude
+            }
+            if (location.latitude > maxAltitude!!) maxAltitude = location.altitude
+            if (location.latitude < minAltitude!!) minAltitude = location.altitude
+        }
     }
     private fun updateSpeeds(d: Double) {
         //la distancia se calcula en km, asi que la pasamos a metros para el calculo de velocidadr
@@ -320,6 +453,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        mainContext = this
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initToolBar()
@@ -673,45 +807,45 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }*/
     }
     private fun initMap():Unit{
+        listPoints = arrayListOf()
+        (listPoints as ArrayList<LatLng>).clear()
+
         createMapFragment()
-        binding.lyOpenerButton.isEnabled = allPermissionGranted()
+        binding.lyOpenerButton.isEnabled = allPermissionsGrantedGPS()
     }
     fun changeTypeMap(v: View){
         if(mMap.mapType == GoogleMap.MAP_TYPE_HYBRID){
             mMap.mapType == GoogleMap.MAP_TYPE_NORMAL
             binding.ivTypeMap.setImageResource(R.drawable.map_type_hybrid)
-        }else{
+        } else {
             mMap.mapType == GoogleMap.MAP_TYPE_HYBRID
             binding.ivTypeMap.setImageResource(R.drawable.map_type_normal)
         }
     }
-    fun callCenterMap(v: View){
+
+    fun callCenterMap(v: View) {
         mapCentered = true
-        if(latitude == 0.0 )centerMap(init_lt, init_ln)
+        if (latitude == 0.0) centerMap(init_lt, init_ln)
         else centerMap(latitude, longitude)
     }
-     fun callShowHideMap(v: View):Unit{
-        if(allPermissionGranted()){
-            if(binding.lyMap.height==0){
-                var params: LinearLayout.LayoutParams = binding.lyMap.layoutParams as LayoutParams
-                params.height = 1157
-                binding.lyMap.layoutParams = params
 
-                ObjectAnimator.ofFloat(binding.lyFragmentMap, "translationY", 300f)
-                    .apply {
-                        duration= 50
-                        start()
-                    }
-                binding.ivOpenClose.setRotation(100f)
-            }else{
-                ObjectAnimator.ofFloat(binding.lyFragmentMap, "translationY", -300f).
-                apply {
-                    duration = 30
-                    start()
-                }
+    fun callShowHideMap(v: View) {
+        if (allPermissionsGrantedGPS()) {
+            var lyMap = findViewById<LinearLayout>(R.id.lyMap)
+            var lyFragmentMap = findViewById<LinearLayout>(R.id.lyFragmentMap)
+            var ivOpenClose = findViewById<ImageView>(R.id.ivOpenClose)
+
+            if (lyMap.height == 0) {
+                setHeightLinearLayout(lyMap, 1157)
+                animateViewofFloat(lyFragmentMap, "translationY", 0f, 0)
+                ivOpenClose.setRotation(180f)
+            } else {
+                setHeightLinearLayout(lyMap, 0)
+                lyFragmentMap.translationY = -300f
+                ivOpenClose.setRotation(0f)
             }
-        }else requestPermissionLocation()
 
+        } else requestPermissionLocation()
     }
     private fun createMapFragment():Unit{
         val mapFragment = supportFragmentManager
@@ -761,6 +895,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun resetVariablesRun(): Unit {
         timeInSeconds = 0
         rounds = 1
+
+        timeInSeconds = 0
+        rounds = 1
+
+
+        distance = 0.0
+        maxSpeed = 0.0
+        avgSpeed = 0.0
+
+        minAltitude = null
+        maxAltitude = null
+        minLatitude = null
+        maxLatitude = null
+        minLongitude = null
+        maxLongitude = null
+
+        (listPoints as ArrayList<LatLng>).clear()
+
+        challengeDistance = 0f
+        challengeDuration = 0
+
+        activatedGPS = true
+        flagSavedLocation = false
+
         initStopWatch()
     }
 
@@ -776,13 +934,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun initPermissionGPS(): Unit {
-        if (allPermissionGranted()) {
+        if (allPermissionsGrantedGPS()) {
+
             fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         } else requestPermissionLocation()
 
     }
 
-    private fun allPermissionGranted() = REQUIRED_PERMISSION_GPS.all {
+    private fun allPermissionsGrantedGPS() = REQUIRED_PERMISSION_GPS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
     }
 
@@ -904,37 +1063,41 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
-    private fun initNavigationView(): Unit {
-        var navigatioView: NavigationView = findViewById(R.id.nav_view)
-        navigatioView.setNavigationItemSelectedListener(this)
+    private fun initNavigationView() {
+        var navigationView: NavigationView = findViewById(R.id.nav_view)
+        navigationView.setNavigationItemSelectedListener(this)
 
         var headerView: View =
-            LayoutInflater.from(this).inflate(R.layout.nav_header_main, navigatioView, false)
-        navigatioView.removeHeaderView(headerView)
-        navigatioView.addHeaderView(headerView)
+            LayoutInflater.from(this).inflate(R.layout.nav_header_main, navigationView, false)
+        navigationView.removeHeaderView(headerView)
+        navigationView.addHeaderView(headerView)
 
         var tvUser: TextView = headerView.findViewById(R.id.tvUser)
         tvUser.text = useremail
     }
 
     override fun onBackPressed() {
-        // super.onBackPressed()
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        //super.onBackPressed()
+
+        if (drawer.isDrawerOpen(GravityCompat.START))
             drawer.closeDrawer(GravityCompat.START)
-        } else {
+        else
             signOut()
-        }
+
     }
 
-    private fun initToolBar(): Unit {
-        var toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)
+    private fun initToolBar() {
+        val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
+
         drawer = findViewById(R.id.drawer_layout)
         val toggle = ActionBarDrawerToggle(
             this, drawer, toolbar, R.string.bar_title,
             R.string.navigation_drawer_close
         )
+
         drawer.addDrawerListener(toggle)
+
         toggle.syncState()
     }
 
