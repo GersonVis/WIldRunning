@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
@@ -28,6 +29,25 @@ import com.example.wildproject.Constants.INTERVAL_LOCATION
 import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_BIKE
 import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_ROLLERSKATE
 import com.example.wildproject.Constants.LIMIT_DISTANCE_ACCEPTED_RUNNING
+import com.example.wildproject.Constants.key_challengeAutofinish
+import com.example.wildproject.Constants.key_challengeDistance
+import com.example.wildproject.Constants.key_challengeDurationHH
+import com.example.wildproject.Constants.key_challengeDurationMM
+import com.example.wildproject.Constants.key_challengeDurationSS
+import com.example.wildproject.Constants.key_challengeNofify
+import com.example.wildproject.Constants.key_intervalDuration
+import com.example.wildproject.Constants.key_maxCircularSeekBar
+import com.example.wildproject.Constants.key_modeChallenge
+import com.example.wildproject.Constants.key_modeChallengeDistance
+import com.example.wildproject.Constants.key_modeChallengeDuration
+import com.example.wildproject.Constants.key_modeInterval
+import com.example.wildproject.Constants.key_progressCircularSeekBar
+import com.example.wildproject.Constants.key_provider
+import com.example.wildproject.Constants.key_runningTime
+import com.example.wildproject.Constants.key_selectedSport
+import com.example.wildproject.Constants.key_userApp
+import com.example.wildproject.Constants.key_walkingTime
+import com.example.wildproject.LoginActivity.Companion.providerSession
 import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.Utility.animateViewofFloat
 import com.example.wildproject.Utility.getFormattedStopWatch
@@ -95,6 +115,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private lateinit var sportSelected: String
     private var LIMIT_DISTANCE_ACCEPTED: Double = 0.0
+
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var editor: SharedPreferences.Editor
 
     private fun createPolylines(listPoints: Iterable<LatLng>):Unit{
             val polyLinesOptions = PolylineOptions()
@@ -805,6 +828,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         /*binding.lyOpenerButton.setOnClickListener {
             callShowHideMap()
         }*/
+        initPreferences()
+    }
+    private fun initPreferences():Unit{
+        sharedPreferences = getSharedPreferences("sharedPreferences", MODE_PRIVATE)
+        editor = sharedPreferences.edit()
     }
     private fun initMap():Unit{
         listPoints = arrayListOf()
@@ -853,9 +881,42 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         mapFragment.getMapAsync(this)
     }
     private fun resetClicked():Unit{
+
+        savePreferences()
+
         resetVariablesRun()
         resetTimeClicked()
         resetInterface()
+    }
+    private fun savePreferences():Unit{
+        editor.clear()
+        editor.apply{
+            putString(key_userApp, useremail)
+            putString(key_provider, providerSession)
+
+            putString(key_selectedSport, sportSelected)
+
+            putBoolean(key_modeInterval, binding.swIntervalMode.isChecked)
+            putInt(key_intervalDuration, binding.npDurationInterval.value)
+            putFloat(key_progressCircularSeekBar, binding.csbRunWalk.progress)
+            putFloat(key_maxCircularSeekBar, binding.csbRunWalk.max)
+            putString(key_runningTime, binding.tvRunningTime.text.toString())
+            putString(key_walkingTime, binding.tvWalkingTime.text.toString())
+
+            putBoolean(key_modeChallenge, binding.swChallenges.isChecked)
+            putBoolean(key_modeChallengeDuration, !(challengeDuration == 0))
+            putInt(key_challengeDurationHH, binding.npChallengeDurationHH.value)
+            putInt(key_challengeDurationMM, binding.npChallengeDurationMM.value)
+            putInt(key_challengeDurationSS, binding.npChallengeDurationSS.value)
+            putBoolean(key_modeChallengeDistance, !(challengeDistance == 0f))
+            putInt(key_challengeDistance, binding.npChallengeDistance.value)
+
+
+            putBoolean(key_challengeNofify, binding.cbNotify.isChecked)
+            putBoolean(key_challengeAutofinish, binding.cbAutoFinish.isChecked)
+
+
+        }.apply()
     }
     private fun resetInterface():Unit{
         binding.fbCamera.isVisible = false
