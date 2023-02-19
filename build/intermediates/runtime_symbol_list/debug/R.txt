@@ -4012,6 +4012,8 @@ int string acept 0x7f110026
 int string aceptActivationGps 0x7f110027
 int string alertActivationGPSDescription 0x7f110028
 int string alertActivationGPSTitle 0x7f110029
+int string alertClearPreferencesDescription 0x7f11015a
+int string alertClearPreferencesTitle 0x7f11015b
 int string androidx_startup 0x7f11002a
 int string app_name 0x7f11002b
 int string appbar_scrolling_view_behavior 0x7f11002c

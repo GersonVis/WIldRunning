@@ -68,6 +68,8 @@
     <string name="aceptActivationGps">Aceptar</string>
     <string name="alertActivationGPSDescription">Gracias por activar el gps</string>
     <string name="alertActivationGPSTitle">Activa el gps</string>
+    <string name="alertClearPreferencesDescription">Borraremos los ajustes de volumen y carrera (modo y tiempo de intervalos) de tu útlima carrera, vamos que tampoco pasa na</string>
+    <string name="alertClearPreferencesTitle">¿Quieres borrar tus preferencias de carrera?</string>
     <string name="app_name">WildProject</string>
     <string name="bar_title">WildRunning</string>
     <string name="bar_title2">Alegría Macarena</string>

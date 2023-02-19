@@ -4013,6 +4013,8 @@ string acept
 string aceptActivationGps
 string alertActivationGPSDescription
 string alertActivationGPSTitle
+string alertClearPreferencesDescription
+string alertClearPreferencesTitle
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior

@@ -402,6 +402,8 @@ string acept
 string aceptActivationGps
 string alertActivationGPSDescription
 string alertActivationGPSTitle
+string alertClearPreferencesDescription
+string alertClearPreferencesTitle
 string app_name
 string bar_title
 string bar_title2

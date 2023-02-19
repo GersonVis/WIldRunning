@@ -92,4 +92,6 @@
     <string name="alertActivationGPSDescription">Gracias por activar el gps</string>
     <string name="aceptActivationGps">Aceptar</string>
     <string name="ignoreActivationGPS">No activaste GPS</string>
+    <string name="alertClearPreferencesTitle">¿Quieres borrar tus preferencias de carrera?</string>
+    <string name="alertClearPreferencesDescription">Borraremos los ajustes de volumen y carrera (modo y tiempo de intervalos) de tu útlima carrera, vamos que tampoco pasa na</string>
 </resources>
