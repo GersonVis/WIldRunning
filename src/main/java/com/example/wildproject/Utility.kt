@@ -1,11 +1,24 @@
 package com.example.wildproject
 
 import android.animation.ObjectAnimator
+import android.content.ContentValues
+import android.graphics.Color
+import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.LinearLayout.LayoutParams
+import com.example.wildproject.LoginActivity.Companion.useremail
+import com.example.wildproject.MainActivity.Companion.activatedGPS
+import com.example.wildproject.MainActivity.Companion.totalsBike
+import com.example.wildproject.MainActivity.Companion.totalsRollerSkate
+import com.example.wildproject.MainActivity.Companion.totalsRunning
+import com.example.wildproject.MainActivity.Companion.totalsSelectedSport
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import java.util.concurrent.TimeUnit
-import kotlin.time.DurationUnit
+
+
+var totalsChecked: Int = 0
 
 object Utility {
 
@@ -86,21 +99,179 @@ object Utility {
         //365 dias = 31536000s
 
         var years: Int = 0
-        while (seconds >=  31536000) { years++; seconds-=31536000; }
+        while (seconds >= 31536000) {
+            years++; seconds -= 31536000; }
 
         var months: Int = 0
-        while (seconds >=  2592000) { months++; seconds-=2592000; }
+        while (seconds >= 2592000) {
+            months++; seconds -= 2592000; }
 
         var days: Int = 0
-        while (seconds >=  86400) { days++; seconds-=86400; }
+        while (seconds >= 86400) {
+            days++; seconds -= 86400; }
 
         if (years > 0) total += "${years}y "
         if (months > 0) total += "${months}m "
         if (days > 0) total += "${days}d "
 
-        total += getFormattedStopWatch(seconds*1000)
+        total += getFormattedStopWatch(seconds * 1000)
 
         return total
     }
 
+    fun deleteRunAndLinkedData(idRun: String, sport: String, ly: LinearLayout, cr: Runs) {
+
+        if (activatedGPS) deleteLocations(idRun, useremail)
+        //si habia fotos, borramos todas las fotos
+        updateTotals(cr)
+        checkRecords(cr, sport, useremail)
+        deleteRun(idRun, sport, ly)
+    }
+
+    private fun updateTotals(cr: Runs) {
+        totalsSelectedSport.totalDistance = totalsSelectedSport.totalDistance!! - cr.distance!!
+        totalsSelectedSport.totalRuns = totalsSelectedSport.totalRuns!! - 1
+        totalsSelectedSport.totalTime =
+            totalsSelectedSport.totalTime!! - getSecFromWatch(cr.duration!!)
+    }
+
+    private fun deleteRun(idRun: String, sport: String, ly: LinearLayout) {
+        var dbRun = FirebaseFirestore.getInstance()
+        dbRun.collection("runs$sport").document(idRun)
+            .delete()
+            .addOnSuccessListener {
+                Snackbar.make(ly, "Registro Borrado", Snackbar.LENGTH_LONG).setAction("OK") {
+                    ly.setBackgroundColor(Color.CYAN)
+                }.show()
+            }
+            .addOnFailureListener {
+                Snackbar.make(ly, "Error al borrar el registro", Snackbar.LENGTH_LONG)
+                    .setAction("OK") {
+                        ly.setBackgroundColor(Color.CYAN)
+                    }.show()
+            }
+    }
+}
+
+private fun checkRecords(cr: Runs, sport: String, user: String) {
+
+    totalsChecked = 0
+
+    checkDistanceRecord(cr, sport, user)
+    checkAvgSpeedRecord(cr, sport, user)
+    checkMaxSpeedRecord(cr, sport, user)
+}
+
+private fun checkAvgSpeedRecord(cr: Runs, sport: String, user: String) {
+    if (cr.avgSpeed!! == totalsSelectedSport.recordAvgSpeed) {
+        var dbRecords = FirebaseFirestore.getInstance()
+        dbRecords.collection("runs$sport")
+            .orderBy("avgSpeed", Query.Direction.DESCENDING)
+            .whereEqualTo("user", user)
+            .get()
+            .addOnSuccessListener { documents ->
+
+                if (documents.size() == 1) totalsSelectedSport.recordAvgSpeed = 0.0
+                else totalsSelectedSport.recordAvgSpeed =
+                    documents.documents[1].get("avgSpeed").toString().toDouble()
+
+                var collection = "totals$sport"
+                var dbUpdateTotals = FirebaseFirestore.getInstance()
+                dbUpdateTotals.collection(collection).document(user)
+                    .update("recordAvgSpeed", totalsSelectedSport.recordAvgSpeed)
+
+                totalsChecked++
+                if (totalsChecked == 3) refreshTotalsSport(sport)
+
+            }
+            .addOnFailureListener { exception ->
+                Log.w(ContentValues.TAG, "Error getting documents WHERE EQUAL TO: ", exception)
+            }
+    }
+}
+
+private fun checkMaxSpeedRecord(cr: Runs, sport: String, user: String) {
+    if (cr.maxSpeed!! == totalsSelectedSport.recordSpeed) {
+        var dbRecords = FirebaseFirestore.getInstance()
+        dbRecords.collection("runs$sport")
+            .orderBy("maxSpeed", Query.Direction.DESCENDING)
+            .whereEqualTo("user", user)
+            .get()
+            .addOnSuccessListener { documents ->
+
+                if (documents.size() == 1) totalsSelectedSport.recordSpeed = 0.0
+                else totalsSelectedSport.recordSpeed =
+                    documents.documents[1].get("maxSpeed").toString().toDouble()
+
+                var collection = "totals$sport"
+                var dbUpdateTotals = FirebaseFirestore.getInstance()
+                dbUpdateTotals.collection(collection).document(user)
+                    .update("recordSpeed", totalsSelectedSport.recordSpeed)
+
+                totalsChecked++
+                if (totalsChecked == 3) refreshTotalsSport(sport)
+
+            }
+            .addOnFailureListener { exception ->
+                Log.w(ContentValues.TAG, "Error getting documents WHERE EQUAL TO: ", exception)
+            }
+    }
+}
+
+private fun checkDistanceRecord(cr: Runs, sport: String, user: String) {
+    if (cr.distance!! == totalsSelectedSport.recordDistance) {
+        var dbRecords = FirebaseFirestore.getInstance()
+        dbRecords.collection("runs$sport")
+            .orderBy("distance", Query.Direction.DESCENDING)
+            .whereEqualTo("user", user)
+            .get()
+            .addOnSuccessListener { documents ->
+
+                if (documents.size() == 1) totalsSelectedSport.recordDistance = 0.0
+                else totalsSelectedSport.recordDistance =
+                    documents.documents[1].get("distance").toString().toDouble()
+
+                var collection = "totals$sport"
+                var dbUpdateTotals = FirebaseFirestore.getInstance()
+                dbUpdateTotals.collection(collection).document(user)
+                    .update("recordDistance", totalsSelectedSport.recordDistance)
+
+                totalsChecked++
+                if (totalsChecked == 3) refreshTotalsSport(sport)
+
+            }
+            .addOnFailureListener { exception ->
+                Log.w(ContentValues.TAG, "Error getting documents WHERE EQUAL TO: ", exception)
+            }
+    }
+}
+
+private fun deleteLocations(idRun: String, user: String) {
+    var idLocations = idRun.subSequence(user.length, idRun.length).toString()
+
+    var dbLocations = FirebaseFirestore.getInstance()
+    dbLocations.collection("locations/$user/$idLocations")
+        .get()
+        .addOnSuccessListener { documents ->
+            for (docLocation in documents) {
+                var dbLoc = FirebaseFirestore.getInstance()
+                dbLoc.collection("locations/$user/$idLocations").document(docLocation.id)
+                    .delete()
+            }
+
+        }
+        .addOnFailureListener { exception ->
+            Log.w(ContentValues.TAG, "Error getting documents: ", exception)
+
+        }
+}
+
+private fun refreshTotalsSport(sport: String) {
+    when (sport) {
+        "Bike" -> totalsBike = totalsSelectedSport
+        "RollerSkate" -> totalsRollerSkate = totalsSelectedSport
+        "Running" -> totalsRunning = totalsSelectedSport
+    }
+
+}
 }
