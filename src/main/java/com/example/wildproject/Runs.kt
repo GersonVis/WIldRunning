@@ -9,14 +9,14 @@ data class Runs(
     var intervalMode: Boolean? = null,
     var intervalDuration: Boolean? = null,
     var runningTime: String? = null,
-    var makingTime: String? = null
+    var makingTime: String? = null,
 
     var challengeDuration: String? = null,
     var challengeDistance: String? = null,
 
     var distance: Double? = null,
     var maxSpeed: Double? = null,
-    var avgSpeed: Double? = null
+    var avgSpeed: Double? = null,
 
 
     var minAltitude: Double? = null,
@@ -27,7 +27,9 @@ data class Runs(
     var maxLongitude: Double? = null,
 
     var centerLatitude: Double ? = null,
-    var centerLongitude: Double ? null
+    var centerLongitude: Double ? =null,
+    var sport: String ? = null,
+    var activateGPS: Boolean ?= null
 
 ) {
 }
