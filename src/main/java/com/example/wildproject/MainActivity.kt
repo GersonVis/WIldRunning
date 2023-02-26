@@ -2034,7 +2034,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
     fun takePicture(v: View){
-        
+        val intent = Intent(this, Camera::class.java)
+        var inParameter = intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        inParameter.putExtra("dataRun", dateRun)
+        inParameter.putExtra("startTimeRun", startTimeRun)
+        startActivity(intent)
     }
     private fun checkMaxSpeedRecord(cr: Runs, sport: String, user: String) {
         if (cr.maxSpeed!! == totalsSelectedSport.recordSpeed) {

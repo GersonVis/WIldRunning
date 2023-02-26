@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.wildproject.app-mergeDebugResources-44:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\0c988c2b5fe10c465f34d22483785f0a\\transformed\\appcompat-1.6.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",

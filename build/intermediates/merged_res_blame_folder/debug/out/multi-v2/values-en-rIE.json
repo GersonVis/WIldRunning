@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wildproject.app-mergeDebugResources-39:/values-en-rIE/values-en-rIE.xml",
+            "outputFile": "com.example.wildproject.app-mergeDebugResources-44:/values-en-rIE/values-en-rIE.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Golfa\\.gradle\\caches\\transforms-3\\84df847cab23ed2c47444f68ce07ba2c\\transformed\\firebase-ui-auth-7.2.0\\res\\values-en-rIE\\values-en-rIE.xml",

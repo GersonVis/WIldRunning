@@ -619,6 +619,7 @@ int attr imagePanX 0x7f030224
 int attr imagePanY 0x7f030225
 int attr imageRotate 0x7f030226
 int attr imageZoom 0x7f030227
+int attr implementationMode 0x7f0304d5
 int attr indeterminateAnimationType 0x7f030228
 int attr indeterminateProgressStyle 0x7f030229
 int attr indicatorColor 0x7f03022a
@@ -994,6 +995,7 @@ int attr round 0x7f03039b
 int attr roundPercent 0x7f03039c
 int attr saturation 0x7f03039d
 int attr scaleFromTextSize 0x7f03039e
+int attr scaleType 0x7f0304d6
 int attr scopeUris 0x7f03039f
 int attr scrimAnimationDuration 0x7f0303a0
 int attr scrimBackground 0x7f0303a1
@@ -2792,8 +2794,15 @@ int drawable ic_mtrl_checked_circle 0x7f0700c2
 int drawable ic_mtrl_chip_checked_black 0x7f0700c3
 int drawable ic_mtrl_chip_checked_circle 0x7f0700c4
 int drawable ic_mtrl_chip_close_circle 0x7f0700c5
+int drawable ic_outer_circle 0x7f070128
+int drawable ic_photo 0x7f070129
 int drawable ic_popup_sync 0x7f0700c6
 int drawable ic_run 0x7f0700c7
+int drawable ic_shutter 0x7f07012a
+int drawable ic_shutter_focused 0x7f07012b
+int drawable ic_shutter_normal 0x7f07012c
+int drawable ic_shutter_pressed 0x7f07012d
+int drawable ic_switch 0x7f07012e
 int drawable level_1 0x7f0700c8
 int drawable level_2 0x7f0700c9
 int drawable level_3 0x7f0700ca
@@ -3014,6 +3023,8 @@ int id button_resend_email 0x7f080078
 int id button_sign_in 0x7f080079
 int id cache_measures 0x7f08007a
 int id callMeasure 0x7f08007b
+int id camera_capture_button 0x7f08033d
+int id camera_switch_button 0x7f08033e
 int id cancel_action 0x7f08007c
 int id cancel_button 0x7f08007d
 int id carryVelocity 0x7f08007e
@@ -3033,12 +3044,14 @@ int id checked 0x7f08008b
 int id chronometer 0x7f08008c
 int id circle_center 0x7f08008d
 int id circular 0x7f08008e
+int id clMain 0x7f08033f
 int id clear_text 0x7f08008f
 int id clip_horizontal 0x7f080090
 int id clip_vertical 0x7f080091
 int id clockwise 0x7f080092
 int id closest 0x7f080093
 int id collapseActionView 0x7f080094
+int id compatible 0x7f080340
 int id compress 0x7f080095
 int id confirm_button 0x7f080096
 int id confirmation_code 0x7f080097
@@ -3148,6 +3161,9 @@ int id fbFinalPicture 0x7f0800fe
 int id fbHome 0x7f0800ff
 int id fbShareRun 0x7f080100
 int id fill 0x7f080101
+int id fillCenter 0x7f080341
+int id fillEnd 0x7f080342
+int id fillStart 0x7f080343
 int id fill_horizontal 0x7f080102
 int id fill_vertical 0x7f080103
 int id filled 0x7f080104
@@ -3168,6 +3184,7 @@ int id frost 0x7f080112
 int id fullscreen_header 0x7f080113
 int id ghost_view 0x7f080114
 int id ghost_view_holder 0x7f080115
+int id glide_custom_view_target_tag 0x7f080344
 int id gone 0x7f080116
 int id graph 0x7f080117
 int id graph_wrap 0x7f080118
@@ -3429,9 +3446,11 @@ int id path 0x7f080217
 int id pathRelative 0x7f080218
 int id peekHeight 0x7f080219
 int id percent 0x7f08021a
+int id performance 0x7f080345
 int id phone_button 0x7f08021b
 int id phone_layout 0x7f08021c
 int id phone_number 0x7f08021d
+int id photo_view_button 0x7f080346
 int id pin 0x7f08021e
 int id position 0x7f08021f
 int id postLayout 0x7f080220
@@ -3696,6 +3715,7 @@ int id unlabeled 0x7f080322
 int id up 0x7f080323
 int id useLogo 0x7f080324
 int id vertical_only 0x7f080325
+int id viewFinder 0x7f080347
 int id view_offset_helper 0x7f080326
 int id view_transition 0x7f080327
 int id view_tree_lifecycle_owner 0x7f080328
@@ -3843,6 +3863,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_camera 0x7f0b0092
 int layout activity_forgot_password 0x7f0b001c
 int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
@@ -7082,6 +7103,9 @@ int styleable PopupWindow_android_popupAnimationStyle 1
 int styleable PopupWindow_overlapAnchor 2
 int[] styleable PopupWindowBackgroundState { 0x7f0303e0 }
 int styleable PopupWindowBackgroundState_state_above_anchor 0
+int[] styleable PreviewView { 0x7f0304d5, 0x7f0304d6 }
+int styleable PreviewView_implementationMode 0
+int styleable PreviewView_scaleType 1
 int[] styleable PropertySet { 0x010100dc, 0x0101031f, 0x7f03028a, 0x7f030333, 0x7f0304be }
 int styleable PropertySet_android_visibility 0
 int styleable PropertySet_android_alpha 1

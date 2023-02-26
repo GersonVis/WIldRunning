@@ -71,8 +71,15 @@ drawable ic_baseline_pause_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_gallery
+drawable ic_outer_circle
+drawable ic_photo
 drawable ic_popup_sync
 drawable ic_run
+drawable ic_shutter
+drawable ic_shutter_focused
+drawable ic_shutter_normal
+drawable ic_shutter_pressed
+drawable ic_switch
 drawable level_1
 drawable level_2
 drawable level_3
@@ -103,9 +110,12 @@ id btSignGoogle
 id btStart
 id btStartLabel
 id btnLogin
+id camera_capture_button
+id camera_switch_button
 id cbAccept
 id cbAutoFinish
 id cbNotify
+id clMain
 id csbChallengeDistance
 id csbCurrentAvgSpeed
 id csbCurrentDistance
@@ -255,6 +265,7 @@ id orderby_date
 id orderby_distance
 id orderby_duration
 id orderby_maxspeed
+id photo_view_button
 id relativeLayoutsbHardMusic
 id rlChallengeOptions
 id rlCurrentAvg
@@ -374,6 +385,8 @@ id tvWalkingTime
 id tvWalkingTimeDiv
 id tvWalkingTimeux
 id txtInvitation
+id viewFinder
+layout activity_camera
 layout activity_forgot_password
 layout activity_login
 layout activity_main

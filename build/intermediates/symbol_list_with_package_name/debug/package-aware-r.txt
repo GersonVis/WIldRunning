@@ -620,6 +620,7 @@ attr imagePanX
 attr imagePanY
 attr imageRotate
 attr imageZoom
+attr implementationMode
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
 attr indicatorColor
@@ -995,6 +996,7 @@ attr round
 attr roundPercent
 attr saturation
 attr scaleFromTextSize
+attr scaleType
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
@@ -2793,8 +2795,15 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_outer_circle
+drawable ic_photo
 drawable ic_popup_sync
 drawable ic_run
+drawable ic_shutter
+drawable ic_shutter_focused
+drawable ic_shutter_normal
+drawable ic_shutter_pressed
+drawable ic_switch
 drawable level_1
 drawable level_2
 drawable level_3
@@ -3015,6 +3024,8 @@ id button_resend_email
 id button_sign_in
 id cache_measures
 id callMeasure
+id camera_capture_button
+id camera_switch_button
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -3034,12 +3045,14 @@ id checked
 id chronometer
 id circle_center
 id circular
+id clMain
 id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id compatible
 id compress
 id confirm_button
 id confirmation_code
@@ -3149,6 +3162,9 @@ id fbFinalPicture
 id fbHome
 id fbShareRun
 id fill
+id fillCenter
+id fillEnd
+id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
@@ -3169,6 +3185,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3430,9 +3447,11 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id performance
 id phone_button
 id phone_layout
 id phone_number
+id photo_view_button
 id pin
 id position
 id postLayout
@@ -3697,6 +3716,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewFinder
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3844,6 +3864,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_camera
 layout activity_forgot_password
 layout activity_login
 layout activity_main
@@ -5550,6 +5571,7 @@ styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable PreviewView implementationMode scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values

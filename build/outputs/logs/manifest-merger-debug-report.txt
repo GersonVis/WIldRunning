@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.geo.API_KEY
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:77:5-79:43
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:5-29:43
 	android:value
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:32:66-121
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:9-40
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:32:20-65
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:9-54
 manifest
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Golfa\.gradle\caches\transforms-3\baa23ebbd743b544d33355da4947943c\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:2:1-20:12
@@ -20,12 +20,14 @@ MERGED from [com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradl
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Golfa\.gradle\caches\transforms-3\cb0f248aa0acd44ae5dccd3c18d3fe02\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Golfa\.gradle\caches\transforms-3\b669c8aff1e944942b5071a2805cd238\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.camera:camera-view:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\2c67f80beb29c614a9af034217d58c10\transformed\camera-view-1.0.0-alpha27\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.0] C:\Users\Golfa\.gradle\caches\transforms-3\364af5561335dbc1224240c83700ae2f\transformed\appcompat-resources-1.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\Golfa\.gradle\caches\transforms-3\88109fb7c2332763b5df41ef7498f6fa\transformed\library-1.6.1\AndroidManifest.xml:6:1-15:12
 MERGED from [androidx.appcompat:appcompat:1.6.0] C:\Users\Golfa\.gradle\caches\transforms-3\0c988c2b5fe10c465f34d22483785f0a\transformed\appcompat-1.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:17:1-44:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\cdb862cc4b83130ddb8045fbae1c8b23\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
@@ -63,6 +65,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Golfa\.gr
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\84424e8afda051c7e2410d03a8ea1529\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\369ddcf978e46b306995abb8d7c37398\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\2e9b8a871ac37844ee660c4df1ff757e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\40b163564d144301f98d077ea08b89a1\transformed\camera-lifecycle-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:17:1-36:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\f580594060d2f8886c2f53d30e8a000f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -71,6 +75,8 @@ MERGED from [androidx.transition:transition:1.2.0] C:\Users\Golfa\.gradle\caches
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\6f3bcf2e624a5ac3241865f621ed2c0b\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\81175069381c52711bd9139ed7fd6379\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.browser:browser:1.4.0] C:\Users\Golfa\.gradle\caches\transforms-3\e34efa809c6258b56c4e2fe2afe3dc4d\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\2364e8fc6804ca6e08c2f33ed83abedc\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\b1e8724dbad58567bd127d2d2fd7bb68\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -89,6 +95,8 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Golfa\.gradle\
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0c9bc65375e78546e6976aa66643fc91\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\21b57e23866fd1f4ba3734794b8c4efb\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\67a41567f087a05dbac6d97d796738f9\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\56e9e30fc0316df39724f23a91cf7d88\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0f07759854e402cf6ba5475c7b11d66b\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\ab5b155c7c4a894b2576900aa78596f0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\01ff9aafe65592e61ec35d0c7f4d4dd0\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\c0aede8406e319f91f374b43761b4f3b\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -101,31 +109,47 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Golfa\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\1fcdc49920a56ae5eefb9d61494756c7\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\Golfa\.gradle\caches\transforms-3\e4b4c8e3ca30a9f85c6239a34be79bc5\transformed\grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\4c7a636136de17bb62f70c233bc61b25\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
 	package
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-80:12
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera.any
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:5:5-7:35
+	android:required
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:7:9-32
+	android:name
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:9-51
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.CAPTURE_AUDIO_OUTPUT
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:10:5-12:47
+	tools:ignore
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:11:9-63
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:19:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
@@ -147,9 +171,9 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\596a5ca1503bf9e518def064a7bf9389\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\596a5ca1503bf9e518def064a7bf9389\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:19:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:20:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:12:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
@@ -173,21 +197,21 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\Golfa\.gradle\caches\transforms-3\e4b4c8e3ca30a9f85c6239a34be79bc5\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\Golfa\.gradle\caches\transforms-3\e4b4c8e3ca30a9f85c6239a34be79bc5\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:15:5-79
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:15:22-76
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:22:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:16:5-85
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:23:5-85
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:16:22-82
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:23:22-82
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:17:5-77
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:24:5-77
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:17:22-74
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:24:22-74
 application
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:21:5-76:19
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:5-97:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:10:5-18:19
@@ -210,6 +234,8 @@ MERGED from [com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.g
 MERGED from [com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:36:5-42:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
@@ -254,14 +280,22 @@ MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Golf
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\b1e4ad5db6561a50d37207d9f6de2b69\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84b6c1d94d39bf729a5ef6fab6c1a1a3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84b6c1d94d39bf729a5ef6fab6c1a1a3\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:30:5-34:19
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:30:5-34:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:25:5-36:19
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:25:5-36:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [me.tankery.lib:circularSeekBar:1.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\985d4227661e447a14f059f1b167c43e\transformed\circularSeekBar-1.4.1\AndroidManifest.xml:9:5-20
 MERGED from [me.tankery.lib:circularSeekBar:1.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\985d4227661e447a14f059f1b167c43e\transformed\circularSeekBar-1.4.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\56e9e30fc0316df39724f23a91cf7d88\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\56e9e30fc0316df39724f23a91cf7d88\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\ab5b155c7c4a894b2576900aa78596f0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\ab5b155c7c4a894b2576900aa78596f0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\01ff9aafe65592e61ec35d0c7f4d4dd0\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
@@ -269,75 +303,81 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Golfa\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:38:9-35
 	android:label
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:36:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:24:9-54
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:34:9-54
 	android:roundIcon
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:27:9-54
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:37:9-54
 	tools:targetApi
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:31:9-29
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:41:9-29
 	android:icon
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:25:9-43
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:35:9-43
 	android:allowBackup
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:32:9-35
 	android:theme
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:29:9-49
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:39:9-49
 	android:dataExtractionRules
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:23:9-65
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:33:9-65
 	android:usesCleartextTraffic
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:30:9-44
-activity#com.example.wildproject.RecordActivity
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:33:9-39:20
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:40:9-44
+activity#com.example.wildproject.Camera
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:exported
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:34:13-43
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:43:13-35
 meta-data#android.app.lib_name
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:36:13-38:36
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:45:13-47:36
 	android:value
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:38:17-33
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:47:17-33
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:37:17-52
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:46:17-52
+activity#com.example.wildproject.RecordActivity
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:54:9-60:20
+	android:exported
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:13-37
+	android:name
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:55:13-43
 activity#com.example.wildproject.ForgotPasswordActivity
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:40:9-46:20
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:61:9-67:20
 	android:exported
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:63:13-37
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:41:13-51
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:62:13-51
 activity#com.example.wildproject.TermsActivity
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:47:9-53:20
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:68:9-74:20
 	android:exported
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:48:13-42
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:69:13-42
 activity#com.example.wildproject.LoginActivity
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:54:9-67:20
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:75:9-88:20
 	android:screenOrientation
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:57:13-49
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:78:13-49
 	android:exported
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:56:13-36
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:77:13-36
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:55:13-42
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:76:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:62:13-66:29
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:83:13-87:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:63:17-69
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:84:17-69
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:63:25-66
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:84:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:65:17-77
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:86:17-77
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:65:27-74
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:86:27-74
 activity#com.example.wildproject.MainActivity
-ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:68:9-75:20
+ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:89:9-96:20
 	android:screenOrientation
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:71:13-49
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:92:13-49
 	android:exported
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:70:13-36
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:91:13-36
 	android:name
-		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:69:13-41
+		ADDED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml:90:13-41
 uses-sdk
 INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.xml
@@ -360,6 +400,8 @@ MERGED from [com.google.android.material:material:1.7.0] C:\Users\Golfa\.gradle\
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Golfa\.gradle\caches\transforms-3\cb0f248aa0acd44ae5dccd3c18d3fe02\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Golfa\.gradle\caches\transforms-3\b669c8aff1e944942b5071a2805cd238\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Golfa\.gradle\caches\transforms-3\b669c8aff1e944942b5071a2805cd238\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-view:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\2c67f80beb29c614a9af034217d58c10\transformed\camera-view-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-view:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\2c67f80beb29c614a9af034217d58c10\transformed\camera-view-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.0] C:\Users\Golfa\.gradle\caches\transforms-3\364af5561335dbc1224240c83700ae2f\transformed\appcompat-resources-1.6.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.0] C:\Users\Golfa\.gradle\caches\transforms-3\364af5561335dbc1224240c83700ae2f\transformed\appcompat-resources-1.6.0\AndroidManifest.xml:20:5-44
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\Golfa\.gradle\caches\transforms-3\88109fb7c2332763b5df41ef7498f6fa\transformed\library-1.6.1\AndroidManifest.xml:11:5-13:41
@@ -372,6 +414,8 @@ MERGED from [com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.g
 MERGED from [com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\cdb862cc4b83130ddb8045fbae1c8b23\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\cdb862cc4b83130ddb8045fbae1c8b23\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:5:5-44
@@ -446,6 +490,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Golfa\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\369ddcf978e46b306995abb8d7c37398\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\2e9b8a871ac37844ee660c4df1ff757e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\2e9b8a871ac37844ee660c4df1ff757e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\40b163564d144301f98d077ea08b89a1\transformed\camera-lifecycle-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\40b163564d144301f98d077ea08b89a1\transformed\camera-lifecycle-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -462,6 +510,10 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Golfa\.gradl
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\81175069381c52711bd9139ed7fd6379\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.4.0] C:\Users\Golfa\.gradle\caches\transforms-3\e34efa809c6258b56c4e2fe2afe3dc4d\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.4.0] C:\Users\Golfa\.gradle\caches\transforms-3\e34efa809c6258b56c4e2fe2afe3dc4d\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\2364e8fc6804ca6e08c2f33ed83abedc\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -498,6 +550,10 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Golfa\.gradle\caches\tra
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\21b57e23866fd1f4ba3734794b8c4efb\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\67a41567f087a05dbac6d97d796738f9\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\67a41567f087a05dbac6d97d796738f9\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\56e9e30fc0316df39724f23a91cf7d88\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\56e9e30fc0316df39724f23a91cf7d88\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0f07759854e402cf6ba5475c7b11d66b\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0f07759854e402cf6ba5475c7b11d66b\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\ab5b155c7c4a894b2576900aa78596f0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\ab5b155c7c4a894b2576900aa78596f0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\01ff9aafe65592e61ec35d0c7f4d4dd0\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
@@ -834,6 +890,8 @@ ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gr
 		ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
 queries
 ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:24:5-28:15
+MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:24:5-28:15
 package#com.google.android.apps.maps
 ADDED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
 	android:name
@@ -940,6 +998,18 @@ ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Go
 		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+intent#action:name:androidx.camera.extensions.action.VENDOR_ACTION
+ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:25:9-27:18
+action#androidx.camera.extensions.action.VENDOR_ACTION
+ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:26:13-86
+	android:name
+		ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:26:21-83
+uses-library#androidx.camera.extensions.impl
+ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:31:9-33:40
+	android:required
+		ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:32:13-59
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
@@ -960,6 +1030,26 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transfor
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:26:9-35:19
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:31:9-35:45
+MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:31:9-35:45
+	tools:node
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:31:13-31
+	android:enabled
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:28:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:29:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:30:13-42
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:27:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:32:13-34:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:34:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:33:17-103
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\Golfa\.gradle\caches\transforms-3\82ed115d47c0bb8be22ca7538bd6ed2e\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel

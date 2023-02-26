@@ -8,6 +8,12 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="33" />
 
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -34,6 +40,10 @@
 
         <!-- Needs to be explicitly declared on Android R+ -->
         <package android:name="com.google.android.apps.maps" />
+
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
     </queries>
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -60,6 +70,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.WildProject"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.wildproject.Camera"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDbd3p1GqnWQtyQ-TsArc9U3IYUYVQ19B0" />
@@ -316,6 +334,10 @@
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.wildproject.androidx-startup"
@@ -327,6 +349,15 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
     </application>
 
 </manifest>
