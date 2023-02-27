@@ -1,33 +1,32 @@
 package com.example.wildproject
 
-import android.content.Context
-import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
+import android.media.MediaScannerConnection
+import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.util.Log
+import android.webkit.MimeTypeMap
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.camera.core.AspectRatio
-import androidx.camera.core.CameraProvider
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageCapture
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.net.toFile
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.databinding.ActivityCameraBinding
+import com.google.android.material.snackbar.Snackbar
 import java.io.File
 
-import kotlin.math.min
 import kotlin.math.max
 import kotlin.math.abs
 
 
-
-import java.lang.StrictMath.min
-import java.util.concurrent.Executor
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -99,6 +98,7 @@ class Camera : AppCompatActivity() {
         }, ContextCompat.getMainExecutor(this))
 
     }
+    private var FILENAME: String = ""
     private fun manageSwitchButton():Unit{
         try {
             binding.cameraSwitchButton.isEnabled = hasBackCamera() && hasFromCamera()
@@ -147,7 +147,7 @@ class Camera : AppCompatActivity() {
 
         imageCapture = ImageCapture.Builder()
             .setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY)
-            .setTargetAspectRatio(aspectRadio())
+            .setTargetAspectRatio(screenAspectRatio)
             .setTargetRotation(rotation)
             .build()
 
@@ -161,8 +161,9 @@ class Camera : AppCompatActivity() {
         }
 
     }
+
     private fun aspectRadio(width: Int, height: Int): Int{
-        val previewRatio = max(width, height).toDouble() / min(width, height)
+        val previewRatio = max(width, height).toDouble() / kotlin.math.min(width, height)
 
         if (abs(previewRatio - RATIO_4_3_VALUE) <= abs(previewRatio - RATIO_16_9_VALUE)){
             return AspectRatio.RATIO_4_3
@@ -180,6 +181,60 @@ class Camera : AppCompatActivity() {
         return if (mediaDir!=null && mediaDir.exists()) mediaDir else filesDir
     }
     private fun takePicture():Unit{
+        FILENAME = getString(R.string.app_name) + useremail + startTimeRun
+        FILENAME = FILENAME.replace(":", "")
+        FILENAME = FILENAME.replace("/", "")
 
+        val photoFile = File (outputDirectory, FILENAME + ".jpg")
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+
+        imageCapture?.takePicture(
+            outputOptions,
+            ContextCompat.getMainExecutor(this ),
+            object: ImageCapture.OnImageSavedCallback{
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+
+                    val savedUri = Uri.fromFile(photoFile)
+
+                    if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
+                        setGalleryThumbail(savedUri)
+                    }
+                    val mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(savedUri.toFile().extension)
+                    MediaScannerConnection.scanFile(
+                        baseContext,
+                        arrayOf(
+                            savedUri.toFile().absolutePath
+                        ),
+                        arrayOf(mimeType)
+                    ){ s: String, uri: Uri ->
+
+                    }
+
+                    Snackbar.make(binding.root, "Error al tomar al fotografía", Snackbar.LENGTH_SHORT)
+                        .setAction("Ok"){
+                            binding.clMain.setBackgroundColor(Color.BLUE)
+                        }
+                        .show()
+                }
+
+                override fun onError(exception: ImageCaptureException) {
+                    Snackbar.make(binding.root, "Error al tomar al fotografía", Snackbar.LENGTH_SHORT)
+                        .setAction("Ok"){
+                            binding.clMain.setBackgroundColor(Color.RED)
+                        }
+                        .show()
+                }
+
+            }
+        )
+    }
+    private fun setGalleryThumbail(uri: Uri):Unit{
+        var thumbail = binding.photoViewButton
+        thumbail.post {
+            Glide.with(thumbail)
+                .load(uri)
+                .apply(RequestOptions.circleCropTransform())
+                .into(thumbail)
+        }
     }
 }

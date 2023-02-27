@@ -10,6 +10,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 
 class RecordActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_record)
