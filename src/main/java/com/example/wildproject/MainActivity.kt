@@ -519,7 +519,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
             var tvNumberLevelRunning = findViewById<TextView>(R.id.tvNumberLevelRun)
-            var levelText = "${getString(R.string.level)} ${levelRunning.image!!.subSequence(6,7).toString()}"
+            var levelText = "0"
             tvNumberLevelRunning.text = levelText
 
             var tt = getFormattedTotalTime(totalsRunning.totalTime!!.toLong())
@@ -1138,6 +1138,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         initObjects()
         initNavigationView()
         eventsViews()
+
+       callRecordActictivity()
     }
 
 
@@ -2744,6 +2746,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun callRecordActictivity(): Unit {
+        Toast.makeText(this, "lanzada", Toast.LENGTH_SHORT).show()
+        println("lanzada activity")
         startActivity(Intent(this, RecordActivity::class.java))
     }
 

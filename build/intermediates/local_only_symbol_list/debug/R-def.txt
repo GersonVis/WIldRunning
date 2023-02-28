@@ -162,8 +162,8 @@ id ivMedalAvgSpeed
 id ivMedalDistance
 id ivMedalMaxSpeed
 id ivOpenClose
-id ivRollerRunning
 id ivRollerSkate
+id ivRunning
 id ivSportBike
 id ivSportRollerSkate
 id ivSportRunning
@@ -279,7 +279,7 @@ id rlRecyclers
 id rlStart
 id rlStartCamara
 id rlTopFixed
-id rvRecyclers
+id rvRecords
 id sbHardTrack
 id sbHardVolume
 id sbNotifyVolume

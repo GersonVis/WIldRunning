@@ -3231,8 +3231,8 @@ id ivMedalAvgSpeed
 id ivMedalDistance
 id ivMedalMaxSpeed
 id ivOpenClose
-id ivRollerRunning
 id ivRollerSkate
+id ivRunning
 id ivSportBike
 id ivSportRollerSkate
 id ivSportRunning
@@ -3485,7 +3485,7 @@ id root
 id round
 id rounded
 id row_index_key
-id rvRecyclers
+id rvRecords
 id satellite
 id save_non_transition_alpha
 id save_overlay_view

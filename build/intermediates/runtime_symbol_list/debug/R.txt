@@ -3230,8 +3230,8 @@ int id ivMedalAvgSpeed 0x7f08013f
 int id ivMedalDistance 0x7f080140
 int id ivMedalMaxSpeed 0x7f080141
 int id ivOpenClose 0x7f080142
-int id ivRollerRunning 0x7f080143
 int id ivRollerSkate 0x7f080144
+int id ivRunning 0x7f080348
 int id ivSportBike 0x7f080145
 int id ivSportRollerSkate 0x7f080146
 int id ivSportRunning 0x7f080147
@@ -3484,7 +3484,7 @@ int id root 0x7f08023b
 int id round 0x7f08023c
 int id rounded 0x7f08023d
 int id row_index_key 0x7f08023e
-int id rvRecyclers 0x7f08023f
+int id rvRecords 0x7f080349
 int id satellite 0x7f080240
 int id save_non_transition_alpha 0x7f080241
 int id save_overlay_view 0x7f080242

@@ -85,6 +85,12 @@
     <string name="textNull"></string>
     <string name="textNoData">-</string>
 
+    <string name="CardAvgSpeedTitle">VEL. PROM.</string>
+    <string name="CardMaxSpeedTitle">VEL. MAX</string>
+    <string name="CardMedalDistance">Kms. [RP]</string>
+    <string name="CardMedalAvgSpeed">V.Máx. [RP]</string>
+    <string name="CardMedalMaxSpeed">V.Pr. [RP]</string>
+
     <string name="medalDistanceDescription">Distancia [Record Personal]</string>
     <string name="medalAvgSpeedDescription">Vel. Máx. [Record Personal]</string>
     <string name="medalMaxSpeedDescription">Vel. Prom. [Record Personal]</string>

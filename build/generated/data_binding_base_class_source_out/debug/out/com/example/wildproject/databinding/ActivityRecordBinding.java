@@ -29,10 +29,10 @@ public final class ActivityRecordBinding implements ViewBinding {
   public final ImageView ivBike;
 
   @NonNull
-  public final ImageView ivRollerRunning;
+  public final ImageView ivRollerSkate;
 
   @NonNull
-  public final ImageView ivRollerSkate;
+  public final ImageView ivRunning;
 
   @NonNull
   public final LinearLayout lySports;
@@ -41,24 +41,24 @@ public final class ActivityRecordBinding implements ViewBinding {
   public final LinearLayout rlRecyclers;
 
   @NonNull
-  public final RecyclerView rvRecyclers;
+  public final RecyclerView rvRecords;
 
   @NonNull
   public final Toolbar toolbarRecord;
 
   private ActivityRecordBinding(@NonNull LinearLayout rootView,
       @NonNull FloatingActionButton fbHome, @NonNull ImageView ivBike,
-      @NonNull ImageView ivRollerRunning, @NonNull ImageView ivRollerSkate,
+      @NonNull ImageView ivRollerSkate, @NonNull ImageView ivRunning,
       @NonNull LinearLayout lySports, @NonNull LinearLayout rlRecyclers,
-      @NonNull RecyclerView rvRecyclers, @NonNull Toolbar toolbarRecord) {
+      @NonNull RecyclerView rvRecords, @NonNull Toolbar toolbarRecord) {
     this.rootView = rootView;
     this.fbHome = fbHome;
     this.ivBike = ivBike;
-    this.ivRollerRunning = ivRollerRunning;
     this.ivRollerSkate = ivRollerSkate;
+    this.ivRunning = ivRunning;
     this.lySports = lySports;
     this.rlRecyclers = rlRecyclers;
-    this.rvRecyclers = rvRecyclers;
+    this.rvRecords = rvRecords;
     this.toolbarRecord = toolbarRecord;
   }
 
@@ -101,15 +101,15 @@ public final class ActivityRecordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ivRollerRunning;
-      ImageView ivRollerRunning = ViewBindings.findChildViewById(rootView, id);
-      if (ivRollerRunning == null) {
-        break missingId;
-      }
-
       id = R.id.ivRollerSkate;
       ImageView ivRollerSkate = ViewBindings.findChildViewById(rootView, id);
       if (ivRollerSkate == null) {
+        break missingId;
+      }
+
+      id = R.id.ivRunning;
+      ImageView ivRunning = ViewBindings.findChildViewById(rootView, id);
+      if (ivRunning == null) {
         break missingId;
       }
 
@@ -125,9 +125,9 @@ public final class ActivityRecordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rvRecyclers;
-      RecyclerView rvRecyclers = ViewBindings.findChildViewById(rootView, id);
-      if (rvRecyclers == null) {
+      id = R.id.rvRecords;
+      RecyclerView rvRecords = ViewBindings.findChildViewById(rootView, id);
+      if (rvRecords == null) {
         break missingId;
       }
 
@@ -137,8 +137,8 @@ public final class ActivityRecordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRecordBinding((LinearLayout) rootView, fbHome, ivBike, ivRollerRunning,
-          ivRollerSkate, lySports, rlRecyclers, rvRecyclers, toolbarRecord);
+      return new ActivityRecordBinding((LinearLayout) rootView, fbHome, ivBike, ivRollerSkate,
+          ivRunning, lySports, rlRecyclers, rvRecords, toolbarRecord);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
