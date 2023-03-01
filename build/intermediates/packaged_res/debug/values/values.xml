@@ -53,6 +53,11 @@
     <dimen name="stroke_large">12dp</dimen>
     <dimen name="stroke_medium">8dp</dimen>
     <dimen name="stroke_small">4dp</dimen>
+    <string name="CardAvgSpeedTitle">VEL. PROM.</string>
+    <string name="CardMaxSpeedTitle">VEL. MAX</string>
+    <string name="CardMedalAvgSpeed">V.Máx. [RP]</string>
+    <string name="CardMedalDistance">Kms. [RP]</string>
+    <string name="CardMedalMaxSpeed">V.Pr. [RP]</string>
     <string name="NoDataWarning">No hay datos registrados. Recuerda activar el GPS si deseas información de tu carrera</string>
     <string name="PopUpAvgSpeedTitle">VELOCIDAD PROMEDIO</string>
     <string name="PopUpChallengeTitle">OBJETIVO</string>

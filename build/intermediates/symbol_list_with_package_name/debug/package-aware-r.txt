@@ -2724,6 +2724,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable card_run
 drawable centermap_icon
 drawable circle_background_todisable
 drawable circle_background_topause
@@ -3219,10 +3220,15 @@ id invisible
 id invisible_frame
 id inward
 id italic
+id item_record
 id item_touch_helper_previous_elevation
 id ivBike
 id ivClosePopUp
 id ivCurrentLevel
+id ivHeaderMedalAvgSpeed
+id ivHeaderMedalDistance
+id ivHeaderMedalMaxSpeed
+id ivHeaderOpenClose
 id ivLebelBike
 id ivLebelRun
 id ivLebelSkate
@@ -3231,6 +3237,7 @@ id ivMedalAvgSpeed
 id ivMedalDistance
 id ivMedalMaxSpeed
 id ivOpenClose
+id ivPicture
 id ivRollerSkate
 id ivRunning
 id ivSportBike
@@ -3276,7 +3283,18 @@ id lyCurrentRun
 id lyCurrentSpeeds
 id lyCurrentSport
 id lyCurrentTimeMedals
+id lyDataDate
+id lyDataDateSport
+id lyDataDistance
+id lyDataRun
+id lyDataRunBody
+id lyDataRunBodyContainer
+id lyDataRunHeader
+id lyDataSpeedMedals
+id lyDate
+id lyDistance
 id lyDistanceData
+id lyDuration
 id lyFragmentMap
 id lyHardTrack
 id lyHardVolume
@@ -3307,6 +3325,7 @@ id lyOpenerLine
 id lyOpenerMap
 id lyOpenerTitle
 id lyOptionsRun
+id lyPicture
 id lyPopUpClose
 id lyPopUpOptionsRun
 id lyPopupRun
@@ -3318,6 +3337,8 @@ id lySettingsVolumes
 id lySettingsVolumesSpace
 id lySoftTrack
 id lySoftVolume
+id lySpeeds
+id lySport
 id lySportBike
 id lySportRollerSkate
 id lySportRunning
@@ -3639,6 +3660,8 @@ id tvCurrentAvgSpeedLabel
 id tvCurrentAvgSpeedUX
 id tvCurrentDistance
 id tvCurrentSpeed
+id tvDate
+id tvDelete
 id tvDeleteRun
 id tvDistanceLabel
 id tvDistanceRecord
@@ -3651,6 +3674,10 @@ id tvDurationTitle
 id tvHardPosition
 id tvHardRemaining
 id tvHardVolumen
+id tvHeaderAvgSpeed
+id tvHeaderDate
+id tvHeaderDistance
+id tvHeaderDuration
 id tvHeaderLevelBike
 id tvHeaderLevelRun
 id tvHeaderLevelSkate
@@ -3679,6 +3706,7 @@ id tvNumberLevel
 id tvNumberLevelBike
 id tvNumberLevelRun
 id tvNumberLevelSkate
+id tvPlay
 id tvReset
 id tvRounds
 id tvRunningTime
@@ -3688,6 +3716,7 @@ id tvSoftRemaining
 id tvSoftVolumen
 id tvSpeedLabel
 id tvSpeedUX
+id tvStartTime
 id tvTerms
 id tvTotalDistance
 id tvTotalDistanceBike
@@ -3873,6 +3902,7 @@ layout activity_terms
 layout app_bar_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card_run
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3992,6 +4022,11 @@ mipmap map_type_normal
 plurals fui_error_weak_password
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+string CardAvgSpeedTitle
+string CardMaxSpeedTitle
+string CardMedalAvgSpeed
+string CardMedalDistance
+string CardMedalMaxSpeed
 string NoDataWarning
 string PopUpAvgSpeedTitle
 string PopUpChallengeTitle

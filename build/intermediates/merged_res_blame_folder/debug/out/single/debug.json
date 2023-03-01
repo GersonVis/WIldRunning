@@ -68,6 +68,10 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxxhdpi\\login_imagen.png"
     },
     {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable_card_run.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable\\card_run.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxhdpi_facebook.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxhdpi\\facebook.png"
     },
@@ -172,6 +176,10 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxxhdpi\\opener_icon_dark.xml"
     },
     {
+        "merged": "com.example.wildproject.app-merged_res-46:/drawable_card_run.xml.flat",
+        "source": "com.example.wildproject.app-main-48:/drawable/card_run.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxxhdpi_level_1.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxxhdpi\\level_1.png"
     },
@@ -252,6 +260,10 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-hdpi\\medalgold.png"
     },
     {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\layout_card_run.xml.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\layout\\card_run.xml"
+    },
+    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxxhdpi_level_4.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxxhdpi\\level_4.png"
     },
@@ -270,10 +282,6 @@
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\layout_app_bar_main.xml.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\layout\\app_bar_main.xml"
-    },
-    {
-        "merged": "com.example.wildproject.app-merged_res-46:/layout_activity_record.xml.flat",
-        "source": "com.example.wildproject.app-main-48:/layout/activity_record.xml"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxhdpi_medal_null_dark.png.flat",
@@ -588,12 +596,12 @@
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxxhdpi\\running.png"
     },
     {
-        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxhdpi_medalsilver.png.flat",
-        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxhdpi\\medalsilver.png"
-    },
-    {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xhdpi_login_imagen.png.flat",
         "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xhdpi\\login_imagen.png"
+    },
+    {
+        "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxhdpi_medalsilver.png.flat",
+        "source": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-main-48:\\drawable-xxhdpi\\medalsilver.png"
     },
     {
         "merged": "C:\\Users\\Golfa\\.gradle\\daemon\\7.4\\com.example.wildproject.app-merged_res-46:\\drawable-xxxhdpi_opener_icon.xml.flat",

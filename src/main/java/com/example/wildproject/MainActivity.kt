@@ -1139,7 +1139,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         initNavigationView()
         eventsViews()
 
-       callRecordActictivity()
+      // callRecordActictivity()
     }
 
 

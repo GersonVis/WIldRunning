@@ -1,8 +1,8 @@
 package com.example.wildproject
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -16,7 +16,6 @@ import com.example.wildproject.databinding.ActivityRecordBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import java.lang.Math.random
-import java.util.*
 
 class RecordActivity : AppCompatActivity() {
     private var sportSelected: String = "Running"
@@ -33,7 +32,7 @@ class RecordActivity : AppCompatActivity() {
         binding = ActivityRecordBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //  rellenarFireBase()
+       //  rellenarFireBase()
 
         var toolbar: Toolbar = findViewById(R.id.toolbar_record)
         setSupportActionBar(toolbar)
@@ -64,7 +63,7 @@ class RecordActivity : AppCompatActivity() {
         random()
         var lists: Array<String> = arrayOf("runsBike", "runsRunning", "runsRollerSkate")
         for (sport in lists) {
-            for (pos in 0..10) {
+            for (pos in 0..1) {
                 dbTotal.collection("$sport")
                     .document("$useremail${(0..100).random()}${(0..100).random()}").set(
                     hashMapOf(
@@ -72,22 +71,24 @@ class RecordActivity : AppCompatActivity() {
                         "date" to "00:00:00",
                         "startTime" to "00:00:00",
                         "sport" to sportSelected,
-                        "activatedGPS" to "00:00:00",
+                        "activatedGPS" to true,
                         "duration" to "00:00:00",
-                        "distance" to 343,
-                        "avgSpeed" to 343,
-                        "maxSpeed" to 343,
+                        "distance" to 343f,
+                        "avgSpeed" to 343f,
+                        "maxSpeed" to 343f,
                         "minAltitude" to 343,
                         "maxAltitude" to 343,
                         "minLatitude" to 343,
                         "maxLatitude" to 343,
                         "minLongitude" to 343,
                         "maxLongitude" to 343,
-                        "centerLatitude" to 343,
-                        "centerLongitude" to 343,
-                        "medalDistance" to 343,
-                        "medalAvgSpeed" to 343,
-                        "medalMaxSpeed" to 343
+                        "centerLatitude" to 323f,
+                        "centerLongitude" to 33f,
+                        "medalDistance" to "343",
+                        "medalAvgSpeed" to "343",
+                        "medalMaxSpeed" to "343",
+                        "challengeDistance" to 0.0,
+                        "challengeDuration" to ""
                     )
 
                 ).addOnSuccessListener {
@@ -132,10 +133,16 @@ class RecordActivity : AppCompatActivity() {
         var dbRuns = FirebaseFirestore.getInstance()
 
         dbRuns.collection("runsBike").orderBy(field, order)
-            .whereEqualTo("user", "visoso126@gmail.com")
+            .whereEqualTo("user", useremail)
             .get()
             .addOnSuccessListener { document ->
+                Log.i("firebase", "recivido")
+                Log.i("firebase", "recivido")
                 for (run in document) {
+
+                    var runOb = run.toObject(Runs::class.java)
+                    Log.i("firebase", "date: ${runOb.date}")
+                    println("date: ${runOb.date}")
                     runsArrayList.add(run.toObject(Runs::class.java))
                 }
                 myAdapter.notifyDataSetChanged()

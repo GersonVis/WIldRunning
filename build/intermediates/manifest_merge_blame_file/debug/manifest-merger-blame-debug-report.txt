@@ -431,253 +431,265 @@
 225                android:value="com.google.firebase.components.ComponentRegistrar" />
 225-->[com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:16:17-82
 226            <meta-data
-226-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
-227                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-227-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:15:17-124
+226-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+227                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+227-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:15:17-122
 228                android:value="com.google.firebase.components.ComponentRegistrar" />
-228-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:16:17-82
+228-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:16:17-82
 229            <meta-data
-229-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:11:13-13:85
-230                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-230-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:12:17-126
+229-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+230                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+230-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:15:17-124
 231                android:value="com.google.firebase.components.ComponentRegistrar" />
-231-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:13:17-82
+231-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:16:17-82
 232            <meta-data
-232-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
-233                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-233-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:12:17-116
+232-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:11:13-13:85
+233                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+233-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:12:17-126
 234                android:value="com.google.firebase.components.ComponentRegistrar" />
-234-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:13:17-82
+234-->[com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:13:17-82
 235            <meta-data
-235-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:14:13-16:85
-236                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-236-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:15:17-113
+235-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
+236                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+236-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:12:17-116
 237                android:value="com.google.firebase.components.ComponentRegistrar" />
-237-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:16:17-82
+237-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:13:17-82
 238            <meta-data
-238-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-239                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-239-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+238-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:14:13-16:85
+239                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+239-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:15:17-113
 240                android:value="com.google.firebase.components.ComponentRegistrar" />
-240-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+240-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\d790bdd68c1d98fd2fec27b4dcb8b60d\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:16:17-82
 241            <meta-data
-241-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:19:13-21:85
-242                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-242-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:20:17-111
+241-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+242                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+242-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
 243                android:value="com.google.firebase.components.ComponentRegistrar" />
-243-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:21:17-82
+243-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
 244            <meta-data
-244-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-245                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-245-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+244-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:19:13-21:85
+245                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+245-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:20:17-111
 246                android:value="com.google.firebase.components.ComponentRegistrar" />
-246-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+246-->[com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:21:17-82
 247            <meta-data
-247-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
-248                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-248-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+247-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+248                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+248-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
 249                android:value="com.google.firebase.components.ComponentRegistrar" />
-249-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+249-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
 250            <meta-data
-250-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
-251                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-251-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+250-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+251                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+251-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
 252                android:value="com.google.firebase.components.ComponentRegistrar" />
-252-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
-253        </service>
-254
-255        <activity
-255-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-256            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-256-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-257            android:excludeFromRecents="true"
-257-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-258            android:exported="true"
-258-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-259            android:launchMode="singleTask"
-259-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-260            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-260-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-261            <intent-filter>
-261-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-262                <action android:name="android.intent.action.VIEW" />
-262-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:17-69
-262-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:25-66
-263
-264                <category android:name="android.intent.category.DEFAULT" />
-264-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:17-76
-264-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:27-73
-265                <category android:name="android.intent.category.BROWSABLE" />
-265-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:17-78
-265-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:27-75
-266
-267                <data
-267-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:17-81
-268                    android:host="firebase.auth"
-269                    android:path="/"
-270                    android:scheme="genericidp" />
-270-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:23-78
-271            </intent-filter>
-272        </activity>
-273        <activity
-273-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-274            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-274-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-275            android:excludeFromRecents="true"
-275-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-276            android:exported="true"
-276-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-277            android:launchMode="singleTask"
-277-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-278            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-278-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-279            <intent-filter>
-279-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-280                <action android:name="android.intent.action.VIEW" />
-280-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:17-69
-280-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:25-66
-281
-282                <category android:name="android.intent.category.DEFAULT" />
-282-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:17-76
-282-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:27-73
-283                <category android:name="android.intent.category.BROWSABLE" />
-283-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:17-78
-283-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:27-75
-284
-285                <data
-285-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:17-81
-286                    android:host="firebase.auth"
-287                    android:path="/"
-288                    android:scheme="recaptcha" />
-288-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:23-78
-289            </intent-filter>
-290        </activity>
-291        <activity
-291-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:23:9-27:75
-292            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-292-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:24:13-93
-293            android:excludeFromRecents="true"
-293-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:25:13-46
-294            android:exported="false"
-294-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:26:13-37
-295            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-295-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:27:13-72
-296        <!--
-297            Service handling Google Sign-In user revocation. For apps that do not integrate with
-298            Google Sign-In, this service will never be started.
-299        -->
-300        <service
-300-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:33:9-37:51
-301            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-301-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:34:13-89
-302            android:exported="true"
-302-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:35:13-36
-303            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-303-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:36:13-107
-304            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
-304-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:37:13-48
-305        <uses-library
-305-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
-306            android:name="org.apache.http.legacy"
-306-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
-307            android:required="false" />
-307-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
-308
-309        <provider
-309-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
-310            android:name="com.google.firebase.provider.FirebaseInitProvider"
-310-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:26:13-77
-311            android:authorities="com.example.wildproject.firebaseinitprovider"
-311-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:27:13-72
-312            android:directBootAware="true"
-312-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:28:13-43
-313            android:exported="false"
-313-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:29:13-37
-314            android:initOrder="100" />
-314-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:30:13-36
-315
-316        <activity
-316-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-317            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-317-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-318            android:exported="false"
-318-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-319            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-319-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-320
-321        <receiver
-321-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
-322            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-322-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
-323            android:enabled="true"
-323-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
-324            android:exported="false" >
-324-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
-325        </receiver>
+252-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+253            <meta-data
+253-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+254                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+254-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+256            <meta-data
+256-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+257                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+257-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+258                android:value="com.google.firebase.components.ComponentRegistrar" />
+258-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\9339bfc9bfc8496af532f20bc3e395fa\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+259        </service>
+260
+261        <activity
+261-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+262            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+262-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+263            android:excludeFromRecents="true"
+263-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+264            android:exported="true"
+264-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+265            android:launchMode="singleTask"
+265-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+266            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+266-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+267            <intent-filter>
+267-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+268                <action android:name="android.intent.action.VIEW" />
+268-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:17-69
+268-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:25-66
+269
+270                <category android:name="android.intent.category.DEFAULT" />
+270-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:17-76
+270-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:27-73
+271                <category android:name="android.intent.category.BROWSABLE" />
+271-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:17-78
+271-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:27-75
+272
+273                <data
+273-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:17-81
+274                    android:host="firebase.auth"
+275                    android:path="/"
+276                    android:scheme="genericidp" />
+276-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:23-78
+277            </intent-filter>
+278        </activity>
+279        <activity
+279-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+280            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+280-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+281            android:excludeFromRecents="true"
+281-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+282            android:exported="true"
+282-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+283            android:launchMode="singleTask"
+283-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+284            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+284-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+285            <intent-filter>
+285-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+286                <action android:name="android.intent.action.VIEW" />
+286-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:17-69
+286-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:93:25-66
+287
+288                <category android:name="android.intent.category.DEFAULT" />
+288-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:17-76
+288-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:95:27-73
+289                <category android:name="android.intent.category.BROWSABLE" />
+289-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:17-78
+289-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:96:27-75
+290
+291                <data
+291-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:17-81
+292                    android:host="firebase.auth"
+293                    android:path="/"
+294                    android:scheme="recaptcha" />
+294-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:98:23-78
+295            </intent-filter>
+296        </activity>
+297        <activity
+297-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:23:9-27:75
+298            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+298-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:24:13-93
+299            android:excludeFromRecents="true"
+299-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:25:13-46
+300            android:exported="false"
+300-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:26:13-37
+301            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+301-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:27:13-72
+302        <!--
+303            Service handling Google Sign-In user revocation. For apps that do not integrate with
+304            Google Sign-In, this service will never be started.
+305        -->
+306        <service
+306-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:33:9-37:51
+307            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+307-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:34:13-89
+308            android:exported="true"
+308-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:35:13-36
+309            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+309-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:36:13-107
+310            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+310-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\92b7a201ea8095b9b06cb1c0e01e8b65\transformed\play-services-auth-20.4.1\AndroidManifest.xml:37:13-48
+311        <uses-library
+311-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+312            android:name="org.apache.http.legacy"
+312-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+313            android:required="false" />
+313-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+314
+315        <provider
+315-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
+316            android:name="com.google.firebase.provider.FirebaseInitProvider"
+316-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:26:13-77
+317            android:authorities="com.example.wildproject.firebaseinitprovider"
+317-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:27:13-72
+318            android:directBootAware="true"
+318-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:28:13-43
+319            android:exported="false"
+319-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:29:13-37
+320            android:initOrder="100" />
+320-->[com.google.firebase:firebase-common:20.3.0] C:\Users\Golfa\.gradle\caches\transforms-3\997be546023a2d000b07d16ae5a97007\transformed\firebase-common-20.3.0\AndroidManifest.xml:30:13-36
+321
+322        <activity
+322-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+323            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+323-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+324            android:exported="false"
+324-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+325            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+325-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\d3bf83c74077b7be188cdff75c753354\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 326
-327        <service
-327-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
-328            android:name="com.google.android.gms.measurement.AppMeasurementService"
-328-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+327        <receiver
+327-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+328            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+328-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
 329            android:enabled="true"
-329-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
-330            android:exported="false" />
-330-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
-331        <service
-331-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
-332            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-332-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
-333            android:enabled="true"
-333-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
-334            android:exported="false"
-334-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
-335            android:permission="android.permission.BIND_JOB_SERVICE" />
-335-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
-336
-337        <uses-library
-337-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:31:9-33:40
-338            android:name="androidx.camera.extensions.impl"
-338-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:32:13-59
-339            android:required="false" />
-339-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:33:13-37
-340
-341        <provider
-341-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-342            android:name="androidx.startup.InitializationProvider"
-342-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-343            android:authorities="com.example.wildproject.androidx-startup"
-343-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-344            android:exported="false" >
-344-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-345            <meta-data
-345-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-346                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-346-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-347                android:value="androidx.startup" />
-347-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-348            <meta-data
-348-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-349                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-349-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-350                android:value="androidx.startup" />
-350-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-351        </provider>
-352
-353        <service
-353-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:26:9-35:19
-354            android:name="androidx.camera.core.impl.MetadataHolderService"
-354-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:27:13-75
-355            android:enabled="false"
-355-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:28:13-36
-356            android:exported="false" >
-356-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:29:13-37
-357            <meta-data
-357-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:32:13-34:89
-358                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-358-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:33:17-103
-359                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-359-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:34:17-86
-360        </service>
-361    </application>
-362
-363</manifest>
+329-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+330            android:exported="false" >
+330-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+331        </receiver>
+332
+333        <service
+333-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+334            android:name="com.google.android.gms.measurement.AppMeasurementService"
+334-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+335            android:enabled="true"
+335-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+336            android:exported="false" />
+336-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+337        <service
+337-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+338            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+338-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+339            android:enabled="true"
+339-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+340            android:exported="false"
+340-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+341            android:permission="android.permission.BIND_JOB_SERVICE" />
+341-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\52136b79207e9f95ef0aee34a6432fd9\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+342
+343        <uses-library
+343-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:31:9-33:40
+344            android:name="androidx.camera.extensions.impl"
+344-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:32:13-59
+345            android:required="false" />
+345-->[androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:33:13-37
+346
+347        <provider
+347-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+348            android:name="androidx.startup.InitializationProvider"
+348-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+349            android:authorities="com.example.wildproject.androidx-startup"
+349-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+350            android:exported="false" >
+350-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+351            <meta-data
+351-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+352                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+352-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+353                android:value="androidx.startup" />
+353-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+354            <meta-data
+354-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+355                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+355-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+356                android:value="androidx.startup" />
+356-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Golfa\.gradle\caches\transforms-3\f3f735b3998505e7eb1fe395ac3e59e2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+357        </provider>
+358
+359        <service
+359-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:26:9-35:19
+360            android:name="androidx.camera.core.impl.MetadataHolderService"
+360-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:27:13-75
+361            android:enabled="false"
+361-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:28:13-36
+362            android:exported="false" >
+362-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:29:13-37
+363            <meta-data
+363-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:32:13-34:89
+364                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+364-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:33:17-103
+365                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+365-->[androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:34:17-86
+366        </service>
+367    </application>
+368
+369</manifest>

@@ -2,7 +2,9 @@ package com.example.wildproject
 
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.graphics.drawable.GradientDrawable.Orientation
 import android.media.MediaScannerConnection
+import android.media.VolumeShaper.Configuration
 import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +23,12 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.wildproject.LoginActivity.Companion.useremail
 import com.example.wildproject.databinding.ActivityCameraBinding
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageMetadata
+import com.google.firebase.storage.ktx.storageMetadata
 import java.io.File
+import java.io.IOError
+import java.io.IOException
 
 import kotlin.math.max
 import kotlin.math.abs
@@ -42,6 +49,7 @@ class Camera : AppCompatActivity() {
     private lateinit var dataRun: String
     private lateinit var startTimeRun: String
 
+    private lateinit var metadata: StorageMetadata
     private var preview: Preview? = null
 
     companion object{
@@ -185,6 +193,24 @@ class Camera : AppCompatActivity() {
         FILENAME = FILENAME.replace(":", "")
         FILENAME = FILENAME.replace("/", "")
 
+
+        if(getResources().getConfiguration().orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE){
+            metadata = storageMetadata{
+                contentType = "image/jpg"
+                setCustomMetadata("orientation", "horizontal")
+                setCustomMetadata("autor", "gerson")
+            }
+        }else{
+            metadata = storageMetadata{
+                contentType = "image/jpg"
+                setCustomMetadata("orientation", "vertical")
+                setCustomMetadata("autor", "gerson")
+            }
+        }
+
+
+
+
         val photoFile = File (outputDirectory, FILENAME + ".jpg")
         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
 
@@ -215,6 +241,7 @@ class Camera : AppCompatActivity() {
                             binding.clMain.setBackgroundColor(Color.BLUE)
                         }
                         .show()
+                    uploadFile(photoFile)
                 }
 
                 override fun onError(exception: ImageCaptureException) {
@@ -227,6 +254,35 @@ class Camera : AppCompatActivity() {
 
             }
         )
+    }
+    private var lastImage = ""
+    private fun uploadFile(file: File):Unit{
+        var dirname = dataRun+startTimeRun
+        dirname= dirname.replace(":", "")
+        dirname= dirname.replace("/", "")
+        var fileName = dirname+"-"+(0..100).random()
+
+        var storageReferences = FirebaseStorage.getInstance().getReference("images/$useremail/$dirname/$fileName")
+        storageReferences.putFile(Uri.fromFile(file))
+            .addOnCompleteListener {
+                lastImage= "images/$useremail/$dirname/$fileName"
+                val myFile = File(file.absolutePath)
+
+
+
+                val metaRef = FirebaseStorage.getInstance().getReference("images/$useremail/$dirname/$fileName")
+                metaRef.updateMetadata(metadata)
+
+
+
+
+                Toast.makeText(this, "Se a subido y eliminado en el" +
+                        "dispostivo correctamente", Toast.LENGTH_SHORT).show()
+
+                myFile.delete()
+            }.addOnFailureListener{
+                throw (IOException("Ocurrío un error al subir el archivo $it"))
+            }
     }
     private fun setGalleryThumbail(uri: Uri):Unit{
         var thumbail = binding.photoViewButton

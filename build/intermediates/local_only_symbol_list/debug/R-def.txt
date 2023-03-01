@@ -56,6 +56,7 @@ dimen stroke_small
 drawable bicicleta
 drawable bicycle
 drawable bike
+drawable card_run
 drawable centermap_icon
 drawable circle_background_todisable
 drawable circle_background_topause
@@ -151,9 +152,14 @@ id fbFinalPicture
 id fbHome
 id fbShareRun
 id fragmentMap
+id item_record
 id ivBike
 id ivClosePopUp
 id ivCurrentLevel
+id ivHeaderMedalAvgSpeed
+id ivHeaderMedalDistance
+id ivHeaderMedalMaxSpeed
+id ivHeaderOpenClose
 id ivLebelBike
 id ivLebelRun
 id ivLebelSkate
@@ -162,6 +168,7 @@ id ivMedalAvgSpeed
 id ivMedalDistance
 id ivMedalMaxSpeed
 id ivOpenClose
+id ivPicture
 id ivRollerSkate
 id ivRunning
 id ivSportBike
@@ -193,7 +200,18 @@ id lyCurrentRun
 id lyCurrentSpeeds
 id lyCurrentSport
 id lyCurrentTimeMedals
+id lyDataDate
+id lyDataDateSport
+id lyDataDistance
+id lyDataRun
+id lyDataRunBody
+id lyDataRunBodyContainer
+id lyDataRunHeader
+id lyDataSpeedMedals
+id lyDate
+id lyDistance
 id lyDistanceData
+id lyDuration
 id lyFragmentMap
 id lyHardTrack
 id lyHardVolume
@@ -224,6 +242,7 @@ id lyOpenerLine
 id lyOpenerMap
 id lyOpenerTitle
 id lyOptionsRun
+id lyPicture
 id lyPopUpClose
 id lyPopUpOptionsRun
 id lyPopupRun
@@ -235,6 +254,8 @@ id lySettingsVolumes
 id lySettingsVolumesSpace
 id lySoftTrack
 id lySoftVolume
+id lySpeeds
+id lySport
 id lySportBike
 id lySportRollerSkate
 id lySportRunning
@@ -314,6 +335,8 @@ id tvCurrentAvgSpeedLabel
 id tvCurrentAvgSpeedUX
 id tvCurrentDistance
 id tvCurrentSpeed
+id tvDate
+id tvDelete
 id tvDeleteRun
 id tvDistanceLabel
 id tvDistanceRecord
@@ -326,6 +349,10 @@ id tvDurationTitle
 id tvHardPosition
 id tvHardRemaining
 id tvHardVolumen
+id tvHeaderAvgSpeed
+id tvHeaderDate
+id tvHeaderDistance
+id tvHeaderDuration
 id tvHeaderLevelBike
 id tvHeaderLevelRun
 id tvHeaderLevelSkate
@@ -354,6 +381,7 @@ id tvNumberLevel
 id tvNumberLevelBike
 id tvNumberLevelRun
 id tvNumberLevelSkate
+id tvPlay
 id tvReset
 id tvRounds
 id tvRunningTime
@@ -363,6 +391,7 @@ id tvSoftRemaining
 id tvSoftVolumen
 id tvSpeedLabel
 id tvSpeedUX
+id tvStartTime
 id tvTerms
 id tvTotalDistance
 id tvTotalDistanceBike
@@ -393,6 +422,7 @@ layout activity_main
 layout activity_record
 layout activity_terms
 layout app_bar_main
+layout card_run
 layout nav_header_main
 menu activity_main_drawer
 menu menu_secundario
@@ -400,6 +430,11 @@ menu order_records_by
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap map_type_normal
+string CardAvgSpeedTitle
+string CardMaxSpeedTitle
+string CardMedalAvgSpeed
+string CardMedalDistance
+string CardMedalMaxSpeed
 string NoDataWarning
 string PopUpAvgSpeedTitle
 string PopUpChallengeTitle

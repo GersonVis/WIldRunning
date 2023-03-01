@@ -14,6 +14,7 @@ INJECTED from C:\Users\Golfa\AndroidStudioProjects\app\src\main\AndroidManifest.
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Golfa\.gradle\caches\transforms-3\baa23ebbd743b544d33355da4947943c\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\7a11a7b447d6563d7294e403cf093cf8\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:2:1-17:12
@@ -30,8 +31,9 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.g
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\cdb862cc4b83130ddb8045fbae1c8b23\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\56a074a709891eb394392d0b639af487\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\c2b2d3f07de034c11e7a861f580c157a\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:15:1-25:12
@@ -67,6 +69,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Golfa\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Golfa\.gradle\caches\transforms-3\2e9b8a871ac37844ee660c4df1ff757e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\40b163564d144301f98d077ea08b89a1\transformed\camera-lifecycle-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Golfa\.gradle\caches\transforms-3\c22553626eecba1fcb3d9e04b77a1da4\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Golfa\.gradle\caches\transforms-3\f580594060d2f8886c2f53d30e8a000f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -78,7 +81,6 @@ MERGED from [androidx.browser:browser:1.4.0] C:\Users\Golfa\.gradle\caches\trans
 MERGED from [androidx.camera:camera-camera2:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\f82822bd12b7b184b44807efbb4d4b49\transformed\camera-camera2-1.1.0-alpha07\AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\2364e8fc6804ca6e08c2f33ed83abedc\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\b1e8724dbad58567bd127d2d2fd7bb68\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\118d9cb8d4e60b74a73cea96cdd9640c\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\6087030946cea7b699125156714481ad\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -158,6 +160,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.g
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
@@ -182,6 +186,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.g
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\Golfa\.gradle\caches\transforms-3\cd06c97a522acbf3f583b0905f995bdb\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
@@ -216,6 +222,8 @@ MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\cache
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
@@ -238,10 +246,12 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\cach
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Golfa\.gradle\caches\transforms-3\a490874ae78d10648f9dfd1c1e43d7b3\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\56a074a709891eb394392d0b639af487\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -388,6 +398,8 @@ MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\cache
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:5:5-44
@@ -420,10 +432,12 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\cdb862cc4b83130ddb8045fbae1c8b23\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\5fcddcd7f4cc59a5f49c934b198f64fd\transformed\play-services-location-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\1de5027872399e851c2444b231aab019\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\56a074a709891eb394392d0b639af487\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
@@ -494,6 +508,8 @@ MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\cach
 MERGED from [androidx.camera:camera-lifecycle:1.0.1] C:\Users\Golfa\.gradle\caches\transforms-3\40b163564d144301f98d077ea08b89a1\transformed\camera-lifecycle-1.0.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-extensions:1.0.0-alpha27] C:\Users\Golfa\.gradle\caches\transforms-3\3357ee82393b1af78f058690fcf21586\transformed\camera-extensions-1.0.0-alpha27\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Golfa\.gradle\caches\transforms-3\c22553626eecba1fcb3d9e04b77a1da4\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Golfa\.gradle\caches\transforms-3\c22553626eecba1fcb3d9e04b77a1da4\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\ed20f5a56911a094f4d99333f6e8c645\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\0e32abee142edddb3a1691269fd1bb16\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -516,8 +532,6 @@ MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\c
 MERGED from [androidx.camera:camera-core:1.1.0-alpha07] C:\Users\Golfa\.gradle\caches\transforms-3\2be3968c15f71dd5f1c5c2968063bdcc\transformed\camera-core-1.1.0-alpha07\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\9b375dac234be55a984f8f1f259894b6\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\2364e8fc6804ca6e08c2f33ed83abedc\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\2364e8fc6804ca6e08c2f33ed83abedc\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\b1e8724dbad58567bd127d2d2fd7bb68\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Golfa\.gradle\caches\transforms-3\b1e8724dbad58567bd127d2d2fd7bb68\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\118d9cb8d4e60b74a73cea96cdd9640c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -770,6 +784,8 @@ ADDED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches
 		ADDED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\84df847cab23ed2c47444f68ce07ba2c\transformed\firebase-ui-auth-7.2.0\AndroidManifest.xml:103:13-79
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\62c939217f7b30f5525b145c4d0da226\transformed\firebase-analytics-ktx-21.2.0\AndroidManifest.xml:8:9-14:19
@@ -782,6 +798,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\3f0cd6c4d401cd3daea87d8d4cfacf7c\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Golfa\.gradle\caches\transforms-3\f81d2c61ed0f64b3f524def4461d1b4e\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:28:9-34:19
@@ -804,6 +822,12 @@ ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.g
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\a06d618b3f3e96e9106401e8fa5f194f\transformed\firebase-firestore-ktx-24.4.2\AndroidManifest.xml:15:17-126
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\e530d4f59ed87ec704d0b5ccd3663f21\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:15:17-122
 meta-data#com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar
 ADDED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\74565ee1492d594409379505f4da6d16\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
 	android:value
@@ -908,6 +932,12 @@ ADDED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradl
 		ADDED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:21:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.4.2] C:\Users\Golfa\.gradle\caches\transforms-3\68f2f0995c45f4f5b1621b671c9feba8\transformed\firebase-firestore-24.4.2\AndroidManifest.xml:20:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\c47ccecc81a503fa1fb7c6f2b3cf8ff9\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\Golfa\.gradle\caches\transforms-3\edd59c82297564c0b124f415ff700a2a\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
 	android:value
