@@ -25,16 +25,17 @@ data class Runs(
     var minLongitude: Double ?= null,
     var maxLongitude: Double ?= null,
 
-    var centerLatitude: Double ?= null,
-    var centerLongitude: Double ?= null,
+    var centerLatitude: Double? = null,
+    var centerLongitude: Double? = null,
 
-    var sport: String ?= null,
+    var sport: String? = null,
 
-    var activatedGPS: Boolean ?= null,
+    var activatedGPS: Boolean? = null,
 
-    var medalDistance: String ?= null,
-    var medalAvgSpeed: String ?= null,
-    var medalMaxSpeed: String ?= null
+    var medalDistance: String? = null,
+    var medalAvgSpeed: String? = null,
+    var medalMaxSpeed: String? = null,
+
 
 
 ) {

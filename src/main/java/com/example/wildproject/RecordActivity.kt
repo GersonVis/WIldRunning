@@ -55,6 +55,8 @@ class RecordActivity : AppCompatActivity() {
         recyclerView.adapter = myAdapter
 
 
+
+
     }
 
     private fun rellenarFireBase(): Unit {
